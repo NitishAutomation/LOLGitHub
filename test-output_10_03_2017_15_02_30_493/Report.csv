@@ -1,0 +1,14 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Oct 03 14:57:42 IST 2017,
+End Date   :  Tue Oct 03 15:02:29 IST 2017,
+Total Duration :0 Hours 4 Minutes 47 Seconds,
+Total Pass : 1,
+Total Fail : 2,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_NonProd,,
+URL :http://www.freshway.com,
+Browser : Chrome 
+TC_ColdFusion:ValidateHomePageForColdFusion With TestData :10:TC_ColdFusion,Fail,Failed TestCase :TC_ColdFusion:ValidateHomePageForColdFusion With TestData :10:TC_ColdFusion<br>Not able to find Element / Action :  ColdFusionPassword<br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>4</td> <td>NavigateToColdFusionInternalAndLogin</td>  <td>Fire_waitForElement</td>  <td>ColdFusionPassword</td><td>20</td> </tr> 	</table><br><br> Duration>0 Hours 1 Minutes 11 Seconds
+TC_ContentManagement:ValidateHomePageAndTab,Fail,Failed TestCase :TC_ContentManagement:ValidateHomePageAndTab<br>Not able to find Element / Action :  ContentManagementHome_Link<br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>4</td> <td>NavigateToContentMangAndValidateHomePage</td>  <td>Fire_waitForElement</td>  <td>ContentManagementHome_Link</td><td>20</td> </tr> 	</table><br><br> Duration>0 Hours 1 Minutes 6 Seconds
+TC_FLMQA:ValidateHomePageAndPDF With TestData :11:TC_LOLFeedHome,Pass,Duration: 0 Hours 2 Minutes 27 Seconds

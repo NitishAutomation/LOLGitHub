@@ -1,0 +1,36 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Oct 03 12:42:47 IST 2017,
+End Date   :  Tue Oct 03 13:16:26 IST 2017,
+Total Duration :0 Hours 33 Minutes 39 Seconds,
+Total Pass : 18,
+Total Fail : 7,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_Prod,,
+URL :http://www.freshway.com,
+Browser : Chrome 
+TC_AdBuilder:ValidateHomePageAndAnyOptionPage With TestData :7:TC_AdBuilder,Fail,Failed TestCase :TC_AdBuilder:ValidateHomePageAndAnyOptionPage With TestData :7:TC_AdBuilder<br>Not able to find Element / Action :  LOLUtilityUsername<br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>4</td> <td>NavigateToAdBuilder</td>  <td>Fire_waitForElement</td>  <td>LOLUtilityUsername</td><td>20</td> </tr> 	</table><br><br> Duration>0 Hours 1 Minutes 20 Seconds
+TC_AnswerPlot:AnswerPlot_GeneralValidation,Pass,Duration: 0 Hours 1 Minutes 5 Seconds
+TC_CalibrateTechnologies:CalibrateTechnologies_GeneralValidation,Pass,Duration: 0 Hours 0 Minutes 13 Seconds
+TC_CoOpsTruck:CoOpc_GeneralValidation,Pass,Duration: 0 Hours 0 Minutes 13 Seconds
+TC_ContentManagementExtConsumption:ValidateHomePage,Fail,Failed TestCase :TC_ContentManagementExtConsumption:ValidateHomePage<br>Problem in finding Element CMEXDoctitle_TextBox<br> Duration>0 Hours 1 Minutes 31 Seconds
+TC_EHS:ValidateHomePageAndEHSDirectoryTab With TestData :8:TC_EHS,Pass,Duration: 0 Hours 0 Minutes 14 Seconds
+TC_EIG:ValidateHomePageForEIG With TestData :9:TC_EIG,Pass,Duration: 0 Hours 0 Minutes 20 Seconds
+TC_FOLO:ValidateNewOrderScreen With TestData :14:TC_FOLO,Pass,Duration: 0 Hours 0 Minutes 58 Seconds
+TC_LOLUtilityHomePage:ValidateLOLUtilityHomepage With TestData :5:TC_LOLUtilityPurina,Pass,Duration: 0 Hours 1 Minutes 39 Seconds
+TC_MIMSBusinessLogic:ValidateMIMSLink With TestData :7:TC_AdBuilder,Pass,Duration: 0 Hours 0 Minutes 58 Seconds
+TC_MyPriceList:ValidateHomePageAndDocumentDownload With TestData :16:TC_MyPriceList,Pass,Duration: 0 Hours 1 Minutes 0 Seconds
+TC_OBIEEUserMaintenance:ValidateHomePageAndSharedFolderOption With TestData :17:TC_OBIEEUserMaintenance,Fail,Failed TestCase :TC_OBIEEUserMaintenance:ValidateHomePageAndSharedFolderOption With TestData :17:TC_OBIEEUserMaintenance<br>Not able to find Element / Action :  OBIEEUserName<br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>4</td> <td>NavigateToOBIEEAndLogin</td>  <td>Fire_waitForElement</td>  <td>OBIEEUserName</td><td>20</td> </tr> 	</table><br><br> Duration>0 Hours 1 Minutes 8 Seconds
+TC_OTMFeed:ValidateSearchRecordForFeedDomain With TestData :4:TC_OTMFeed,Pass,Duration: 0 Hours 0 Minutes 33 Seconds
+TC_OTMWinfield:ValidateWinfeildDomainAndRecord With TestData :21:TC_OTMWinfield,Pass,Duration: 0 Hours 0 Minutes 19 Seconds
+TC_PurinaHomePage:ValidatePurinaHomepage With TestData :5:TC_LOLUtilityPurina,Pass,Duration: 0 Hours 1 Minutes 42 Seconds
+TC_SourceLOL_GPS:Source_LOL_GPS_GeneralVerification,Fail,Failed TestCase :TC_SourceLOL_GPS:Source_LOL_GPS_GeneralVerification<br>Problem in finding Element SourceLandoLakesGPS_Logo<br> Duration>0 Hours 1 Minutes 47 Seconds
+TC_SourceLOL_IT:Source_LOL_IT_GeneralVerification,Fail,Failed TestCase :TC_SourceLOL_IT:Source_LOL_IT_GeneralVerification<br>Problem in finding Element SourceLandoLakesInformationPage_Logo<br> Duration>0 Hours 3 Minutes 57 Seconds
+TC_SureTechLabs:SureTechLabs_Homepage_Login_CustomerReg_Verification,Pass,Duration: 0 Hours 0 Minutes 19 Seconds
+TC_VideoPortal_LOLCentral:Video_Portal_LOLCentral_GeneralVerification,Fail,Failed TestCase :TC_VideoPortal_LOLCentral:Video_Portal_LOLCentral_GeneralVerification<br>Element Not found: Action:selectFrame  ,<b>Element:</b> Value: VBrick Tab Widget<br> Duration>0 Hours 2 Minutes 4 Seconds
+TC_WinfiledUnitedBusinesslogicAnswerPlotAdmin: With TestData :23:TC_WinfiledUnitedBusinesslogicAnswerPlotAdmin,Pass,Duration: 0 Hours 0 Minutes 23 Seconds
+TC_WinfiledUnitedBusinesslogicConnect3: With TestData :6:TC_WinfiledUnitedBusinesslogic,Pass,Duration: 0 Hours 1 Minutes 49 Seconds
+TC_WinfiledUnitedBusinesslogicEqinox: With TestData :6:TC_WinfiledUnitedBusinesslogic,Pass,Duration: 0 Hours 1 Minutes 37 Seconds
+TC_WinfiledUnitedBusinesslogicFeedLicenseManf: With TestData :6:TC_WinfiledUnitedBusinesslogic,Fail,Failed TestCase :TC_WinfiledUnitedBusinesslogicFeedLicenseManf: With TestData :6:TC_WinfiledUnitedBusinesslogic<br>Problem in finding Element IngredientSpecificationManual_Link<br> Duration>0 Hours 1 Minutes 56 Seconds
+TC_WinfiledUnitedBusinesslogicMPOL: With TestData :6:TC_WinfiledUnitedBusinesslogic,Pass,Duration: 0 Hours 4 Minutes 7 Seconds
+TC_WinfiledUnitedBusinesslogicPurinaFeedManual: With TestData :6:TC_WinfiledUnitedBusinesslogic,Pass,Duration: 0 Hours 2 Minutes 4 Seconds

@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Aug 01 18:50:59 IST 2017,
+End Date   :  Tue Aug 01 18:52:04 IST 2017,
+Total Duration :0 Hours 1 Minutes 4 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: demoTest,,
+URL :http://winfielduspy.ent.lolcentral.com/jde/E1Menu.maf,
+Browser : IExplorer 
+TS-005:LOL,Fail,Failed TestCase :TS-005:LOL<br>expected [true] but found [false]<br> Duration>0 Hours 1 Minutes 4 Seconds

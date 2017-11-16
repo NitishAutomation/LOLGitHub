@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>NetSuite Login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="/core/styles/pagestyles.nl?ct=-2&amp;bglt=F2F4F6&amp;bgmd=EDF1F7&amp;bgdk=737A82&amp;bgon=5C7499&amp;bgoff=AFB5BF&amp;bgbar=5C7499&amp;tasktitletext=E4EAF4&amp;crumbtext=C4C8CF&amp;headertext=B5C1D5&amp;ontab=FFFFFF&amp;offtab=000000&amp;text=000000&amp;link=000000&amp;bgbody=FFFFFF&amp;bghead=FFFFFF&amp;portlet=C0CAD9&amp;portletlabel=000000&amp;bgbutton=FFE599&amp;bgrequiredfld=FFFFE5&amp;font=Verdana%2CHelvetica%2Csans-serif&amp;size_site_content=9pt&amp;size_site_title=9pt&amp;size=1.0&amp;nlinputstyles=T&amp;accessibility=F&amp;NS_VER=2017.2.0" />
+	<link rel="stylesheet" href="/uirefresh/css/fonts.css" />
+	<link rel="stylesheet" href="/uirefresh/css/oneoff_loginpage.css" />
+	<script type="text/javascript" src="/pages/loginpage/assets/js/loginrouter.js"></script>
+    <script type="text/javascript" src="/javascript/NLPortal.jsp?NS_VER=2017.2.0&amp;minver=53&amp;JSP_VER=1"></script>
+
+
+</head>
+<body bgcolor="#FFFFFF" link="#000000" vlink="#000000" alink="#000000" text="#000000" topmargin="5" leftmargin="5" rightmargin="5" marginheight="5">
+
+
+<form id="loginForm" method="post" action="/app/login/nllogin.nl">
+	<input type="hidden" id="pwdChangeRendered" value="" />
+	<input type="hidden" id="pwdPolicyAlertCheckFunction" value="" />
+	<input type="hidden" id="pwdFieldName" value="Password" />
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tbody><tr>
+			<td bgcolor="#FFFFFF" style="font-size:0">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+						<td align="LEFT"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="padding-top:1;"><a href="https://system.beta.netsuite.com/pages/login.jsp" style="white-space:nowrap;"><img class="uir-logo" src="/images/logos/netsuite-oracle.svg" height="30" border="0" style="margin-right:30px;margin-left:20px;" /><img src="/images/logos/ReleasePreview.gif" height="30" width="235" border="0" /></a></td><td align="right"></td></tr></tbody></table></td>
+					</tr>
+					
+				</tbody></table>
+
+				<div class="header-separator"></div>
+			</td>
+		</tr>
+
+		<tr class="content-row">
+			<td>
+				<table border="0" cellspacing="0" cellpadding="5" width="100%">
+					<tbody><tr>
+						<td valign="top">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td>
+
+
+
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td colspan="2"><table border="0" cellpadding="0" cellspacing="2"><tbody><tr>
+														<td class="pic"><img src="/images/icons/store/icon_exclamation2c.gif" width="12" height="12" border="0" /></td><td valign="top" class="checkoutwarning">Invalid login. You must provide an email address.</td>
+													</tr></tbody></table></td>
+												</tr>
+
+
+												<tr>
+													<td align="left">
+													<table border="0" cellpadding="0" cellspacing="2">
+
+													<tbody><tr><td>
+														<table>
+															<tbody><tr>
+																<td class="smalltextnolink" align="right" id="emailAddressLabel">Email address </td>
+																<td>
+																	<input aria-labelledby="emailAddressLabel" class="input" name="email" size="30" value="" />
+																</td>
+																<td class="smalltextnolink" align="right">    </td>
+															</tr>
+
+															<tr>
+																<td class="smalltextnolink" align="right" id="passwordLabel">
+Password																	 </td>
+																<td>
+
+																	<input aria-labelledby="passwordLabel" class="input" name="password" id="password" size="30" maxlength="255" type="password" />
+																</td>
+															</tr>
+
+															<tr>
+																<td><input type="hidden" name="errorredirect" value="/app/login/secure/loginrouter.nl" /></td>		
+															</tr>
+
+													<tr>
+														<td class="text" id="rememberMeLabel">
+															<input type="hidden" id="hintText" value="When you check this box, you will not have to re-enter your e-mail address when you log in. For security, you will always have to re-enter your password." />
+															<a id="remembermehint" class="smalltext" tabindex="-1" href="#">Remember Me</a>
+														</td>
+														<td>
+															<input aria-labelledby="rememberMeLabel" id="rememberme" name="rememberme" type="checkbox" value="T" class="checkbox" />
+														</td>
+													</tr>
+												</tbody></table></td></tr>
+
+											</tbody></table>
+
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellspacing="0" cellpadding="3" border="0">
+					<tbody><tr>
+						<td>
+							<input type="hidden" name="jsenabled" value="T" />
+							<input type="hidden" name="ct" value="&lt;link rel='stylesheet' href='/core/styles/pagestyles.nl?ct=-2&amp;bglt=F2F4F6&amp;bgmd=EDF1F7&amp;bgdk=737A82&amp;bgon=5C7499&amp;bgoff=AFB5BF&amp;bgbar=5C7499&amp;tasktitletext=E4EAF4&amp;crumbtext=C4C8CF&amp;headertext=B5C1D5&amp;ontab=FFFFFF&amp;offtab=000000&amp;text=000000&amp;link=000000&amp;bgbody=FFFFFF&amp;bghead=FFFFFF&amp;portlet=C0CAD9&amp;portletlabel=000000&amp;bgbutton=FFE599&amp;bgrequiredfld=FFFFE5&amp;font=Verdana%2CHelvetica%2Csans-serif&amp;size_site_content=9pt&amp;size_site_title=9pt&amp;size=1.0&amp;nlinputstyles=T&amp;accessibility=F&amp;NS_VER=2017.2.0'&gt;" />
+							<input type="hidden" id="setLoginCookie" value="T" />
+							<input type="submit" id="submitter" name="submitter" value="Log In" class="bgbutton" />
+						</td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+
+		<tr class="bottom-links">
+			<td class="smalltext">
+				<a href="/app/login/preparepwdreset.nl">
+Forgot your password?				</a>
+			</td>
+		</tr>
+	</tbody></table>
+
+
+
+</td></tr></tbody></table></form></body></html>

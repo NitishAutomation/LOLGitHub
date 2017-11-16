@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 16:02:12 IST 2017,
+End Date   :  Tue Sep 19 16:02:29 IST 2017,
+Total Duration :0 Hours 0 Minutes 17 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdMIMS,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_MIMSBusinessLogic:ValidateMIMSLink With TestData :7:TC_AdBuilder,Fail,Failed TestCase :TC_MIMSBusinessLogic:ValidateMIMSLink With TestData :7:TC_AdBuilder<br>Error in executing <br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>1</td> <td>NavigateToMIMSBusiness</td>  <td>Fire_goToUrl</td>  <td></td><td>https://mims.landolakesinc.com/</td> </tr> 	</table><br><br> Duration>0 Hours 0 Minutes 15 Seconds

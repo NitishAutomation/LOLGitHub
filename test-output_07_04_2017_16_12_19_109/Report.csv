@@ -1,0 +1,20 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Jul 04 16:09:42 IST 2017,
+End Date   :  Tue Jul 04 16:12:18 IST 2017,
+Total Duration :0 Hours 2 Minutes 36 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : VIVEK-PRASAD/vivek.prasad/OS-Windows 10,
+Groups: LOL-101,,
+URL :http://winfielduspy.ent.lolcentral.com/jde/E1Menu.maf,
+Browser : Chrome 
+LOL-101:LOL_Verify OC Order Creation,Fail,Failed TestCase :LOL-101:LOL_Verify OC Order Creation<br>no alert open
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.23 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'VIVEK-PRASAD', ip: '10.10.26.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\VIVEK~1.PRA\AppData\Local\Temp\scoped_dir4832_18019}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c7f42a252c4e54b0bf5df8a22a83801f<br> Duration>0 Hours 2 Minutes 35 Seconds

@@ -1,0 +1,13 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Jul 04 17:27:34 IST 2017,
+End Date   :  Tue Jul 04 17:33:08 IST 2017,
+Total Duration :0 Hours 5 Minutes 34 Seconds,
+Total Pass : 2,
+Total Fail : 0,
+Executed By : VIVEK-PRASAD/vivek.prasad/OS-Windows 10,
+Groups: LOL-101,LOL-102,
+URL :http://winfielduspy.ent.lolcentral.com/jde/E1Menu.maf,
+Browser : Chrome 
+LOL-101:LOL_Verify OC Order Creation,Pass,Duration: 0 Hours 2 Minutes 44 Seconds
+LOL-102:LOL_Verify Batch Update for Multitiered Discount,Pass,Duration: 0 Hours 2 Minutes 49 Seconds

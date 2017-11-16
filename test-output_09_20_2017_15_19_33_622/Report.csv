@@ -1,0 +1,18 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 15:19:13 IST 2017,
+End Date   :  Wed Sep 20 15:19:33 IST 2017,
+Total Duration :0 Hours 0 Minutes 20 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdOTM,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_OTMDairy:ValidateSearchRecordForDairyDomain With TestData :3:TC_OTMDairy,Fail,Failed TestCase :TC_OTMDairy:ValidateSearchRecordForDairyDomain With TestData :3:TC_OTMDairy<br>Element is obscured (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NITISH-NAYAK', ip: '10.10.26.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=40.15063.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=windows}]
+Session ID: 7114EEAA-45E8-48B3-B69F-C1F57B5868B8<br> Duration>0 Hours 0 Minutes 16 Seconds

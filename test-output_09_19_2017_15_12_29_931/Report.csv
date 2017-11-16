@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 15:11:58 IST 2017,
+End Date   :  Tue Sep 19 15:12:29 IST 2017,
+Total Duration :0 Hours 0 Minutes 31 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdEIG,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_EIG:ValidateHomePageForEIG With TestData :9:TC_EIG,Pass,Duration: 0 Hours 0 Minutes 29 Seconds

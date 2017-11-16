@@ -1,0 +1,169 @@
+<!-- FILE: fdr_rpt_list.html --><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title> </title>
+<link href="/crystal/enterprise10/admin/en/css/default.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+
+
+<body topmargin="0" leftmargin="0">
+
+<script language="Javascript">
+//LOCALIZATION STRINGS
+var _errNoSelected = "No items have been selected yet.";
+var _errCantDelete = "You do not have permission to delete at least one selected item.These items will be deselected.\nVerify the new selection set, then click Delete.";
+var _errCantCopyMove = "You do not have permission to copy or move at least one selected item (only creating shortcuts is allowed).\nOK - Continue command as selected\nCancel - Uncheck offending items";
+var _errCantCopy = "You do not have permission to copy at least one selected item (only moving or creating shortcuts is allowed).\nOK - Continue command as selected\nCancel - Uncheck offending items";
+var _errCantMove = "You do not have permission to move at least one selected item (only copying or creating shortcuts is allowed).\nOK - Continue command as selected\nCancel - Uncheck offending items";
+var _strDelete = "Delete the selected item(s)?";
+</script>
+
+<div id="tooltip" style="position:absolute;visibility:hidden;z-index:99;"></div>
+
+<script src="/crystal/enterprise10/admin/en/js/helps.js"></script>
+<script src="/crystal/enterprise10/admin/en/js/tips.js"></script>
+
+<script language="JavaScript">
+var _numItems = 0;
+var _aRightsArray = [];
+var canDoAnything = true;
+var CAN_DELETE = 0;
+var CAN_COPY = 1;
+var CAN_MOVE = 2;
+
+function selectAll()
+{
+	for(var i=0; i &lt; _numItems; i++)
+	{
+		document.folderReportForm.elements["chkbox"+i].checked = true;
+	}
+}
+
+function canDelete()
+{
+	var failed = false;
+	for(var i=0; i &lt; _numItems; i++){
+		if (document.folderReportForm.elements["chkbox"+i].checked &amp;&amp; !_aRightsArray[i][CAN_DELETE]){
+			if (failed) document.folderReportForm.elements["chkbox"+i].checked = false;
+			else{
+				alert(_errCantDelete);
+				document.folderReportForm.elements["chkbox"+i].checked = false;
+				failed = true;
+			}
+		}
+	}
+	if (failed) return false;
+	return true;
+}
+
+//Determines if the user can copy the selected list and whether they want to continue
+//Returns - [doIcontinue, canCopy, canMove]
+function canCopyMove(){
+	var canCopy = true;
+	var canMove = true;
+	for(var i=0; i &lt; _numItems; i++){
+		if (document.folderReportForm.elements["chkbox"+i].checked &amp;&amp; !_aRightsArray[i][CAN_COPY])
+			canCopy = false;
+		if (document.folderReportForm.elements["chkbox"+i].checked &amp;&amp; !_aRightsArray[i][CAN_MOVE])
+			canMove = false;
+	}
+
+	var canContinue = true;
+	if (!canCopy &amp;&amp; !canMove){
+		canContinue = confirm(_errCantCopyMove);
+	}else if (!canCopy){
+		canContinue = confirm(_errCantCopy);
+	}else if (!canMove){
+		canContinue = confirm(_errCantMove);
+	}
+
+	if (!canContinue){
+		for(var i=0; i &lt; _numItems; i++){
+			if (document.folderReportForm.elements["chkbox"+i].checked &amp;&amp; (!_aRightsArray[i][CAN_COPY] || !_aRightsArray[i][CAN_MOVE]))
+				document.folderReportForm.elements["chkbox"+i].checked = false;
+		}
+	}
+
+	return [canContinue, canCopy, canMove];
+}
+
+function deselectAll()
+{
+	for(var i=0; i &lt; _numItems; i++)
+	{
+		document.folderReportForm.elements["chkbox"+i].checked = false;
+	}
+}
+
+function deleteSelected()
+{
+	if (!canDoAnything) return;
+    if (!canDelete()) return;
+	var items = "";
+	for(var i=0; i &lt; _numItems; i++)
+	{
+		if(document.folderReportForm.elements["chkbox"+i].checked){
+			items += document.folderReportForm.elements["chkbox"+i].value + "*";
+		}
+	}
+
+	if(items != "")
+	{
+		if(window.confirm(_strDelete))
+		{
+			document.folderReportForm.checkedItems.value = items;
+			document.folderReportForm.submit();
+		}
+	}
+	else
+	{
+		alert(_errNoSelected);
+	}
+}
+
+function moveSelected()
+{
+	if (!canDoAnything) return;
+	var copyInfo = canCopyMove();
+	if (!copyInfo[0]) return;
+    var items = getSelected();
+	if(items != "") {
+      parent.location.href = "/crystal/enterprise10/admin/en/infoobject.cwr?action=-10005&amp;cmd=cmfrm&amp;refresh=r_reports&amp;id=16428" + "&amp;checkedItems=" + items + (copyInfo[CAN_COPY] ? "&amp;canCopy" : "") + (copyInfo[CAN_MOVE] ? "&amp;canMove" : "");
+	}
+	else {
+		alert(_errNoSelected);
+	}
+}
+
+function getSelected()
+{
+	var items = "";
+	for(var i=0; i &lt; _numItems; i++)
+	{
+		if(document.folderReportForm.elements["chkbox"+i].checked)
+    {
+      if (items != "") items += "*";
+			items += document.folderReportForm.elements["chkbox"+i].value;
+    }
+	}
+
+  return items;
+}
+</script>
+
+<form name="folderReportForm" action="/crystal/enterprise10/admin/en/infoobject.cwr?action=-10005&amp;cmd=delete&amp;refresh=r_reports&amp;id=16428" method="POST" target="_parent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr class="listHeading" width="100%">
+	  <td width="25%" align="LEFT" class="listHeading"><span id="text"> Object Title</span></td>
+	  <td width="65%" align="LEFT" class="listHeading"><span id="text">Description</span></td>
+	  <td width="10%" align="LEFT" class="listHeading"><span id="text">Selected</span></td>
+  </tr>
+  
+  <input name="checkedItems" type="hidden" value="" />
+</tbody></table>
+</form>
+
+
+
+
+</body></html>

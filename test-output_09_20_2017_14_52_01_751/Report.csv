@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 14:50:36 IST 2017,
+End Date   :  Wed Sep 20 14:52:01 IST 2017,
+Total Duration :0 Hours 1 Minutes 24 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdFSi,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_FSICrystalReporting:Validate_ReportGeneratingProperly With TestData :1:TC_FSICrystalReporting,Fail,Failed TestCase :TC_FSICrystalReporting:Validate_ReportGeneratingProperly With TestData :1:TC_FSICrystalReporting<br>Problem in finding Element FSICrystalReporting_RetailIncentiveReport_Link<br> Duration>0 Hours 1 Minutes 21 Seconds

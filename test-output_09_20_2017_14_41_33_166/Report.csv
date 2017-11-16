@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 14:41:14 IST 2017,
+End Date   :  Wed Sep 20 14:41:32 IST 2017,
+Total Duration :0 Hours 0 Minutes 18 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdFSi,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_FSICrystalReporting:Validate_ReportGeneratingProperly With TestData :1:TC_FSICrystalReporting,Pass,Duration: 0 Hours 0 Minutes 15 Seconds

@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 11:56:55 IST 2017,
+End Date   :  Wed Sep 20 12:00:26 IST 2017,
+Total Duration :0 Hours 3 Minutes 30 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdSure,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_SureTechLabs:SureTechLabs_Homepage_Login_CustomerReg_Verification,Fail,Failed TestCase :TC_SureTechLabs:SureTechLabs_Homepage_Login_CustomerReg_Verification<br>Problem in finding Element SureTechLabs_UserName_TextBox<br> Duration>0 Hours 3 Minutes 25 Seconds

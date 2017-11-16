@@ -1,0 +1,17 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 17:33:41 IST 2017,
+End Date   :  Wed Sep 20 17:36:06 IST 2017,
+Total Duration :0 Hours 2 Minutes 25 Seconds,
+Total Pass : 6,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdEdge,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_FreshWay:FreshWay_Home_ContactUs_AboutUs_DeliveryAreas_Verification,Pass,Duration: 0 Hours 0 Minutes 6 Seconds
+TC_NextGrow:NextGrow_GeneralValidation,Pass,Duration: 0 Hours 0 Minutes 9 Seconds
+TC_OTMDairy:ValidateSearchRecordForDairyDomain With TestData :3:TC_OTMDairy,Pass,Duration: 0 Hours 0 Minutes 18 Seconds
+TC_PmiNutrition:PMI_Nutrition_GeneralVerification,Pass,Duration: 0 Hours 1 Minutes 17 Seconds
+TC_TestDiet:TestDiet_GeneralVerification,Pass,Duration: 0 Hours 0 Minutes 5 Seconds
+TC_WinField:WinField_GeneralVerification,Pass,Duration: 0 Hours 0 Minutes 10 Seconds

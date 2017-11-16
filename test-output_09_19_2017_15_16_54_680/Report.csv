@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 15:15:21 IST 2017,
+End Date   :  Tue Sep 19 15:16:54 IST 2017,
+Total Duration :0 Hours 1 Minutes 32 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdPricelist,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_MyPriceList:ValidateHomePageAndDocumentDownload With TestData :16:TC_MyPriceList,Pass,Duration: 0 Hours 1 Minutes 30 Seconds

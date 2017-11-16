@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 15:29:26 IST 2017,
+End Date   :  Wed Sep 20 15:30:00 IST 2017,
+Total Duration :0 Hours 0 Minutes 33 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdOTM,,
+URL :http://www.freshway.com,
+Browser : Chrome 
+TC_OTMDairy:ValidateSearchRecordForDairyDomain With TestData :3:TC_OTMDairy,Pass,Duration: 0 Hours 0 Minutes 32 Seconds

@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 17:14:08 IST 2017,
+End Date   :  Tue Sep 19 17:14:33 IST 2017,
+Total Duration :0 Hours 0 Minutes 24 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_Prodconnect,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_WinfiledUnitedBusinesslogicConnect3: With TestData :6:TC_WinfiledUnitedBusinesslogic,Fail,Failed TestCase :TC_WinfiledUnitedBusinesslogicConnect3: With TestData :6:TC_WinfiledUnitedBusinesslogic<br>Error in executing <br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>1</td> <td>NavigateToWinfieldUnitedBusinessLogin</td>  <td>Fire_goToUrl</td>  <td></td><td>https://www.winfieldunited.com/</td> </tr> 	</table><br><br> Duration>0 Hours 0 Minutes 22 Seconds

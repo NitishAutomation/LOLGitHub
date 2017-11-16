@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 17:26:40 IST 2017,
+End Date   :  Tue Sep 19 17:28:39 IST 2017,
+Total Duration :0 Hours 1 Minutes 59 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdFLM,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_WinfiledUnitedBusinesslogicFeedLicenseManf: With TestData :6:TC_WinfiledUnitedBusinesslogic,Pass,Duration: 0 Hours 1 Minutes 57 Seconds

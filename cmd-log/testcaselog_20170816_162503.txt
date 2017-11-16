@@ -1,0 +1,90 @@
+
+E:\LOLPOC\LOL_POC>echo off 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.test:LOL_Fire:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for com.test:fireKW:jar should not point at files within the project directory, ${basedir}/ext/fireKW-1.0-SNAPSHOT.jar will be unresolvable by dependent projects @ line 124, column 16
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LOL_Fire 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ LOL_Fire ---
+[INFO] Deleting E:\LOLPOC\LOL_POC\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ LOL_Fire ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\LOLPOC\LOL_POC\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ LOL_Fire ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to E:\LOLPOC\LOL_POC\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ LOL_Fire ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ LOL_Fire ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 31 source files to E:\LOLPOC\LOL_POC\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ LOL_Fire ---
+[INFO] Surefire report directory: E:\LOLPOC\LOL_POC\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Version - 3.1_MHG
+****** STARTING TEST LOL-121:LOL_Integrate_C18034_Standard_Cost_Update_Standard_Raw_Materials *****
+Aug 16, 2017 4:25:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+sabarish 
+Row--> 1
+RunThis = Yes
+Scenario Description = R5541056 Standard Cost Update Standard Raw Materials - UFN001
+UserName = 559773
+Password = Welcome9
+OrderNumber = 10
+ShipToNumber = 7025278
+BranchPlant = 601253
+ItemNumber = 10000760
+Customer_po = 1234
+SoldToNumber = 7028356
+Data Selection 
+Reached here....
+***** ENDING TEST LOL-121:LOL_Integrate_C18034_Standard_Cost_Update_Standard_Raw_Materials *****
+====================================================================================
+Total ::: No Of Test cases :1::: PASS:1:::Fail:0:::Skipped:0
+====================================================================================
+PASSED: LOL-121:LOL_Integrate_C18034_Standard_Cost_Update_Standard_Raw_Materials
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+[TestNG] Time taken by [FailedReporter passed=0 failed=0 skipped=0]: 0 ms
+[TestNG] Time taken by org.testng.reporters.EmailableReporter2@6ea6d14e: 10 ms
+[TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@61443d8f: 370 ms
+[TestNG] Time taken by org.testng.reporters.JUnitReportReporter@2aaf7cc2: 10 ms
+[TestNG] Time taken by org.testng.reporters.jq.Main@63d4e2ba: 20 ms
+[TestNG] Time taken by org.testng.reporters.XMLReporter@2b80d80f: 23 ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.386 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:38 min
+[INFO] Finished at: 2017-08-16T16:26:42+05:30
+[INFO] Final Memory: 25M/136M
+[INFO] ------------------------------------------------------------------------

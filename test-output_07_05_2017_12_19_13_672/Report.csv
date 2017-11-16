@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Jul 05 12:17:08 IST 2017,
+End Date   :  Wed Jul 05 12:19:13 IST 2017,
+Total Duration :0 Hours 2 Minutes 4 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : VIVEK-PRASAD/vivek.prasad/OS-Windows 10,
+Groups: Login Validation,,
+URL :https://finstudent.tavant.com/seb/,
+Browser : IExplorer 
+TC-1:Verify Login page,Fail,Failed TestCase :TC-1:Verify Login page<br>Problem in finding Element logoHeader_LBL<br> Duration>0 Hours 2 Minutes 1 Seconds

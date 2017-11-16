@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Oct 03 18:03:09 IST 2017,
+End Date   :  Tue Oct 03 18:04:18 IST 2017,
+Total Duration :0 Hours 1 Minutes 8 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: Smoke_TestSuite_P1,,
+URL :http://www.freshway.com,
+Browser : Chrome 
+TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend,Fail,Failed TestCase :TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend<br>Problem in finding Element Answer_TextBox<br> Duration>0 Hours 1 Minutes 4 Seconds

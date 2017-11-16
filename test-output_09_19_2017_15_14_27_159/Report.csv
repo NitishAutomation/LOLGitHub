@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 15:13:19 IST 2017,
+End Date   :  Tue Sep 19 15:14:26 IST 2017,
+Total Duration :0 Hours 1 Minutes 6 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdFOlo,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_FOLO:ValidateNewOrderScreen With TestData :14:TC_FOLO,Pass,Duration: 0 Hours 1 Minutes 5 Seconds

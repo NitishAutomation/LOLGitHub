@@ -1,0 +1,30 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.18t|$
+Arch|x86_64-msvc|$
+
+[PLUGINS]
+NPSWF64_22_0_0_209.dll|$
+C:\WINDOWS\system32\Macromed\Flash\NPSWF64_22_0_0_209.dll|$
+22.0.0.209|$
+1496235202573|0|0|0|$
+Shockwave Flash 22.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]
+C:\Program Files\Microsoft Silverlight\5.1.50907.0\npctrl.dll|$
+1493832722000|$
+C:\Program Files\Microsoft Silverlight\5.1.50907.0\npctrlui.dll|$
+1493832722000|$
+C:\Program Files\Java\jre1.8.0_131\bin\plugin2\npjp2.dll|$
+1496234617975|$
+C:\Program Files\Java\jre1.8.0_131\bin\dtplugin\npdeployJava1.dll|$
+1496234616273|$
+C:\Users\nitish.nayak\AppData\Local\Citrix\ICA Client\npicaN.dll|$
+1487161646000|$
+C:\Users\nitish.nayak\AppData\Roaming\Mozilla\plugins\npatgpc.dll|$
+1502115995678|$

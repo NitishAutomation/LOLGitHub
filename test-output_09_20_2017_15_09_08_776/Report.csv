@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 15:08:27 IST 2017,
+End Date   :  Wed Sep 20 15:09:08 IST 2017,
+Total Duration :0 Hours 0 Minutes 40 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdAnswer,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_AnswerPlot:AnswerPlot_GeneralValidation,Pass,Duration: 0 Hours 0 Minutes 37 Seconds

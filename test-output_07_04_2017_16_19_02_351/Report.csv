@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Jul 04 16:16:30 IST 2017,
+End Date   :  Tue Jul 04 16:19:01 IST 2017,
+Total Duration :0 Hours 2 Minutes 31 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : VIVEK-PRASAD/vivek.prasad/OS-Windows 10,
+Groups: LOL-101,,
+URL :http://winfielduspy.ent.lolcentral.com/jde/E1Menu.maf,
+Browser : Chrome 
+LOL-101:LOL_Verify OC Order Creation,Fail,Failed TestCase :LOL-101:LOL_Verify OC Order Creation<br>Error in executing <br> <b>Step Details:</b> <table border="1"> <tr> <th width=5%>StepId</th>  <th width=45%>Test Step Description</th>  <th width=30%>Action/Command</th> <th width=10%>Target Element</th> <th width=10%>Data</th></tr><tr><td>4</td> <td>Logout of LOL Portal</td>  <td>Fire_waitForElement</td>  <td>LOL_UserName</td><td></td> </tr> 	</table><br><br> Duration>0 Hours 2 Minutes 30 Seconds

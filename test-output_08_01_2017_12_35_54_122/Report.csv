@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Aug 01 12:35:45 IST 2017,
+End Date   :  Tue Aug 01 12:35:53 IST 2017,
+Total Duration :0 Hours 0 Minutes 7 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: demoTest,,
+URL :http://automationpractice.com/index.php,
+Browser : IExplorer 
+TS-005:LOL,Pass,Duration: 0 Hours 0 Minutes 7 Seconds

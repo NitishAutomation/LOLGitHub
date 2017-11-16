@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Sep 19 16:06:21 IST 2017,
+End Date   :  Tue Sep 19 16:07:13 IST 2017,
+Total Duration :0 Hours 0 Minutes 52 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdMIMS,,
+URL :http://www.freshway.com,
+Browser : Firefox 
+TC_MIMSBusinessLogic:ValidateMIMSLink With TestData :7:TC_AdBuilder,Pass,Duration: 0 Hours 0 Minutes 50 Seconds

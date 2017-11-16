@@ -1,0 +1,1447 @@
+<html isappopenedinnewwindow="false" jdeaccessibility="false"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script language="JavaScript" src="/jde/js/utils.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/share/js/webgui.js" type="text/javascript"></script>
+<script type="text/javascript">
+var jdeWebGUICSS1 = true;
+var jdeWebGUIDOM1 = true;
+var jdeWebGUIDOM2 = true;
+var jdeWebGUIDynamicMenus = true;
+var jdeWebGUIDynamicOptions = true;
+var jdeWebGUIEventOffsetCoords = true;
+var jdeWebGUISmallScreen = false;
+WEBGUIRES_https_dummy_html="/jde/share/https_dummy.html";
+WEBGUIRES_images_treeexpanded_gif="/jde/share/images/treeexpanded.gif";
+WEBGUIRES_images_treecollapsed_gif="/jde/share/images/treecollapsed.gif";
+WEBGUIRES_images_treecollapsed_rtl_gif="/jde/share/images/treecollapsed_rtl.gif";
+WEBGUIRES_images_spacer_gif="/jde/share/images/spacer.gif";
+WEBGUIRES_images_menuitemblank_gif="/jde/share/images/menuitemblank.gif";
+WEBGUIRES_images_submenuitemdisabled_gif="/jde/share/images/submenuitemdisabled.gif";
+WEBGUIRES_images_submenuitemdisabled_rtl_gif="/jde/share/images/submenuitemdisabled_rtl.gif";
+WEBGUIRES_images_submenuitem_gif="/jde/share/images/submenuitem.gif";
+WEBGUIRES_images_submenuitem_rtl_gif="/jde/share/images/submenuitem_rtl.gif";
+WEBGUIRES_images_menuitemcheckdisabled_gif="/jde/share/images/menuitemcheckdisabled.gif";
+WEBGUIRES_images_menuitemcheck_gif="/jde/share/images/menuitemcheck.gif";
+WEBGUIRES_images_menuitembulletdisabled_gif="/jde/share/images/menuitembulletdisabled.gif";
+WEBGUIRES_images_menuitembullet_gif="/jde/share/images/menuitembullet.gif";
+WEBGUIRES_images_tiny_cancel_gif="/jde/share/images/tiny-cancel.gif";
+WEBGUIRES_images_tiny_cancel_mo_gif="/jde/share/images/tiny-cancel-mo.gif";
+WEBGUIRES_images_tiny_ok_mo_gif="/jde/share/images/tiny-ok-mo.gif";
+WEBGUIRES_images_tiny_ok_gif="/jde/share/images/tiny-ok.gif";
+WEBGUIRES_images_tiny_moveallleft_gif="/jde/share/images/tiny-moveallleft.gif";
+WEBGUIRES_images_tiny_moveleft_gif="/jde/share/images/tiny-moveleft.gif";
+WEBGUIRES_images_tiny_moveright_gif="/jde/share/images/tiny-moveright.gif";
+WEBGUIRES_images_tiny_moveallright_gif="/jde/share/images/tiny-moveallright.gif";
+WEBGUIRES_images_tiny_moveallleft_mo_gif="/jde/share/images/tiny-moveallleft-mo.gif";
+WEBGUIRES_images_tiny_moveleft_mo_gif="/jde/share/images/tiny-moveleft-mo.gif";
+WEBGUIRES_images_tiny_moveright_mo_gif="/jde/share/images/tiny-moveright-mo.gif";
+WEBGUIRES_images_tiny_moveallright_mo_gif="/jde/share/images/tiny-moveallright-mo.gif";
+WEBGUIRES_images_Orapageprocessing_ani_gif="/jde/share/images/Orapageprocessing_ani.gif";
+WEBGUIRES_images_loading_52x52_gif="/jde/share/images/loading_52x52.gif";
+WEBGUIRES_images_indeterminate_progress_bar_gif="/jde/share/images/indeterminate_progress_bar.gif";
+var jdeWebGUIcalendarStrings = new Array("Calendar","January","February","March","April","May","June","July","August","September","October","November","December","Sun","Mon","Tue","Wed","Thu","Fri","Sat","OK","Cancel","Previous Year","Previous Month","Next Month","Next Year","UTime","AM","PM");
+var jdeWebGUIStaticStrings = ({
+"JH_CLOSE":"Close",
+"RI_HOVER_TEXT_POPUP":"Popup Content",
+"ACCESS_SORT":"Sort",
+"ACCESS_CLICKABLE_ICON":"Clickable Icon",
+"ACCESS_EDITABLE":"Editable",
+"ACCESS_READONLY":"Read only",
+"ACCESS_DATA_ROW":"data row",
+"ACCESS_DATA_COLUMN":"column",
+"ACCESS_SUB_MENU":"sub menu",
+"ACCESS_SUB_MENU_DESC":"Press right arrow to expand, left arrow to collapse",
+"ROW_SELECTOR":"Row Selector",
+"ACCESS_EDIT_GRID_INSTRO":"Use space on grid cells to start edit mode when you navigate this editable grid.",
+"JH_ASSOCIATE_DESCRIPTION":"Associate Description is",
+"TE_UDC_FAVORITES":"User Defined Code",
+"TE_PROC_INDICATOR_TEXT":"Opening Application",
+"JH_PAGE_COMPLETE":"page loading complete",
+"ACCESS_WARNING_ON_PAGE":"Warning on page.",
+"ACCESS_ERROR_ON_PAGE":"Error on page.",
+"ACCESS_ERROR_INSTRUCTION":"Please check the heading for the detail and then use space key to select the error or warning and then tab to the description and the link to the related control.",
+"ACCESS_GRID_UPDATED":"Grid updated.",
+"ACCESS_TREENODE_UPDATED":"Tree control updated.",
+"ACCESS_CHECK_HEADING":"Check heading to get the detail again.",
+"SPELLCHECK_SUGGESTIONS":"Suggestions",
+"SPELLCHECK_REPLACE":"Replace With",
+"PRTL_WEBGUI_SUNDAY":"Sunday",
+"PRTL_WEBGUI_MONDAY":"Monday",
+"PRTL_WEBGUI_TUESDAY":"Tuesday",
+"PRTL_WEBGUI_WEDNESDAY":"Wednesday",
+"PRTL_WEBGUI_THURSDAY":"Thursday",
+"PRTL_WEBGUI_FRIDAY":"Friday",
+"PRTL_WEBGUI_SATURDAY":"Saturday",
+"CAL_ADD":"Add Activity",
+"HTML_HOTKEY_CALENDAR_DAYVIEW":"Switch to Day view.",
+"ACCESS_SET_ACTIVE":"Set Active",
+"ACCESS_REFRESH_REPORT_LIST":"Refresh Recent Report List",
+"ACCESS_GRID_AGGREGATE":"Grid Aggregate",
+"ACCESS_GRID_AGGREGATE_DESC":"Grid Aggregate (F2)",
+"TEDS_TASK":"Task:",
+"TEDS_APPLICATION":"Application:",
+"TEDS_REPORT":"Report:",
+"TEDS_VERSION":"Version:",
+"TEDS_FORM":"Form:",
+"TEDS_PRODUCT_CODE":"Product Code:",
+"HTML_NORECORD":"No records found.",
+"LV_INVALID_TEXT":"The filter value shall not contain * or %.",
+"JH_ATTACHMENT":"Attachment",
+"LV_LAYOUT":"Layout",
+"LV_ADD_FIELD":"Add Field",
+"LV_REMOVE_FIELD":"Remove Field",
+"CP_ADD_COL_RIGHT":"Add a column to right",
+"CP_ADD_ROW_BOTTOM":"Add a row to bottom",
+"CP_REMOVE_COL":"Remove this column",
+"CP_REMOVE_ROW":"Remove this row",
+"LV_CONFIG_LABEL":"Configure Label",
+"LV_CONFIG_VALUE":"Configure Value",
+"LV_RESIZE":"Resize",
+"LV_ADD_VALUE":"Add Value Only",
+"LV_ADD_LABEL_VALUE":"Add Label and Value",
+"LV_ALIGNMENT":"Alignment",
+"LV_LEFT_ALIGNMENT":"Left Alignment",
+"LV_RIGHT_ALIGNMENT":"Right Alignment",
+"LV_TABLE_VIEW":"Table View",
+"LV_LIST_VIEW":"List View",
+"LV_SORT_BY":"Sort By",
+"LV_OVR_ADD_WARN":"You cannot create a One View Report with a List View grid format. Please switch to a Table View grid format to perform this action.",
+"LV_OVR_ADD_WARN":"You cannot create a One View Report with a List View grid format. Please switch to a Table View grid format to perform this action.",
+"SG_E1_SEARCH_PRE":"EnterpriseOne Search Preferences"});
+</script>
+<link href="/jde/share/css/webclient.jsp" rel="stylesheet" type="text/css"><link href="/jde/share/css/webclient.css" rel="stylesheet" type="text/css">
+
+<link href="/jde/css/RI.css" rel="stylesheet" type="text/css">
+<title>Void&nbsp;Payment&nbsp;-&nbsp;Work&nbsp;with&nbsp;Payments</title>
+
+<link href="/jde/css/RI.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/SidePanel.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/EATT.css" rel="stylesheet" type="text/css">
+<link href="/jde/share/images/jdeicons/favicon.ico" rel="shortcut icon">
+<link href="/jde/share/images/jdeicons/mobile_eone_114.png" rel="apple-touch-icon">
+<script type="text/javascript">
+if (document.all){
+	document.writeln("<style>");
+	document.writeln(".tebody { overflow: hidden; }");
+	document.writeln("<\/style>");
+        var fName = "e1menuAppIframe";
+        var appFrame = document.getElementById(fName);
+        if (appFrame)
+        {
+           appFrame.setAttribute("home", "/jde/Welcome.mafService?e1.namespace=&e1.service=Welcome&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view");
+        }
+        else
+        {
+            appFrame = window.frames[fName];
+            if (appFrame)
+            {
+               appFrame.setAttribute("home", "/jde/Welcome.mafService?e1.namespace=&e1.service=Welcome&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view");
+            }
+         }
+}
+
+function goHome()
+{
+    minimizeSocialTab();
+    var fName = "e1menuAppIframe";
+    var appFrame = document.getElementById(fName);
+
+    var sbFrame = document.getElementById('sbFrame');
+    if(sbFrame != null)
+    {
+        top.cleanUpInlineHeightWidthForIFrame();
+    }
+
+    if (appFrame)
+    {
+        appFrame.src = WEBGUIRES_https_dummy_html;
+        forceRedraw(appFrame);
+        var initUrl = "/jde/Welcome.mafService?e1.namespace=&e1.service=Welcome&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view";
+        initUrl += "&random=" + Math.random();
+        appFrame.src = initUrl;
+    }
+    else
+    {
+        appFrame = window.frames[fName];
+        if (appFrame)
+        {
+           appFrame.location = WEBGUIRES_https_dummy_html;
+           forceRedraw(appFrame); 
+           var initUrl = "/jde/Welcome.mafService?e1.namespace=&e1.service=Welcome&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view";
+           initUrl += "&random=" + Math.random();
+           appFrame.location = initUrl;
+        }
+    }
+
+    ExternalAppsHandler.showE1MenuAppIframe();
+  
+    if (CARO && CARO.setActiveAppTile)
+    {
+        CARO.setActiveAppTile(0);
+    }
+    hideAllDropdownMenus();
+}
+
+function forceRedraw(obj)
+{
+    var savedVisibilityString = obj.style.visibility || '';
+    obj.style.visibility = 'hidden';
+    var hiddenHeight = obj.offsetHeight
+    obj.style.visibility = savedVisibilityString;   
+    var finalHeight = obj.offsetHeight;
+}
+
+function refreshIfHome()
+{
+    var fName = "e1menuAppIframe";
+    var appFrame = document.getElementById(fName);
+
+    if (appFrame)
+    {
+        if(appFrame.src.indexOf("Welcome.maf") != -1)
+        {
+           setTimeout("goHome()", 2000);
+        }
+    }
+    else
+    {
+        appFrame = window.frames[fName];
+        if (appFrame)
+        {
+           if (appFrame.location.href.indexOf("Welcome.maf") != -1)
+           {
+              setTimeout("goHome()", 2000);
+           }
+        }
+    
+     }
+
+}
+</script>
+<script language="javascript" src="/jde/js/AISProxy.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/crossDomainMessaging.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/JQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JQuery/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/TouchLibrary.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/utils.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/carousel.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/UIstate.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/jdeAnimation.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/watchlist.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/cacheManager.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/dropdownMenu.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/dropdownMenuItem.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/menuHotKey.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/Form.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/externalAppsHandler.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/databrowser/QuerySelector.js" type="text/javascript"></script>
+<script language="javascript" src="/jde/js/JSAQ.js" type="text/javascript"></script>
+
+
+
+
+<script language="JavaScript" src="/jde/ResourceCanonicalsJS.mafService?e1.namespace=&amp;e1.service=ResourceCanonicalsJS&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/share/js/e1.js" type="text/javascript"></script>
+<script>
+
+_e1URLFactory = new E1URLFactory('Servlet','/jde/','/jde/URLBuilderService.mafService?e1.namespace=&e1.service=URLBuilderService&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view');
+
+</script>
+
+<script language="JavaScript" src="/jde/js/ClientObject.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/Agent.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/UIBlocking.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridMessageHandler.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/WebObjectUtil.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSE1Page.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/ckeditor/ckeditor.js" type="text/javascript"></script><style>.cke{visibility:hidden;}</style>
+<script language="JavaScript" src="/jde/js/JQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JQuery/jquery-ui.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/KnockOut/knockout-3.2.0.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSEATT.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/RIView.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSSidePanel.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/notificationController.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/E1UDO.js" type="text/javascript"></script>
+</head>
+
+<body onload="javascript:CARO.caroInit();" onresize="javascript:CARO.onResize();">
+<script type="text/javascript">
+function handleOnBrowserClose(forceClose, controlledClose){
+if(window.isNativeContainer && document.querySelector("input[name='jdemafjasLauncher']").value == 'EMBEDDED_E1_PAGE_LAUNCHER')
+  window.controlledBrowserClose=true;
+if (forceClose){
+  if (controlledClose)
+    window.controlledBrowserClose=true;  javascript:window.close();
+ }
+else if (typeof window.controlledBrowserClose !== "undefined" && !window.controlledBrowserClose) {
+window.open('/jde/JASMafletMafBrowserClose.mafService?e1.namespace=&e1.service=JASMafletMafBrowserClose&RENDER_MAFLET=E1Menu&jdemafjasLauncher=PSFT_TE_V3_SW&jdemafjasLinkTarget=&e1.state=maximized&e1UserActInfo=true&jdeLoginAction=LOGOUT&e1.mode=view&jdemafjasFrom=BrowserClose','', 'height=1,width=1,top=20000,left=20000,screenX=20000,screenY=20000directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
+  var name = window.name;
+      if (name == "DataBrowser"){
+           window.name = "";
+    if(document.documentMode !== undefined){
+           window.onCloseDatabrowserWindow();
+      }else {
+    onCloseDatabrowserWindow(); }
+  } else {
+           if(window.onCloseOrphanWindows) onCloseOrphanWindows();
+      }
+}
+}
+</script>
+
+<script type="text/javascript">
+
+function LaunchHotKeysPage()
+{
+	window.open("/jde/JspDispatcher.mafService?E1_JSP_PATH_PARAM=%2Fowhtml%2FHotKeys.jsp&e1.namespace=&e1.service=JspDispatcher&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view", "Hotkey_Summary","titlebar, resizable=1, scrollbars=1");
+}
+</script>
+<script type="text/javascript">function launchAppNewWindow(){}var jdeMenuParent = new jdeMenu("","Could not Find Crystal Enterprise Server.","Crystal Enterprise URL is not defined.","Opening Application","Loading...","/jde/RunApp.mafService?e1.namespace=&e1.service=RunApp&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view&RID=2709237843d2b192","/jde/Dropdown_OCL.mafService?e1.namespace=&e1.service=Dropdown_OCL&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","/jde/RecentReports.mafService?e1.namespace=&e1.service=RecentReports&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","/jde/E1Menu_FastPath.mafService?e1.namespace=&e1.service=E1Menu_FastPath&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","Error:  Popup windows appear to be blocked by your web browser.",false,false,false,"","/jde/E1Menu_Preferences.mafService?e1.namespace=&e1.service=E1Menu_Preferences&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view",true,"2709237843d2b192");
+jdeMenuParent.accessibilityText = new Array();
+jdeMenuParent.flyoutLabels = new Array("Values","Versions","Data Selection","Data Selection & Values","Add To Favorites","Favorite Properties","Remove From Favorites","Documentation","Task Profile"); 
+ var favoriteStaticText = {"favorites": [
+{"favName":"Favorites","favMessage":"Do not show this screen again","favCreate":"Create Favorite","favCancel":"Cancel","favSaveChanges":"SaveChanges","favRemove":"Remove Favorite","favMove":"Move Favorites","favDeleteConfirmation":"Are you sure that you want to delete the selected <br>Favorite?","favMoveConfirmation":"Are you sure that you want to move the selected <br>Task back to Favorites Menu?","favOK":"OK","favRemoveAll":"Remove All Favorites","favDeleteAllConfirmation":"Are you sure that you want to delete all the <br>Favorites?","favDuplicateConfirmation":"This Task already exists on your Favorites menu. <br>Would you like to rename it?","favImage":"Image","favDelete":"Delete","favType":"Type","favRename":"Rename","favReorganize":"Reorganize","favReorganizeTitle":"Reorganize Favorites","favReorganizeSelection":"Select an User Defined Folder","favMoveUp":"Move Up","favMoveDown":"Move Down","favInteractiveApplication":"Interactive Application","favBatchApplication":"Batch Application","favFolder":"Folder","favURL":"URL","favUDC":"User Defined Code","favWorkflow":"Workflow","favCrystalReport":"Crystal Report","favUserCreatedFolder":"User Created Folder","favUserDefinedAppForm":"Interactive Application","favDeleteAll":"DeleteAll","favNewFolder":"New Folder","favAdding":"Add to Favorites","favMoveToolTip":"Move","favProperties":"Favorite Properties","favManage":"Manage Favorites","favNameToAdd":"Name","favOneView":"One View","favExternalApplication":"External Application","favClose":"Close"}]};
+ var externalAppStaticText = {"externalApps": [
+{"openInNewWindowError":"The requested application cannot open in a new browser window. Please open it in the current browser window.","appNotSupportedError":"Error: This application cannot open in the portal."}]};
+</script>
+
+ 
+
+<script language="JavaScript1.2"> 
+framebusting("differentDomain");
+</script>
+<div class="accessibility" id="ariaLog" role="log" aria-relevant="additions">page loading complete</div>
+<div class="accessibility" id="ariaAlert" role="alert" aria-relevant="additions"></div>
+
+<div id="brandingDiv">
+<div class="BrandingBar AFBrandingBar" id="brandingArea">
+
+
+
+<div id="topnav" onclick="javascript:dismissDropdownsIfAppropriate(event);">
+     
+    <div id="topnavOracleBranding"> <!-- The "left chunk" -->
+        
+          <img id="oracleImage" style="cursor: pointer;" onclick="javascript:goHome();" alt="ORACLE ®" src="/jde/share/images/alta/oracle_logo_sm.png" border="0">
+          <span class="appname" id="Sot13" style="white-space: nowrap; cursor: pointer;" onclick="javascript:goHome();"> JD Edwards</span>
+            
+    </div>
+    <div id="topnavSessionInfo"> <!-- The "right chunk" -->
+      <div id="rightControlsContainer">
+        
+        <div class="userSearchContainer" id="userSearchContainer" style="display: none;">
+            <input class="userSearchInput" id="userSearch" aria-label="EnterpriseOne Search Input Field. Type in filter and then use down or up arrow to navigate the search options and then use Enter key to start the search with the search option. Use ESC key to navigate back to EnterpriseOne Search Input Field." onkeyup="onKeyUpSearch(event, this.value)" ondblclick="startDefaultSearch()" onfocus="onFocusSearch()" onblur="onBlurSearch()" placeholder="Search"> 
+            
+            <a tabindex="0" role="button" aria-label="Search (My Searches)" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.click()};" onclick="onClickSearchOptionForSearchInput(event, '(My Searches)', '*Public')">
+                <img title="Search (My Searches)" class="userSearchIcon" role="presentation" src="/jde/share/images/alta/func_find_16_act.png" border="0">
+            </a>
+        </div>
+         
+        <div tabindex="0" id="userAndEnvContainer" role="menuitem" aria-label="User Menu KANGURI SAMEER. Use DOWN key to open role selection popup form. Then Use TAB key to move to the next component." onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="toggleShowUserAndEnvDropdownMenu();" menuExpanded="true">
+            
+                <div id="usernameDiv">
+                    KANGURI SAMEER
+                </div>
+            
+            <div id="envDiv">
+              [JPY920]
+            </div>
+            <div id="userSessionDropdownArrow"></div>
+        </div>
+      </div>      
+
+      
+        <div id="userSessionDropdown" style="display: block;">
+           
+            <div id="roleChooserDiv">
+              <div class="headingRow">
+                <span class="userSessionDropdownIcon" id="rolesIcon" onclick="UTIL.stopEventBubbling()"></span>
+                <span class="userSessionDropdownHeading" id="rolelabel" onclick="UTIL.stopEventBubbling()">Roles</span>       
+                
+
+
+
+
+<div class="hideMenu" id="e1MRoleTable">
+
+<table class="MenuNormal">
+<tbody>
+<tr>
+<td tabindex="0" align="left" id="e1MRoleOptions" role="menuitem" aria-describedby="Role"><form id="e1MRoleForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view&amp;a=rc" method="post" target="e1MRoleIframe">
+<input name="paramRole" tabindex="0" id="e1MRoleSelect" role="menuitem" aria-labelledby="rolelabel" type="hidden" value="W00BSA1">
+<span id="Role">Business Analysts</span>
+    </form>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+      
+              </div>        
+            </div>
+              
+      
+          <div id="personalizeDiv">
+            <div class="headingRow">
+              <span class="userSessionDropdownIcon" id="personalizationIcon" onclick="UTIL.stopEventBubbling()"></span>
+              <span class="userSessionDropdownHeading" id="perlabel" onclick="UTIL.stopEventBubbling()">Personalization</span>        
+              <div class="hideMenu" id="preferenceDiv">
+                <div><table tabindex="0" title="Application: P0085, Form: W0085N" class="MenuNormal" id="PreferencesTable1" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick='javascript:RunNewApp("launchForm","","P0085","APP","W0085N","","","","My%20System%20Options","","","","","0","","undefined");' onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td class="PreferenceMenuItem" nowrap="">My System Options</td></tr></tbody></table></div><div><table tabindex="0" title="My System Profile" class="MenuNormal" id="PreferencesTable2" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="window.open('/jde/E1Menu_About.mafService?e1.state=maximized&amp;e1.mode=view&amp;e1.namespace=&amp;e1.service=E1Menu_About&amp;RENDER_MAFLET=E1Menu','teAboutWindow','height=400,width=600,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1');" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td class="PreferenceMenuItem" nowrap="">My System Profile</td></tr></tbody></table></div><div><table tabindex="0" class="MenuNormal" id="PreferencesTable3" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="javascript:showPreferences();" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td title="Preferences" nowrap="">Preferences</td></tr></tbody></table></div>
+<script type="text/javascript">
+ var isSimplifiedNavigation = false;
+ var prefObj = {"preferences": [{"name":"showRelatedInfoPreference","checkboxId":"prefCheckBox1","value":"on","checked":"true","clickHandler":"storeRelatedInfoShownPreferences","text":"Show Layouts"},{"name":"enablePopupPreference","checkboxId":"prefCheckBox2","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Enable Hover Forms"},{"name":"rowExitPreference","checkboxId":"prefCheckBox3","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Enable Row/Form Menu on Right Mouse Click"},{"name":"addFavPreference","checkboxId":"prefCheckBox4","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Show Add Favorites Window"},{"name":"autoSuggestPreference","checkboxId":"prefCheckBox5","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Auto Suggest Enabled"},{"name":"UseLargeIconsInCarouselPreference","checkboxId":"prefCheckBox7","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Use Large Icons in Carousel"},{"name":"showBreadcrumbsPreference","checkboxId":"prefCheckBox8","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Show Menu Breadcrumbs"},{"name":"openAppInNewWindowPreference","checkboxId":"prefCheckBox9","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Open Application In New Window"},{"name":"enableSimplifiedExits","checkboxId":"prefCheckBox10","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Enable Simplified Row/Form Exits"}]};
+ var prefText = {"label": [{"preferenceText":"Preferences","cancelText":"Cancel","saveCloseText":"Save","appRelease":"E920","prefOptionsValue":"0","openInNewWindowText":"Open in New Window","nativeContainerConnectionsAllowedValue":"true","linkRedirectToAppText":"Switch Links on This Device to Open in EnterpriseOne for iPad","linkRedirectToWebText":"Switch Links on This Device to Open in Web Browser","resetDeviceSpecificE1PagesText":"Reset Device Specific EnterpriseOne Pages","resetButtonText":"Reset","undoButtonText":"Undo","clearBreadcrumbHistoryText":"Clear Breadcrumbs History","clearButtonText":"Clear"}]};
+var resetDeviceSpecificPages = false;var clearBreadcrumbHistory = false;</script>
+<div id="ManageUDOMenuContainer" style="display: none;"><div tabindex="0" id="ManageUDOMenuContainerHeader" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.click()};" onclick="javascript:toggleDisplayOfMangaeUDOSubMenuConatiner();stopEventBubbling(event)"><table class="MenuNormal" id="ManageUDOTable" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td title="Manage Content" id="PreferenceMenuItemUDO" nowrap="">Manage Content<img align="absmiddle" class="leftIndent" id="ManagePageSubMenuCollapseState" style="display: inline;" src="/jde/share/images/open_submenu_ena.png" border="0"><img align="absmiddle" class="leftIndent" id="ManagePageSubMenuExpendState" style="display: none;" src="/jde/share/images/bchistorybtn_ena.png" border="0"></td></tr></tbody></table></div><div id="ManageUDOSubMenuContainer" style="display: none;"><div class="leftIndent"><table tabindex="0" class="MenuNormal" id="ManageCompositePageTable" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.click()};" onclick="javascript:RIUTIL.goLayoutDesignMode();" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td title="Composed Pages" id="PreferenceMenuItemComposite" nowrap="">Composed Pages</td></tr></tbody></table></div><div class="leftIndent"><table tabindex="0" class="MenuNormal" id="ManageCHPTable" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="javascript:showHomePageManagementPane();" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td title="Classic Pages" id="PreferenceMenuItem" nowrap="">Classic Pages</td></tr></tbody></table></div></div></div>
+<script type="text/javascript">
+ var isSimplifiedNavigation = false;
+ var prefObj = {"preferences": [{"name":"showRelatedInfoPreference","checkboxId":"prefCheckBox1","value":"on","checked":"true","clickHandler":"storeRelatedInfoShownPreferences","text":"Show Layouts"},{"name":"enablePopupPreference","checkboxId":"prefCheckBox2","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Enable Hover Forms"},{"name":"rowExitPreference","checkboxId":"prefCheckBox3","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Enable Row/Form Menu on Right Mouse Click"},{"name":"addFavPreference","checkboxId":"prefCheckBox4","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Show Add Favorites Window"},{"name":"autoSuggestPreference","checkboxId":"prefCheckBox5","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Auto Suggest Enabled"},{"name":"UseLargeIconsInCarouselPreference","checkboxId":"prefCheckBox7","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Use Large Icons in Carousel"},{"name":"showBreadcrumbsPreference","checkboxId":"prefCheckBox8","value":"on","checked":"true","clickHandler":"storeUIPreferences","text":"Show Menu Breadcrumbs"},{"name":"openAppInNewWindowPreference","checkboxId":"prefCheckBox9","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Open Application In New Window"},{"name":"enableSimplifiedExits","checkboxId":"prefCheckBox10","value":"off","checked":"false","clickHandler":"storeUIPreferences","text":"Enable Simplified Row/Form Exits"}]};
+ var prefText = {"label": [{"preferenceText":"Preferences","cancelText":"Cancel","saveCloseText":"Save","appRelease":"E920","prefOptionsValue":"0","openInNewWindowText":"Open in New Window","nativeContainerConnectionsAllowedValue":"true","linkRedirectToAppText":"Switch Links on This Device to Open in EnterpriseOne for iPad","linkRedirectToWebText":"Switch Links on This Device to Open in Web Browser","resetDeviceSpecificE1PagesText":"Reset Device Specific EnterpriseOne Pages","resetButtonText":"Reset","undoButtonText":"Undo","clearBreadcrumbHistoryText":"Clear Breadcrumbs History","clearButtonText":"Clear"}]};
+var resetDeviceSpecificPages = false;var clearBreadcrumbHistory = false;</script>
+
+              <div><table tabindex="0" title="Edit Form Layout" class="MenuNormal" id="PersonalizationTable" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';"><tbody><tr><td class="PreferenceMenuItem" nowrap="">Edit Form Layout</td></tr></tbody></table></div></div>
+            </div>        
+          </div>    
+      
+          <div id="helpAndSignOut">
+            <div> <iframe name="LOGOUT_IFRAME" width="0" height="0" tabindex="-1" title="Sign Out" id="LOGOUT_IFRAME" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no"></iframe><a tabindex="0" title="Sign Out" id="e1LogoutLink" role="button" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="try{doE1PreLogout(event);}catch(problem){}" href="/jde/MafletClose.mafService?e1.namespace=&amp;e1.service=MafletClose&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" target="LOGOUT_IFRAME">
+  <div id="signOutLinkDiv">
+    <div class="userSessionDropdownIcon" id="logoutIcon" ontouchstart="document.getElementById('e1LogoutLink').click()"></div>
+    <div class="userSessionDropdownHeading" ontouchstart="document.getElementById('e1LogoutLink').click()">Sign Out</div>
+  </div>
+</a> </div>
+            <div tabindex="0" class="unfocusedHelpDiv" id="helpLinkDiv" role="link" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="window.open('/jde/Help.mafService?e1.state=maximized&amp;e1.mode=view&amp;e1.namespace=&amp;e1.service=Help','HelpPage')" onfocus="this.className='focusedHelpDiv'" onblur="this.className='unfocusedHelpDiv'">
+              <div class="userSessionDropdownHeading">Help</div>        
+              <div class="userSessionDropdownIcon" id="helpIcon"></div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+      
+  
+  
+ 
+</div>
+
+
+<!-- End of DropdownHttpMafletWrapperHeader.jsp -->
+
+
+
+
+
+
+
+
+<!-- Start of dropdown_viewmax.jsp -->
+
+<script language="JavaScript" src="/jde/ResourceCanonicalsJS.mafService?e1.namespace=&amp;e1.service=ResourceCanonicalsJS&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/share/js/e1.js" type="text/javascript"></script>
+<script>
+
+_e1URLFactory = new E1URLFactory('Servlet','/jde/','/jde/URLBuilderService.mafService?e1.namespace=&e1.service=URLBuilderService&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view');
+
+</script>
+
+
+<script>
+    if(window.webkit)
+    {
+        var loginVerifUrlCreator = parent._e1URLFactory.createInstance(parent._e1URLFactory.URL_TYPE_SERVICE);
+        loginVerifUrlCreator.setURI('LoginVerification');
+        loginVerifUrlCreator.setParameter('action', 'sendToken');    
+        var url = loginVerifUrlCreator.toString();           
+        var req = loginVerifUrlCreator.createXMLHttpRequest();
+        req.open('GET', url, true);
+        req.setRequestHeader("Content-Type","text");
+        req.onreadystatechange =  function()
+        {
+            if(req.readyState == 4)
+            {
+                if(req.status == 200)
+                {
+                    if(req.response && req.response != "")
+                    {
+                        var respObj = JSON.parse(req.response);
+                        window.webkit.messageHandlers.jde.postMessage({"type":"cookie","action":"setCookie","value":"x-wv-container="+respObj["x-wv-container"]});
+                    }
+                    else
+                    {
+                        console.error("Invalid response from Login Verification service");
+                    }
+                }
+                else
+                {
+                    console.error("Status "+req.status+": Failed request to Login Verification service.");
+                }
+            }
+        }
+        req.onerror = function()
+        {
+            console.error("Status "+req.status+": failed request to Login Verification service.");
+        }
+        req.send(''); 
+        window.webkit.messageHandlers.jde.postMessage({"type":"cookie","action":"setCookie","value":document.cookie});
+    }
+    localStorage.setItem("userAccessibilityMode", "false");
+    doCloseUrl = function()
+    {
+       var e1UrlCreator = parent._e1URLFactory.createInstance(parent._e1URLFactory.URL_TYPE_SERVICE);
+       e1UrlCreator.setURI('AjaxUIState');
+       e1UrlCreator.setParameter('action', 'closeTab');    
+       var url = e1UrlCreator.toString();           
+       var req = e1UrlCreator.createXMLHttpRequest();
+       req.open('POST', url, true);
+       req.setRequestHeader("Content-Type","text/xml");
+       req.send('');
+       if(document.all)
+       {
+          window.location.reload();   
+       }
+       else
+       {
+         setTimeout("goHome()", 2000);
+       }           
+    }
+</script>
+
+
+
+<input name="globalRID" type="hidden" value="2709237843d2b192">
+
+
+    <div id="normMenu">
+
+<script type="text/javascript">
+function handleOnBrowserClose(forceClose, controlledClose){
+if(window.isNativeContainer && document.querySelector("input[name='jdemafjasLauncher']").value == 'EMBEDDED_E1_PAGE_LAUNCHER')
+  window.controlledBrowserClose=true;
+if (forceClose){
+  if (controlledClose)
+    window.controlledBrowserClose=true;  javascript:window.close();
+ }
+else if (typeof window.controlledBrowserClose !== "undefined" && !window.controlledBrowserClose) {
+window.open('/jde/JASMafletMafBrowserClose.mafService?e1.namespace=&e1.service=JASMafletMafBrowserClose&RENDER_MAFLET=E1Menu&jdemafjasLauncher=PSFT_TE_V3_SW&jdemafjasLinkTarget=E1MENUMAIN_1357365478925647872&e1.state=maximized&e1UserActInfo=true&jdeLoginAction=LOGOUT&e1.mode=view&jdemafjasFrom=BrowserClose','', 'height=1,width=1,top=20000,left=20000,screenX=20000,screenY=20000directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
+  var name = window.name;
+      if (name == "DataBrowser"){
+           window.name = "";
+    if(document.documentMode !== undefined){
+           window.onCloseDatabrowserWindow();
+      }else {
+    onCloseDatabrowserWindow(); }
+  } else {
+           if(window.onCloseOrphanWindows) onCloseOrphanWindows();
+      }
+}
+}
+</script>
+
+<script type="text/javascript">
+
+function LaunchHotKeysPage()
+{
+	window.open("/jde/JspDispatcher.mafService?E1_JSP_PATH_PARAM=%2Fowhtml%2FHotKeys.jsp&e1.namespace=&e1.service=JspDispatcher&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view", "Hotkey_Summary","titlebar, resizable=1, scrollbars=1");
+}
+</script>
+<script type="text/javascript">function launchAppNewWindow(){}var jdeMenuParent = new jdeMenu("","Could not Find Crystal Enterprise Server.","Crystal Enterprise URL is not defined.","Opening Application","Loading...","/jde/RunApp.mafService?e1.namespace=&e1.service=RunApp&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view&RID=2709237843d2b192","/jde/Dropdown_OCL.mafService?e1.namespace=&e1.service=Dropdown_OCL&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","/jde/RecentReports.mafService?e1.namespace=&e1.service=RecentReports&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","/jde/E1Menu_FastPath.mafService?e1.namespace=&e1.service=E1Menu_FastPath&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view","Error:  Popup windows appear to be blocked by your web browser.",false,false,false,"","/jde/E1Menu_Preferences.mafService?e1.namespace=&e1.service=E1Menu_Preferences&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view",true,"2709237843d2b192");
+jdeMenuParent.accessibilityText = new Array();
+jdeMenuParent.flyoutLabels = new Array("Values","Versions","Data Selection","Data Selection & Values","Add To Favorites","Favorite Properties","Remove From Favorites","Documentation","Task Profile"); 
+ var favoriteStaticText = {"favorites": [
+{"favName":"Favorites","favMessage":"Do not show this screen again","favCreate":"Create Favorite","favCancel":"Cancel","favSaveChanges":"SaveChanges","favRemove":"Remove Favorite","favMove":"Move Favorites","favDeleteConfirmation":"Are you sure that you want to delete the selected <br>Favorite?","favMoveConfirmation":"Are you sure that you want to move the selected <br>Task back to Favorites Menu?","favOK":"OK","favRemoveAll":"Remove All Favorites","favDeleteAllConfirmation":"Are you sure that you want to delete all the <br>Favorites?","favDuplicateConfirmation":"This Task already exists on your Favorites menu. <br>Would you like to rename it?","favImage":"Image","favDelete":"Delete","favType":"Type","favRename":"Rename","favReorganize":"Reorganize","favReorganizeTitle":"Reorganize Favorites","favReorganizeSelection":"Select an User Defined Folder","favMoveUp":"Move Up","favMoveDown":"Move Down","favInteractiveApplication":"Interactive Application","favBatchApplication":"Batch Application","favFolder":"Folder","favURL":"URL","favUDC":"User Defined Code","favWorkflow":"Workflow","favCrystalReport":"Crystal Report","favUserCreatedFolder":"User Created Folder","favUserDefinedAppForm":"Interactive Application","favDeleteAll":"DeleteAll","favNewFolder":"New Folder","favAdding":"Add to Favorites","favMoveToolTip":"Move","favProperties":"Favorite Properties","favManage":"Manage Favorites","favNameToAdd":"Name","favOneView":"One View","favExternalApplication":"External Application","favClose":"Close"}]};
+ var externalAppStaticText = {"externalApps": [
+{"openInNewWindowError":"The requested application cannot open in a new browser window. Please open it in the current browser window.","appNotSupportedError":"Error: This application cannot open in the portal."}]};
+</script>
+
+<script type="text/javascript">
+try{
+self.e1_Old_onload_1 = window.onload;} catch(problem){}
+var e1_onload_Handler_1 = function(event){
+try{e1_Old_onload_1(event);} catch(problem){}
+
+
+ try{self.original_name = self.name;}
+ catch(problem){self.original_name = "";}
+ self.name="E1MENUMAIN_1357365478925647872";
+ launchAppNewWindow();
+ RIUTIL.requestInitConstants(); 
+ 
+  NotificationController.startNotificationWorker('/jde/js/notificationWorker.js', '/jde/NotificationController.mafService', '/jde/LoginVerification.mafService?KeepAlive=true', 60000);
+ 
+
+  };
+window.onload = e1_onload_Handler_1;
+
+</script>
+
+
+<script type="text/javascript">
+function getWindowHeight() { 
+var windowHeight=0; 
+ if (window.innerHeight !== undefined) { 
+    windowHeight=window.innerHeight; 
+  } 
+  // IE8 workarounds in "else ifs" 
+  else if (document.documentElement && document.documentElement.clientHeight) {
+     windowHeight = document.documentElement.clientHeight;
+  } 
+   else if (document.documentElement && document.documentElement.offsetHeight) {
+    windowHeight = document.documentElement.offsetHeight;
+  }
+  else if (document.body&&document.body.clientHeight) {
+     windowHeight=document.body.clientHeight;
+  }
+ return windowHeight;
+ }
+function getWindowWidth() {
+  var windowWidth=0;
+  if (window.innerWidth !== undefined) { 
+   windowWidth=window.innerWidth;
+  }
+  // IE8 workarounds in "else ifs" 
+  else if (document.documentElement && document.documentElement.clientWidth) {
+     windowWidth = document.documentElement.clientWidth;
+  } else if (document.documentElement && document.documentElement.offsetWidth) { 
+    windowWidth = document.documentElement.offsetWidth;
+  }  
+  else if (document.body&&document.body.clientWidth) {
+     windowWidth=document.body.clientWidth;
+  }
+ return windowWidth;
+ }
+var origWidth = getWindowWidth();
+var origHeight = getWindowHeight();
+try{
+self.e1_Old_onresize_1 = window.onresize;} catch(problem){}
+var e1_onresize_Handler_1 = function(event){
+try{e1_Old_onresize_1(event);} catch(problem){}
+  var innerWidth = getWindowWidth();
+  var innerHeight = getWindowHeight();
+  if (innerWidth != origWidth || innerHeight != origHeight) { 
+     origWidth =innerWidth; 
+    origHeight= innerHeight; 
+
+
+ teOnLoadOrResize();
+
+ } };
+window.onresize = e1_onresize_Handler_1;
+
+</script>
+
+
+
+<script type="text/javascript">
+try{
+self.e1_Old_onunload_1 = window.onunload;} catch(problem){}
+var e1_onunload_Handler_1 = function(event){
+try{e1_Old_onunload_1(event);} catch(problem){}
+
+
+ self.name=self.original_name;
+
+ handleOnBrowserClose(); 
+
+
+  };
+window.onunload = e1_onunload_Handler_1;
+
+</script>
+
+
+<script type="text/javascript">
+try{
+self.e1_Old_onbeforeunload_1 = window.onbeforeunload;} catch(problem){}
+var e1_onbeforeunload_Handler_1 = function(event){
+try{e1_Old_onbeforeunload_1(event);} catch(problem){}
+
+
+
+
+  };
+window.onbeforeunload = e1_onbeforeunload_Handler_1;
+
+</script>
+
+
+
+<script type="text/javascript">
+try{
+self.e1_Old_onkeydown_1 = document.onkeydown;} catch(problem){}
+var e1_onkeydown_Handler_1 = function(event){
+try{e1_Old_onkeydown_1(event);} catch(problem){}
+
+
+ return onKeyDownHandler(event);
+
+  };
+document.onkeydown = e1_onkeydown_Handler_1;
+
+</script>
+
+
+<script type="text/javascript">
+try{
+self.e1_Old_onkeyup_1 = document.onkeyup;} catch(problem){}
+var e1_onkeyup_Handler_1 = function(event){
+try{e1_Old_onkeyup_1(event);} catch(problem){}
+
+
+ return onKeyUpHandler(event);
+
+  };
+document.onkeyup = e1_onkeyup_Handler_1;
+
+</script>
+
+
+
+<div id="menutitle" role="navigation">
+
+<iframe name="RunAppHiddenIframe" width="0" height="0" tabindex="-1" title="RunAppHiddenIframe" id="RunAppHiddenIframe" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no">IFrame support is required to display this page.</iframe>
+<iframe name="SilentOCLIFrame" width="0" height="0" tabindex="-1" title="SilentOCLIFrame" id="SilentOCLIFrame" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no">IFrame support is required to display this page.</iframe>
+<iframe name="RecentReportsIFrame" width="0" height="0" tabindex="-1" title="RecentReportsIFrame" id="RecentReportsIFrame" src="/jde/RecentReports.mafService?e1.namespace=&amp;e1.service=RecentReports&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view&amp;forceGoToDb=false&amp;amp;timestamp=1501589449915" frameborder="0" scrolling="no">IFrame support is required to display this page.</iframe>
+<iframe name="e1MRoleIframe" width="0" height="0" tabindex="-1" title="e1MRoleIframe" id="e1MRoleIframe" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no">IFrame support is required to display this page.</iframe>
+</div>
+
+
+
+
+<!-- Session timeout UI messaging -->
+<div title="Session Timeout" id="timeoutDialog" style="display: none;">
+		<p id="timeoutDialogText"></p></div>
+
+
+<div class="notPortal" id="menuAndFastPathContainer" onclick="javascript:dismissDropdownsIfAppropriate(event);">
+  <div id="menuContainer" role="menu">
+    
+      
+        
+          <div tabindex="1" title="Home" class="e1MenuBarItem MenuBarFocusableDiv" id="drop_home" aria-describedby="home_desc" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.click();event.stopPropagation();event.preventDefault();};" onclick="javascript:goHome();">
+            <span id="home_desc" style="display: none;">Change user profile to use accessibility mode for improved screen reader experience.</span>
+          </div>
+        
+      
+    
+
+    
+      <div title="Navigator" class="e1MenuBarItem Nav_Navigator_icon" id="drop_mainmenuParent" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="showMenu('e1MMenuRoot',event);">
+        
+          <div tabindex="1" class="e1MenuBarItemChild MenuBarFocusableDiv" id="drop_mainmenu"></div>
+        
+        
+
+
+
+
+
+
+
+
+<div style="height: 0px;"><iframe name="e1MTreeIframe" width="0" height="0" tabindex="-1" title="e1MTreeIframe" id="e1MTreeIframe" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no" style="color: black; background-color: white;">IFrame support is required to display this page.</iframe></div>
+<form id="E1MTreeForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="divtag" id="E1MTreeFormDiv" type="hidden" value="treechild8035900">
+	<input name="indent" id="E1MTreeFormIndent" type="hidden" value="3">
+	<input name="nodeId" id="E1MTreeFormNodeId" type="hidden" value="4CD02A69031701-000039BD00000005-QUXS_4C90D519022506-0000440B00000003-PWQP_8035900">
+    <input name="nodeTitle" id="E1MTreeFormNodeTitle" type="hidden" value="AP Payments&#13;&#13;&#13; &#13;&#13;&#13;Add To Favorites&#13;&#13;Documentation&#13;&#13;Task Profile">
+	<input name="paramRole" id="E1MTreeFormRoleId" type="hidden" value="">
+	<input name="paramCollapsed" id="E1MTreeFormCollapsed" type="hidden" value="false">
+	<input name="a" id="E1MTreeFormAction" type="hidden" value="c">
+</form>
+
+<form id="E1CrystalForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="nodeId" id="E1MCrystalFormNodeId" type="hidden">
+	<input name="a" id="E1MCrystalFormAction" type="hidden" value="lc">
+</form>
+
+<form id="E1OVRForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="nodeId" id="E1MOVRFormNodeId" type="hidden">
+	<input name="a" id="E1MOVRFormAction" type="hidden" value="ov">
+</form>
+
+<form id="E1ExternalAppForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="nodeId" id="E1MExternalAppFormNodeId" type="hidden">
+	<input name="menuNodeInstanceId" id="E1MExternalAppNodeInstanceId" type="hidden">
+	<input name="a" id="E1MExternalAppFormAction" type="hidden" value="ea">
+</form>
+
+<form id="E1PurgeCacheForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="a" type="hidden" value="p">
+	<input name="paramRole" id="E1PurgeCacheFormRoleId" type="hidden">	
+</form>
+
+<form id="E1RefreshRootForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="a" type="hidden" value="r">
+</form>
+
+<form id="E1FavoritesForm" action="/jde/Dropdown_Menu.mafService?e1.namespace=&amp;e1.service=Dropdown_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input name="taskId" id="E1MFavoritesTaskId" type="hidden">
+	<input name="pTaskId" id="E1MFavoritesParentTaskId" type="hidden">
+	<input name="taskView" id="E1MFavoritesTaskView" type="hidden">
+	<input name="taskSeqNum" id="E1MFavoritesSeqNum" type="hidden">
+	<input name="a" id="E1MFavoritesAction" type="hidden">
+    <input name="taskNewName" id="E1MFavoritesNewName" type="hidden">
+    <input name="E1MFavoritesSeqNumMoved" id="E1MFavoritesSeqNumMoved" type="hidden">
+    <input name="udftaskId" id="E1MFavoritesUserDefinedFolderTaskId" type="hidden">
+    <input name="E1MFavoritesReorganizeId" id="E1MFavoritesReorganizeId" type="hidden">
+    <input name="menuItemNodeId" id="E1MFavoritesLaunchingMenuItemNodeId" type="hidden">
+    <input name="appId" id="E1MFavoritesAppId" type="hidden">
+    <input name="formId" id="E1MFavoritesFormId" type="hidden">
+    <input name="appVersion" id="E1MFavoritesAppVersion" type="hidden">
+    <input name="formMode" id="E1MFavoritesFormMode" type="hidden">
+    <input name="formTitle" id="E1MFavoritesFormTitle" type="hidden">
+    <input name="activateSilent" id="E1MFavoritesFormActivateSilent" type="hidden">
+</form>
+
+<div style="display: none;">
+<img alt="" src="/jde/share/images/menuitemblank.gif">
+<img alt="" src="/jde/share/images/small-go.gif">
+<img alt="" src="/jde/share/images/small-go-mo.gif">
+<img alt="" src="/jde/share/images/spacer.gif">
+<img alt="" src="/jde/share/images/treebullet.gif">
+<img alt="" src="/jde/share/images/open_submenu_ena.png">
+<img alt="" src="/jde/share/images/treeflyouttrigger.gif">
+</div>
+
+<script type="text/javascript">
+      var menuFragment = document.createDocumentFragment();
+      var menu = document.createElement ('DIV');
+      menuFragment.appendChild(menu);
+</script>
+
+
+<div id="webTree">
+  <div class="hideMenu" id="e1MMenuRoot">
+  
+  
+    <div id="fastPathContainer" onkeydown="return doMenuKeyDown(this,event,false,'');">
+      
+
+
+
+
+
+
+<form id="e1MFastpathForm" action="/jde/E1Menu_FastPath.mafService?e1.namespace=&amp;e1.service=E1Menu_FastPath&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" target="E1MFastpathHiddenIframe" accept="post">
+    
+    <label class="menulabel" id="TE_FAST_PATH_BOX_LABEL">Fast Path</label>        
+    
+<input name="RID" type="hidden">
+<script type="text/javascript">
+    var RIDField = document.getElementById("globalRID");
+    if(RIDField != null){
+    document.getElementById("RID").value = RIDField.value;
+    }
+</script>
+    
+    <input name="a" class="textfield" id="TE_FAST_PATH_BOX" aria-label="Fast Path" onfocus="this.select()" type="text" placeholder="Fast Path" value="">
+    <div id="fastPathFieldAndButtonDivider"></div>
+
+    <a title="Fast Path" id="fastPathButton" onclick="checkHrefKeyPress(this, event);" href="javascript: document.getElementById('e1MFastpathForm').submit();"></a>
+</form>
+<div style="height: 0px;"><iframe name="E1MFastpathHiddenIframe" width="0" height="0" tabindex="-1" title="E1MFastpathHiddenIframe" id="E1MFastpathHiddenIframe" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no" style="color: black; background-color: white;">IFrame support is required to display this page.</iframe></div>
+
+
+    </div>
+  
+    <div id="e1MMenuRootInner">
+      
+<script type="text/javascript">var mItm = new jdeMItm('9335882','0',true,'Content Development Tools','JDE000154','93_.._9335882','93','..','93','','W00BSA1','','','','','','','','','93_.._9335882');</script>
+<script type="text/javascript">mItm.s1 += mItm.taskNodeHead(true,2,'Task Type:Task View, Fastpath Code: TV:93','','0','',2,'node9335882');mItm.s1 += mItm.flyoutDoc(7,'node9335882');mItm.s1 += mItm.flyoutProps(8,'node9335882');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node9335882');div.setAttribute('taskLabel','Content Development Tools');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>
+<script type="text/javascript">var mItm = new jdeMItm('9135883','0',true,'EnterpriseOne Menus','JDE001693','91_.._9135883','91','..','91','','W00BSA1','','','','','','','','','91_.._9135883');</script>
+<script type="text/javascript">mItm.s1 += mItm.taskNodeHead(true,2,'Task Type:Task View, Fastpath Code: TV:91','','0','',2,'node9135883');mItm.s1 += mItm.flyoutDoc(7,'node9135883');mItm.s1 += mItm.flyoutProps(8,'node9135883');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node9135883');div.setAttribute('taskLabel','EnterpriseOne Menus');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>
+<script type="text/javascript">var mItm = new jdeMItm('8035884','0',true,'LOL Menu','JDE030553','80_.._8035884','80','..','80','','W00BSA1','','','','','','','','','80_.._8035884');</script>
+<script type="text/javascript">mItm.s1 += mItm.taskNodeHead(true,2,'Task Type:Task View, Fastpath Code: TV:80','','0','',2,'node8035884');mItm.s1 += mItm.flyoutDoc(7,'node8035884');mItm.s1 += mItm.flyoutProps(8,'node8035884');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035884');div.setAttribute('taskLabel','LOL Menu');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>
+<script type="text/javascript">var mItm = new jdeMItm('9735885','0',true,'Power User Tasks','JDE023965','97_.._9735885','97','..','97','','W00BSA1','','','','','','','','','97_.._9735885');</script>
+<script type="text/javascript">mItm.s1 += mItm.taskNodeHead(true,2,'Task Type:Task View, Fastpath Code: TV:97','','0','',2,'node9735885');mItm.s1 += mItm.flyoutDoc(7,'node9735885');mItm.s1 += mItm.flyoutProps(8,'node9735885');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node9735885');div.setAttribute('taskLabel','Power User Tasks');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script><script type="text/javascript">var mItm = new jdeMItm();</script>
+ <div id="node0001" tasklabel="Actions"></div><script type="text/javascript"> mItm.s1 += mItm.taskNodeActions("Actions"); var div = document.createElement('DIV');div.setAttribute('id','node00011');div.setAttribute('taskLabel','Actions'); div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>
+    <div><div id="node9335882" tasklabel="Content Development Tools"><div id="head9335882">
+<table tabindex="0" class="MenuNormal" id="menuItem9335882" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="menuItemKeyDown(event,this,0); showSubMenu(event,'treechild9335882',0,'9335882submenu');doActivateNodeWebGui('9335882','','01');doTreeIframeWebGui('93_.._9335882',0,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild9335882');" onclick="doActivateNodeWebGui('9335882','','01');doTreeIframeWebGui('93_.._9335882',0,'.','expand','');menuItemClick(this,0,event);showSubMenu(event,'treechild9335882',0,'9335882submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,0);" oncontextmenu="displayTaskContextMenu(event,'9335882pop',2, 'FlyOut9335882');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td></td><td>&nbsp;</td><td width="100%" align="left"><table width="100%" title="Task Type:Task View, Fastpath Code: TV:93" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td style="cursor: pointer;"><table style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><span title="Task Type:Task View, Fastpath Code: TV:93" id="fldnode9335882">Content Development Tools</span></td><td style="white-space: nowrap;"><table width="100%" align="right" class="hideMenu" id="9335882submenu" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><div id="treechild9335882" style="color: rgb(0, 0, 0);"></div></td></tr></tbody></table></td><td>&nbsp;<div id="9335882pop" role="presentation" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabDoc9335882:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9335882:0" role="presentation" href='javascript:teDoDocWindow("JDE000154","93","93","..","","W00BSA1","")'>Documentation</a></td></tr></tbody></table><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabprop9335882:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9335882:1" role="presentation" href='javascript:teProps("93","93","..","","W00BSA1","")'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign="middle" style="white-space: nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td align="right" style="width: 5px; white-space: nowrap;"><img align="absmiddle" id="I9335882" style="cursor: pointer;" alt="" src="/jde/share/images/open_submenu_ena.png" border="0" td="" <=""></tr></tbody></table></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node9135883" tasklabel="EnterpriseOne Menus"><div id="head9135883">
+<table tabindex="0" class="MenuNormal" id="menuItem9135883" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="menuItemKeyDown(event,this,0); showSubMenu(event,'treechild9135883',0,'9135883submenu');doActivateNodeWebGui('9135883','','01');doTreeIframeWebGui('91_.._9135883',0,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild9135883');" onclick="doActivateNodeWebGui('9135883','','01');doTreeIframeWebGui('91_.._9135883',0,'.','expand','');menuItemClick(this,0,event);showSubMenu(event,'treechild9135883',0,'9135883submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,0);" oncontextmenu="displayTaskContextMenu(event,'9135883pop',2, 'FlyOut9135883');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td></td><td>&nbsp;</td><td width="100%" align="left"><table width="100%" title="Task Type:Task View, Fastpath Code: TV:91" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td style="cursor: pointer;"><table style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><span title="Task Type:Task View, Fastpath Code: TV:91" id="fldnode9135883">EnterpriseOne Menus</span></td><td style="white-space: nowrap;"><table width="100%" align="right" class="hideMenu" id="9135883submenu" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><div id="treechild9135883" style="color: rgb(0, 0, 0);"></div></td></tr></tbody></table></td><td>&nbsp;<div id="9135883pop" role="presentation" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabDoc9135883:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9135883:0" role="presentation" href='javascript:teDoDocWindow("JDE001693","91","91","..","","W00BSA1","")'>Documentation</a></td></tr></tbody></table><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabprop9135883:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9135883:1" role="presentation" href='javascript:teProps("91","91","..","","W00BSA1","")'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign="middle" style="white-space: nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td align="right" style="width: 5px; white-space: nowrap;"><img align="absmiddle" id="I9135883" style="cursor: pointer;" alt="" src="/jde/share/images/open_submenu_ena.png" border="0" td="" <=""></tr></tbody></table></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node8035884" tasklabel="LOL Menu"><div id="head8035884">
+<table tabindex="0" class="MenuNormal" id="menuItem8035884" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="menuItemKeyDown(event,this,0); showSubMenu(event,'treechild8035884',0,'8035884submenu');doActivateNodeWebGui('8035884','','01');doTreeIframeWebGui('80_.._8035884',0,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035884');" onclick="doActivateNodeWebGui('8035884','','01');doTreeIframeWebGui('80_.._8035884',0,'.','expand','');menuItemClick(this,0,event);showSubMenu(event,'treechild8035884',0,'8035884submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,0);" oncontextmenu="displayTaskContextMenu(event,'8035884pop',2, 'FlyOut8035884');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td></td><td>&nbsp;</td><td width="100%" align="left"><table width="100%" title="Task Type:Task View, Fastpath Code: TV:80" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td style="cursor: pointer;"><table style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><span title="Task Type:Task View, Fastpath Code: TV:80" id="fldnode8035884">LOL Menu</span></td><td style="white-space: nowrap;"><table width="100%" align="right" class="hideMenu" id="8035884submenu" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><div class="showMenu" id="treechild8035884" style="color: rgb(0, 0, 0); display: block;" cachedInnerHTML="&#10;<script type=&quot;text/javascript&quot;>var mItm = new jdeMItm('8035886','1',false,'Data Browser','JDE030505','4C72A849028100-0000060600000005-QVPO_80_8035886','4C72A849028100-0000060600000005-QVPO','80','80','10','W00BSA1','http://ahdoul1960.ent.lolcentral.com:20910/jde/DataBrowser.mafService?e1.namespace=&amp;e1.service=DataBrowser&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1.mode=view','','','55','','','1','2709237843d2b192','4C72A849028100-0000060600000005-QVPO_80_8035886');</script>&#10;<script type=&quot;text/javascript&quot;>mItm.s1 += mItm.taskNodeHead(true,6,'http://ahdoul1960.ent.lolcentral.com:20910/jde/DataBrowser.mafService?e1.namespace=&amp;e1.service=DataBrowser&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1.mode=view','','0','',3,'node8035886');mItm.s1 += mItm.flyoutFav('fa',4,'node8035886');mItm.s1 += mItm.flyoutDoc(7,'node8035886');mItm.s1 += mItm.flyoutProps(8,'node8035886');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035886');div.setAttribute('taskLabel','Data Browser');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>&#10;<script type=&quot;text/javascript&quot;>var mItm = new jdeMItm('8035887','1',false,'WinField United ERP User Community','JDE030752','4E413F4A020000-000004AF0000000A-PWQP_80_8035887','4E413F4A020000-000004AF0000000A-PWQP','80','80','20','W00BSA1','https://landolakes.sharepoint.com/sites/Win-WFUS-Training/SitePages/Home.aspx','','','55','','','1','2709237843d2b192','4E413F4A020000-000004AF0000000A-PWQP_80_8035887');</script>&#10;<script type=&quot;text/javascript&quot;>mItm.s1 += mItm.taskNodeHead(true,6,'https://landolakes.sharepoint.com/sites/Win-WFUS-Training/SitePages/Home.aspx','','0','',3,'node8035887');mItm.s1 += mItm.flyoutFav('fa',4,'node8035887');mItm.s1 += mItm.flyoutDoc(7,'node8035887');mItm.s1 += mItm.flyoutProps(8,'node8035887');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035887');div.setAttribute('taskLabel','WinField United ERP User Community');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>&#10;<script type=&quot;text/javascript&quot;>var mItm = new jdeMItm('8035888','1',false,'Unity UPK Portal','JDE031122','4F2AE06C022C01-00002E9300000005-PWQP_80_8035888','4F2AE06C022C01-00002E9300000005-PWQP','80','80','25','W00BSA1','http://upk.ent.lolcentral.com/','','','55','','','1','2709237843d2b192','4F2AE06C022C01-00002E9300000005-PWQP_80_8035888');</script>&#10;<script type=&quot;text/javascript&quot;>mItm.s1 += mItm.taskNodeHead(true,6,'http://upk.ent.lolcentral.com/','','0','',3,'node8035888');mItm.s1 += mItm.flyoutFav('fa',4,'node8035888');mItm.s1 += mItm.flyoutDoc(7,'node8035888');mItm.s1 += mItm.flyoutProps(8,'node8035888');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035888');div.setAttribute('taskLabel','Unity UPK Portal');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>&#10;<script type=&quot;text/javascript&quot;>var mItm = new jdeMItm('8035889','1',true,'Shared Services','JDE030649','4C90C066032000-0000459A00000004-PWQP_80_8035889','4C90C066032000-0000459A00000004-PWQP','80','80','30','W00BSA1','','','','55','','','1','2709237843d2b192','4C90C066032000-0000459A00000004-PWQP_80_8035889');</script>&#10;<script type=&quot;text/javascript&quot;>mItm.s1 += mItm.taskNodeHead(true,2,'Task Type: Folder, Fastpath Code: JDE030649','','0','FOLDER',3,'node8035889');mItm.s1 += mItm.flyoutFav('fa',4,'node8035889');mItm.s1 += mItm.flyoutDoc(7,'node8035889');mItm.s1 += mItm.flyoutProps(8,'node8035889');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035889');div.setAttribute('taskLabel','Shared Services');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script>&#10;<script type=&quot;text/javascript&quot;>var mItm = new jdeMItm('8035890','1',true,'WinField United','JDE032649','58C05E23026000-0000720602C7BB70-SOOS_80_8035890','58C05E23026000-0000720602C7BB70-SOOS','80','80','40','W00BSA1','','','','','','','1','2709237843d2b192','58C05E23026000-0000720602C7BB70-SOOS_80_8035890');</script>&#10;<script type=&quot;text/javascript&quot;>mItm.s1 += mItm.taskNodeHead(true,2,'Task Type: Folder, Fastpath Code: JDE032649','','0','FOLDER',3,'node8035890');mItm.s1 += mItm.flyoutFav('fa',4,'node8035890');mItm.s1 += mItm.flyoutDoc(7,'node8035890');mItm.s1 += mItm.flyoutProps(8,'node8035890');mItm.s1 += mItm.taskNodeTail();mItm.s1 += mItm.nodeTail();var div = document.getElementById('node8035890');div.setAttribute('taskLabel','WinField United');div.innerHTML=mItm.s1; menu.appendChild(div);mItm=null;</script><div><div id=&quot;node8035886&quot; tasklabel=&quot;Data Browser&quot;><div id=&quot;head8035886&quot;>&#10;<table tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;menuItem8035886&quot; onmouseover=&quot;menuItemHover(this,1);&quot; onmouseout=&quot;menuItemUnhover(this,1);&quot; onkeydown=&quot;menuItemKeyDown(event,this,1); showSubMenu(event,'treechild8035886',1,'8035886submenu');doActivateNodeWebGui('8035886','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035886');&quot; onclick=&quot;doActivateNodeWebGui('8035886','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild8035886',1,'8035886submenu');&quot; onfocus=&quot;menuItemHover(this);&quot; onblur=&quot;menuItemUnhover(this,1);&quot; oncontextmenu=&quot;displayTaskContextMenu(event,'8035886pop',3, 'FlyOut8035886');&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td></td><td><span class=&quot;treebulletother&quot;><img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; src=&quot;/jde/share/images/spacer.gif&quot;></span></td><td>&amp;nbsp;</td><td width=&quot;100%&quot; align=&quot;left&quot;><table width=&quot;100%&quot; title=&quot;http://ahdoul1960.ent.lolcentral.com:20910/jde/DataBrowser.mafService?e1.namespace=&amp;amp;e1.service=DataBrowser&amp;amp;RENDER_MAFLET=E1Menu&amp;amp;e1.state=maximized&amp;amp;e1.mode=view&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td style=&quot;cursor: pointer;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><a title=&quot;http://ahdoul1960.ent.lolcentral.com:20910/jde/DataBrowser.mafService?e1.namespace=&amp;amp;e1.service=DataBrowser&amp;amp;RENDER_MAFLET=E1Menu&amp;amp;e1.state=maximized&amp;amp;e1.mode=view&quot; id=&quot;fldnode8035886&quot; onkeydown=&quot;return doMenuKeyDown(this,event)&quot; href=&quot;javascript:RunUrl('http://ahdoul1960.ent.lolcentral.com:20910/jde/DataBrowser.mafService?e1.namespace=&amp;amp;e1.service=DataBrowser&amp;amp;RENDER_MAFLET=E1Menu&amp;amp;e1.state=maximized&amp;amp;e1.mode=view');&quot; arrownav=&quot;yes&quot;>Data Browser</a></td><td>&amp;nbsp;<div id=&quot;8035886pop&quot; role=&quot;presentation&quot; style=&quot;display: none;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabFav8035886:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035886:0&quot; role=&quot;presentation&quot; href='javascript:doFavoritesAction(&quot;4C72A849028100-0000060600000005-QVPO&quot;,&quot;80&quot;,&quot;80&quot;,&quot;10&quot;,&quot;fa&quot;,&quot;Data%20Browser&quot;)'>Add To Favorites</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabDoc8035886:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035886:1&quot; role=&quot;presentation&quot; href='javascript:teDoDocWindow(&quot;JDE030505&quot;,&quot;80&quot;,&quot;4C72A849028100-0000060600000005-QVPO&quot;,&quot;80&quot;,&quot;10&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Documentation</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabprop8035886:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035886:2&quot; role=&quot;presentation&quot; href='javascript:teProps(&quot;80&quot;,&quot;4C72A849028100-0000060600000005-QVPO&quot;,&quot;80&quot;,&quot;10&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign=&quot;middle&quot; style=&quot;white-space: nowrap;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td align=&quot;right&quot; style=&quot;width: 5px; white-space: nowrap;&quot;></td></tr></tbody></table></td><td>&amp;nbsp;</td></tr></tbody></table></div></div><div id=&quot;node8035887&quot; tasklabel=&quot;WinField United ERP User Community&quot;><div id=&quot;head8035887&quot;>&#10;<table tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;menuItem8035887&quot; onmouseover=&quot;menuItemHover(this,1);&quot; onmouseout=&quot;menuItemUnhover(this,1);&quot; onkeydown=&quot;menuItemKeyDown(event,this,1); showSubMenu(event,'treechild8035887',1,'8035887submenu');doActivateNodeWebGui('8035887','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035887');&quot; onclick=&quot;doActivateNodeWebGui('8035887','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild8035887',1,'8035887submenu');&quot; onfocus=&quot;menuItemHover(this);&quot; onblur=&quot;menuItemUnhover(this,1);&quot; oncontextmenu=&quot;displayTaskContextMenu(event,'8035887pop',3, 'FlyOut8035887');&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td></td><td><span class=&quot;treebulletother&quot;><img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; src=&quot;/jde/share/images/spacer.gif&quot;></span></td><td>&amp;nbsp;</td><td width=&quot;100%&quot; align=&quot;left&quot;><table width=&quot;100%&quot; title=&quot;https://landolakes.sharepoint.com/sites/Win-WFUS-Training/SitePages/Home.aspx&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td style=&quot;cursor: pointer;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><a title=&quot;https://landolakes.sharepoint.com/sites/Win-WFUS-Training/SitePages/Home.aspx&quot; id=&quot;fldnode8035887&quot; onkeydown=&quot;return doMenuKeyDown(this,event)&quot; href=&quot;javascript:RunUrl('https://landolakes.sharepoint.com/sites/Win-WFUS-Training/SitePages/Home.aspx');&quot; arrownav=&quot;yes&quot;>WinField United ERP User Community</a></td><td>&amp;nbsp;<div id=&quot;8035887pop&quot; role=&quot;presentation&quot; style=&quot;display: none;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabFav8035887:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035887:0&quot; role=&quot;presentation&quot; href='javascript:doFavoritesAction(&quot;4E413F4A020000-000004AF0000000A-PWQP&quot;,&quot;80&quot;,&quot;80&quot;,&quot;20&quot;,&quot;fa&quot;,&quot;WinField%20United%20ERP%20User%20Community&quot;)'>Add To Favorites</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabDoc8035887:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035887:1&quot; role=&quot;presentation&quot; href='javascript:teDoDocWindow(&quot;JDE030752&quot;,&quot;80&quot;,&quot;4E413F4A020000-000004AF0000000A-PWQP&quot;,&quot;80&quot;,&quot;20&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Documentation</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabprop8035887:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035887:2&quot; role=&quot;presentation&quot; href='javascript:teProps(&quot;80&quot;,&quot;4E413F4A020000-000004AF0000000A-PWQP&quot;,&quot;80&quot;,&quot;20&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign=&quot;middle&quot; style=&quot;white-space: nowrap;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td align=&quot;right&quot; style=&quot;width: 5px; white-space: nowrap;&quot;></td></tr></tbody></table></td><td>&amp;nbsp;</td></tr></tbody></table></div></div><div id=&quot;node8035888&quot; tasklabel=&quot;Unity UPK Portal&quot;><div id=&quot;head8035888&quot;>&#10;<table tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;menuItem8035888&quot; onmouseover=&quot;menuItemHover(this,1);&quot; onmouseout=&quot;menuItemUnhover(this,1);&quot; onkeydown=&quot;menuItemKeyDown(event,this,1); showSubMenu(event,'treechild8035888',1,'8035888submenu');doActivateNodeWebGui('8035888','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035888');&quot; onclick=&quot;doActivateNodeWebGui('8035888','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild8035888',1,'8035888submenu');&quot; onfocus=&quot;menuItemHover(this);&quot; onblur=&quot;menuItemUnhover(this,1);&quot; oncontextmenu=&quot;displayTaskContextMenu(event,'8035888pop',3, 'FlyOut8035888');&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td></td><td><span class=&quot;treebulletother&quot;><img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; src=&quot;/jde/share/images/spacer.gif&quot;></span></td><td>&amp;nbsp;</td><td width=&quot;100%&quot; align=&quot;left&quot;><table width=&quot;100%&quot; title=&quot;http://upk.ent.lolcentral.com/&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td style=&quot;cursor: pointer;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><a title=&quot;http://upk.ent.lolcentral.com/&quot; id=&quot;fldnode8035888&quot; onkeydown=&quot;return doMenuKeyDown(this,event)&quot; href=&quot;javascript:RunUrl('http://upk.ent.lolcentral.com/');&quot; arrownav=&quot;yes&quot;>Unity UPK Portal</a></td><td>&amp;nbsp;<div id=&quot;8035888pop&quot; role=&quot;presentation&quot; style=&quot;display: none;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabFav8035888:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035888:0&quot; role=&quot;presentation&quot; href='javascript:doFavoritesAction(&quot;4F2AE06C022C01-00002E9300000005-PWQP&quot;,&quot;80&quot;,&quot;80&quot;,&quot;25&quot;,&quot;fa&quot;,&quot;Unity%20UPK%20Portal&quot;)'>Add To Favorites</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabDoc8035888:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035888:1&quot; role=&quot;presentation&quot; href='javascript:teDoDocWindow(&quot;JDE031122&quot;,&quot;80&quot;,&quot;4F2AE06C022C01-00002E9300000005-PWQP&quot;,&quot;80&quot;,&quot;25&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Documentation</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabprop8035888:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035888:2&quot; role=&quot;presentation&quot; href='javascript:teProps(&quot;80&quot;,&quot;4F2AE06C022C01-00002E9300000005-PWQP&quot;,&quot;80&quot;,&quot;25&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign=&quot;middle&quot; style=&quot;white-space: nowrap;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td align=&quot;right&quot; style=&quot;width: 5px; white-space: nowrap;&quot;></td></tr></tbody></table></td><td>&amp;nbsp;</td></tr></tbody></table></div></div><div id=&quot;node8035889&quot; tasklabel=&quot;Shared Services&quot;><div id=&quot;head8035889&quot;>&#10;<table tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;menuItem8035889&quot; onmouseover=&quot;menuItemHover(this,1);&quot; onmouseout=&quot;menuItemUnhover(this,1);&quot; onkeydown=&quot;menuItemKeyDown(event,this,1); showSubMenu(event,'treechild8035889',1,'8035889submenu');doActivateNodeWebGui('8035889','','11');doTreeIframeWebGui('4C90C066032000-0000459A00000004-PWQP_80_8035889',1,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035889');&quot; onclick=&quot;doActivateNodeWebGui('8035889','','11');doTreeIframeWebGui('4C90C066032000-0000459A00000004-PWQP_80_8035889',1,'.','expand','');menuItemClick(this,1,event);showSubMenu(event,'treechild8035889',1,'8035889submenu');&quot; onfocus=&quot;menuItemHover(this);&quot; onblur=&quot;menuItemUnhover(this,1);&quot; oncontextmenu=&quot;displayTaskContextMenu(event,'8035889pop',3, 'FlyOut8035889');&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td></td><td><span><img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; src=&quot;/jde/share/images/spacer.gif&quot;></span></td><td>&amp;nbsp;</td><td width=&quot;100%&quot; align=&quot;left&quot;><table width=&quot;100%&quot; title=&quot;Task Type: Folder, Fastpath Code: JDE030649&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td style=&quot;cursor: pointer;&quot;><table style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><span title=&quot;Task Type: Folder, Fastpath Code: JDE030649&quot; id=&quot;fldnode8035889&quot;>Shared Services</span></td><td style=&quot;white-space: nowrap;&quot;><table width=&quot;100%&quot; align=&quot;right&quot; class=&quot;hideMenu&quot; id=&quot;8035889submenu&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><div id=&quot;treechild8035889&quot; style=&quot;color: rgb(0, 0, 0);&quot;></div></td></tr></tbody></table></td><td>&amp;nbsp;<div id=&quot;8035889pop&quot; role=&quot;presentation&quot; style=&quot;display: none;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabFav8035889:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035889:0&quot; role=&quot;presentation&quot; href='javascript:doFavoritesAction(&quot;4C90C066032000-0000459A00000004-PWQP&quot;,&quot;80&quot;,&quot;80&quot;,&quot;30&quot;,&quot;fa&quot;,&quot;Shared%20Services&quot;)'>Add To Favorites</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabDoc8035889:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035889:1&quot; role=&quot;presentation&quot; href='javascript:teDoDocWindow(&quot;JDE030649&quot;,&quot;80&quot;,&quot;4C90C066032000-0000459A00000004-PWQP&quot;,&quot;80&quot;,&quot;30&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Documentation</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabprop8035889:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035889:2&quot; role=&quot;presentation&quot; href='javascript:teProps(&quot;80&quot;,&quot;4C90C066032000-0000459A00000004-PWQP&quot;,&quot;80&quot;,&quot;30&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign=&quot;middle&quot; style=&quot;white-space: nowrap;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td align=&quot;right&quot; style=&quot;width: 5px; white-space: nowrap;&quot;><img align=&quot;absmiddle&quot; id=&quot;I8035889&quot; style=&quot;cursor: pointer;&quot; alt=&quot;&quot; src=&quot;/jde/share/images/open_submenu_ena.png&quot; border=&quot;0&quot; td=&quot;&quot; <=&quot;&quot;></tr></tbody></table></td><td>&amp;nbsp;</td></tr></tbody></table></div></div><div id=&quot;node8035890&quot; tasklabel=&quot;WinField United&quot;><div id=&quot;head8035890&quot;>&#10;<table tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;menuItem8035890&quot; onmouseover=&quot;menuItemHover(this,1);&quot; onmouseout=&quot;menuItemUnhover(this,1);&quot; onkeydown=&quot;menuItemKeyDown(event,this,1); showSubMenu(event,'treechild8035890',1,'8035890submenu');doActivateNodeWebGui('8035890','','11');doTreeIframeWebGui('58C05E23026000-0000720602C7BB70-SOOS_80_8035890',1,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild8035890');&quot; onclick=&quot;doActivateNodeWebGui('8035890','','11');doTreeIframeWebGui('58C05E23026000-0000720602C7BB70-SOOS_80_8035890',1,'.','expand','');menuItemClick(this,1,event);showSubMenu(event,'treechild8035890',1,'8035890submenu');&quot; onfocus=&quot;menuItemHover(this);&quot; onblur=&quot;menuItemUnhover(this,1);&quot; oncontextmenu=&quot;displayTaskContextMenu(event,'8035890pop',3, 'FlyOut8035890');&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td></td><td><span><img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; src=&quot;/jde/share/images/spacer.gif&quot;></span></td><td>&amp;nbsp;</td><td width=&quot;100%&quot; align=&quot;left&quot;><table width=&quot;100%&quot; title=&quot;Task Type: Folder, Fastpath Code: JDE032649&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td style=&quot;cursor: pointer;&quot;><table style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><span title=&quot;Task Type: Folder, Fastpath Code: JDE032649&quot; id=&quot;fldnode8035890&quot;>WinField United</span></td><td style=&quot;white-space: nowrap;&quot;><table width=&quot;100%&quot; align=&quot;right&quot; class=&quot;hideMenu&quot; id=&quot;8035890submenu&quot; style=&quot;white-space: nowrap;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><div id=&quot;treechild8035890&quot; style=&quot;color: rgb(0, 0, 0);&quot;></div></td></tr></tbody></table></td><td>&amp;nbsp;<div id=&quot;8035890pop&quot; role=&quot;presentation&quot; style=&quot;display: none;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabFav8035890:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035890:0&quot; role=&quot;presentation&quot; href='javascript:doFavoritesAction(&quot;58C05E23026000-0000720602C7BB70-SOOS&quot;,&quot;80&quot;,&quot;80&quot;,&quot;40&quot;,&quot;fa&quot;,&quot;WinField%20United&quot;)'>Add To Favorites</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabDoc8035890:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035890:1&quot; role=&quot;presentation&quot; href='javascript:teDoDocWindow(&quot;JDE032649&quot;,&quot;80&quot;,&quot;58C05E23026000-0000720602C7BB70-SOOS&quot;,&quot;80&quot;,&quot;40&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Documentation</a></td></tr></tbody></table><table width=&quot;160&quot; tabindex=&quot;0&quot; class=&quot;MenuNormal&quot; id=&quot;ContextMenuTabprop8035890:0&quot; onmouseover=&quot;this.className='HoverMenuItem';&quot; onmouseout=&quot;this.className='MenuNormal';&quot; onkeydown=&quot;return doMenuKeyDown(this,event,true);&quot; onfocus=&quot;this.className='HoverMenuItem';&quot; onblur=&quot;this.className='MenuNormal';&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr width=&quot;160px;&quot;><td align=&quot;left&quot;><a tabindex=&quot;-1&quot; class=&quot;ContextMenuAnchorItem&quot; id=&quot;fo8035890:2&quot; role=&quot;presentation&quot; href='javascript:teProps(&quot;80&quot;,&quot;58C05E23026000-0000720602C7BB70-SOOS&quot;,&quot;80&quot;,&quot;40&quot;,&quot;W00BSA1&quot;,&quot;&quot;)'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign=&quot;middle&quot; style=&quot;white-space: nowrap;&quot;><table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;><tbody><tr><td align=&quot;right&quot; style=&quot;width: 5px; white-space: nowrap;&quot;><img align=&quot;absmiddle&quot; id=&quot;I8035890&quot; style=&quot;cursor: pointer;&quot; alt=&quot;&quot; src=&quot;/jde/share/images/open_submenu_ena.png&quot; border=&quot;0&quot; td=&quot;&quot; <=&quot;&quot;></tr></tbody></table></td><td>&amp;nbsp;</td></tr></tbody></table></div></div></div>" popupHeight="140"></div></td></tr></tbody></table></td><td>&nbsp;<div id="8035884pop" role="presentation" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabDoc8035884:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo8035884:0" role="presentation" href='javascript:teDoDocWindow("JDE030553","80","80","..","","W00BSA1","")'>Documentation</a></td></tr></tbody></table><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabprop8035884:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo8035884:1" role="presentation" href='javascript:teProps("80","80","..","","W00BSA1","")'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign="middle" style="white-space: nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td align="right" style="width: 5px; white-space: nowrap;"><img align="absmiddle" id="I8035884" style="cursor: pointer;" alt="" src="/jde/share/images/open_submenu_ena.png" border="0" td="" <=""></tr></tbody></table></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node9735885" tasklabel="Power User Tasks"><div id="head9735885">
+<table tabindex="0" class="MenuNormal" id="menuItem9735885" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="menuItemKeyDown(event,this,0); showSubMenu(event,'treechild9735885',0,'9735885submenu');doActivateNodeWebGui('9735885','','01');doTreeIframeWebGui('97_.._9735885',0,'.','expand','');this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild9735885');" onclick="doActivateNodeWebGui('9735885','','01');doTreeIframeWebGui('97_.._9735885',0,'.','expand','');menuItemClick(this,0,event);showSubMenu(event,'treechild9735885',0,'9735885submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,0);" oncontextmenu="displayTaskContextMenu(event,'9735885pop',2, 'FlyOut9735885');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td></td><td>&nbsp;</td><td width="100%" align="left"><table width="100%" title="Task Type:Task View, Fastpath Code: TV:97" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td style="cursor: pointer;"><table style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><span title="Task Type:Task View, Fastpath Code: TV:97" id="fldnode9735885">Power User Tasks</span></td><td style="white-space: nowrap;"><table width="100%" align="right" class="hideMenu" id="9735885submenu" style="white-space: nowrap;" cellspacing="0" cellpadding="0"><tbody><tr><td><div id="treechild9735885" style="color: rgb(0, 0, 0);"></div></td></tr></tbody></table></td><td>&nbsp;<div id="9735885pop" role="presentation" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabDoc9735885:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9735885:0" role="presentation" href='javascript:teDoDocWindow("JDE023965","97","97","..","","W00BSA1","")'>Documentation</a></td></tr></tbody></table><table width="160" tabindex="0" class="MenuNormal" id="ContextMenuTabprop9735885:0" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,true);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" cellspacing="0" cellpadding="0"><tbody><tr width="160px;"><td align="left"><a tabindex="-1" class="ContextMenuAnchorItem" id="fo9735885:1" role="presentation" href='javascript:teProps("97","97","..","","W00BSA1","")'>Task Profile</a></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td><td valign="middle" style="white-space: nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td align="right" style="width: 5px; white-space: nowrap;"><img align="absmiddle" id="I9735885" style="cursor: pointer;" alt="" src="/jde/share/images/open_submenu_ena.png" border="0" td="" <=""></tr></tbody></table></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node00011" taskLabel="Actions"><div id="actionshead"><table tabindex="0" title="Actions" align="left" class="MenuNormal" id="ActionsSubMenuTable" style="white-space: nowrap;" onmouseover="actionsMenuHover(this);" onmouseout="actionsMenuUnhover(this);" onkeydown="taskNodeActionsClick(this,event);return doMenuKeyDown(this,event,false,'');" onclick="taskNodeActionsClick(this,event);" onfocus="this.className='HoverMenuItem';" onblur="this.className='MenuNormal';" reorganize="false"><tbody><tr><td width="100%" align="left">Actions</td><td valign="middle" style="white-space: nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td align="right" style="width: 5px; white-space: nowrap;"><img align="absmiddle" id="I" style="cursor: pointer;" src="/jde/share/images/open_submenu_ena.png" border="0"></td></tr></tbody></table> </td></tr></tbody></table></div></div></div></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+function appendMenu() {
+//document.getElementById('e1MMenuRoot').innerHTML="";
+document.getElementById('e1MMenuRootInner').appendChild(menuFragment);
+//work around for the Disable Active scripting in Internet Zone.
+if(document.all)
+{
+    var divhtml = document.getElementById('e1MMenuRootInner').getElementsByTagName('div')[0];
+    var divinnterHTML  = divhtml.innerHTML;
+    divhtml.innerHTML = divinnterHTML;
+    divinnerHTML = null;
+}
+menu = null;
+}
+</script>
+
+<script type="text/javascript">
+try{
+self.e1_Old_onload_2 = window.onload;} catch(problem){}
+var e1_onload_Handler_2 = function(event){
+try{e1_Old_onload_2(event);} catch(problem){}
+
+
+teFastPathRegisterEventNotification("menuListener");
+appendMenu();
+jdeMenuParent.storeRunAppState(self.name, self.name);
+teFastPathRegisterEventNotification("e1MMonitorFastpath");
+
+  };
+window.onload = e1_onload_Handler_2;
+
+</script>
+
+
+
+      </div>   
+    
+
+    
+      <div title="Open Applications" class="e1MenuBarItem Nav_OpenApp_icon" id="drop_openappsParent" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="showMenu('OPENAPPTABLE',event)">
+        
+          <div tabindex="1" class="e1MenuBarItemChild MenuBarFocusableDiv" id="drop_openapps"></div>
+        
+        <div class="hideMenu" id="OPENAPPTABLE" cellspacing="0" cellpadding="0">
+<span id="OCLList">
+<div id="oclContainer" role="menu"><table tabindex="0" class="MenuNormal" id="OCLTR_1" role="menuitem" aria-label="Work with Payments" onmouseover="this.className='HoverMenuItem';" onmouseout="this.className='MenuNormal';" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="checkFullClickableArea(this,event)" oncontextmenu="displayOpenAppsContextMenu(1, event)" cellspacing="0" cellpadding="0"><tbody><tr><td><table><tbody><tr><td valign="middle"><table height="15" cellspacing="0" cellpadding="0"><tbody><tr><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td></tr></tbody></table></td><td style="text-align: left;"><a tabindex="-1" title="Void Payment - Work with Payments" id="OCLHREF_1" role="presentation" onclick="checkHrefKeyPress(this, event, null)" onblur="document.getElementById('OCLTR_1').className='MenuNormal'" href="javascript:RunOldApp('1');" alt="Void Payment - Work with Payments">Work with Payments</a></td></tr></tbody></table></td></tr></tbody></table></div><span id="caroOCL"><span iconextension="png" iconfile="financial_mntn" label="Work with Payments" oclid="1" syscode="04" versid="UFN001" appid="P0413M" formid="W0413MB"></span><span iconextension="png" iconfile="home" label="Home" oclid="0"></span></span>
+</span></div>
+<script defer="" type="text/javascript">try{teFastPathRegisterEventNotification(handleFPEventOCL);}catch(e){}</script>  
+      </div>
+    
+
+    
+      <div title="Recent Reports" class="e1MenuBarItem Nav_RecentReports_icon" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="showRecRptsMenu('recRptsDiv',event);">
+        
+          <div tabindex="1" class="e1MenuBarItemChild MenuBarFocusableDiv" id="drop_reportmenu"></div>          
+        
+      </div>
+    
+
+    
+       
+        <div title="Favorites" class="e1MenuBarItem Nav_Favorites_icon" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="showMenu('e1MMenuFav',event);">
+          
+            <div tabindex="1" class="e1MenuBarItemChild MenuBarFocusableDiv" id="drop_fav_menus"></div>
+          
+          
+
+
+
+
+
+
+
+<div style="height: 0px;"><iframe name="e1MTreeIframe1" width="0" height="0" tabindex="-1" title="e1MTreeIframe1" id="e1MTreeIframe1" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no" style="color: black; background-color: white;">IFrame support is required to display this page.</iframe></div>
+<form id="E1MFavTreeForm" action="/jde/E1Menu_Menu.mafService?e1.namespace=&amp;e1.service=E1Menu_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input id="E1MFavTreeFormDiv" type="hidden" value="e1MMenuFav">
+	<input id="E1MFavTreeFormIndent" type="hidden" value="0">
+	<input id="E1MFavTreeFormNodeId" type="hidden">
+	<input id="E1MFavTreeFormRoleId" type="hidden">
+	<input id="E1MFavTreeFormCollapsed" type="hidden">
+	<input id="E1MFavTreeFormAction" type="hidden" value="c">
+</form>
+
+<form id="E1FavCrystalForm" action="/jde/E1Menu_Menu.mafService?e1.namespace=&amp;e1.service=E1Menu_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input id="E1MFavCrystalFormNodeId" type="hidden">
+	<input id="E1MFavCrystalFormAction" type="hidden" value="lc">
+</form>
+
+<form id="E1FavPurgeCacheForm" action="/jde/E1Menu_Menu.mafService?e1.namespace=&amp;e1.service=E1Menu_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input type="hidden" value="p">
+	<input id="E1FavPurgeCacheFormRoleId" type="hidden">	
+</form>
+
+<form id="E1RefreshFavForm" action="/jde/E1Menu_Menu.mafService?e1.namespace=&amp;e1.service=E1Menu_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" method="post" target="e1MTreeIframe">
+	<input type="hidden" value="r">
+</form>
+
+<form id="E1FavoritesForm1" action="/jde/E1Menu_Menu.mafService?e1.namespace=&amp;e1.service=E1Menu_Menu&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" method="post" target="e1MTreeIframe1">
+</form>
+
+<div style="display: none;">
+<img alt="" src="/jde/share/images/menuitemblank.gif">
+<img alt="" src="/jde/share/images/small-go.gif">
+<img alt="" src="/jde/share/images/small-go-mo.gif">
+<img alt="" src="/jde/share/images/spacer.gif">
+<img alt="" src="/jde/share/images/treebullet.gif">
+<img alt="" src="/jde/share/images/open_submenu_ena.png">
+<img alt="" src="/jde/share/images/treeflyouttrigger.gif">
+</div>
+
+<script type="text/javascript">
+      var menuFragment1 = document.createDocumentFragment();
+      var menu = document.createElement ('DIV');
+      menuFragment1.appendChild(menu);
+</script>
+
+<div id="webTree1">
+
+<div class="hideMenu" id="e1MMenuFav"><div><div id="ManageFavDiv" taskLabel="Favorites"><table tabindex="0" class="MenuNormal" id="DROP_MANAGE_FAVORITES" role="menuitem" aria-labelledby="ManageFav" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="javascript:manageFavMenuKeyDown(event,this);" onclick="javascript:manageFavorites()" onfocus="menuItemHover(this,0);" onblur="menuItemUnhover(this,0);" cellspacing="0" cellpadding="0" reorganize="false"><tbody><tr><td id="ManageFavTD"><span><img width="16" height="16" class="ManageFavIcon" id="ManageFavIcon" alt="" src="/jde/share/images/spacer.gif"></span></td><td width="100%" align="left" id="ManageFavTD2"><span id="ManageFav">Manage Favorites</span></td></tr></tbody></table></div><div id="AddToFavDiv" taskLabel="Favorites"><table tabindex="0" class="MenuNormal" id="ADD_TO_FAVORITES" role="menuitem" aria-labelledby="AddToFav" style="display: table;" onmouseover="menuItemHover(this,0);" onmouseout="menuItemUnhover(this,0);" onkeydown="javascript:manageFavMenuKeyDown(event,this,'');" onclick="javascript:addFormToFavorites('')" onfocus="menuItemHover(this,0);" onblur="menuItemUnhover(this,0);" cellspacing="0" cellpadding="0" reorganize="false"><tbody><tr><td id="AddToFavTD"><span><img width="16" height="16" class="AddToFavIcon" id="AddToFavIcon" alt="" src="/jde/share/images/spacer.gif"></span></td><td width="100%" align="left" id="AddToFavTD2"><span id="AddToFav">Add to Favorites</span></td></tr></tbody></table></div></div></div>
+
+
+<script type="text/javascript">
+function appendFavMenu() {
+document.getElementById('e1MMenuFav').innerHTML="";
+document.getElementById('e1MMenuFav').appendChild(menuFragment1);
+//work around for the Disable Active scripting in Internet Zone.
+if(document.all)
+{
+    var favdivhtml = document.getElementById('e1MMenuFav').getElementsByTagName('div')[0];
+    var favdivInnterHTML  = favdivhtml.innerHTML;
+    favdivhtml.innerHTML = favdivInnterHTML;
+    favdivhtml = null;
+}
+menu= null;
+}
+</script>
+
+<script type="text/javascript">
+try{
+self.e1_Old_onload_3 = window.onload;} catch(problem){}
+var e1_onload_Handler_3 = function(event){
+try{e1_Old_onload_3(event);} catch(problem){}
+
+
+	teFastPathRegisterEventNotification("menuListener");
+    jdeMenuParent.storeRunAppState(self.name, self.name);
+appendFavMenu();
+
+  };
+window.onload = e1_onload_Handler_3;
+
+</script>
+
+
+</div>
+
+        </div>
+      
+    
+
+          
+      <script>
+  var dropdownWatchlists = [({event:'null',id:'dc92e558b5cc4ff796bed178cc118d21',name:'Paid RX Watchlist',omwObjectName:'OVW03B2002A_1705300001CUST',woUser:'*PUBLIC',desc:'Paid RX Watch list',lineType:0,includeInDD:true,warnThresh:-1,critThresh:-1,runAsAgg:false,minHour:'m',refreshInt:60,maxRecs:200,queryOBNM:'QRY03B2002A_1705300003CUST',isPrivate:false,isRequestPublished:false,isRework:false,isCheckedOut:false,reservedBy:'',isPersonal:false,hasToken:false,tokenProjectName:'null',canCheckout:false,canUnReserve:false,canDesign:false,canAdd:false,canCopy:false,canAddToProject:false,canDelete:false,canRemoveFromProject:false,appId:'P03B2002',formId:'W03B2002A',version:'ZJDE0001',taskId:'                                        ', isNotes:false,hashValue:1394486988}),({event:'null',id:'63351024a2e349149bd85fda7a99c1e6',name:'Missed Cross Dock for S9',omwObjectName:'OVW5542040A_1704110001CUST',woUser:'*PUBLIC',desc:'Missed Cross Dock for S9',lineType:0,includeInDD:true,warnThresh:1,critThresh:200,runAsAgg:false,minHour:'m',refreshInt:480,maxRecs:200,queryOBNM:'QRY5542040A_1704110001CUST',isPrivate:false,isRequestPublished:false,isRework:false,isCheckedOut:false,reservedBy:'',isPersonal:false,hasToken:false,tokenProjectName:'null',canCheckout:false,canUnReserve:false,canDesign:false,canAdd:false,canCopy:false,canAddToProject:false,canDelete:false,canRemoveFromProject:false,appId:'P5542040',formId:'W5542040A',version:'UCS011',taskId:'                                        ', isNotes:false,hashValue:1175098267})];
+  var watchlistsSharedListComplete = true;
+  var watchlistServerSideConstants = {TEXT: {EMPTY_DROPDOWN: '(None)',TIME_SECONDS_SINGULAR: 'second',TIME_SECONDS_PLURAL: 'seconds',TIME_MINUTES: 'minutes',TIME_HOURS: 'hours',TIME_SINCE_UPDATE: 'Time since last update:',UPDATE_FAILED: 'Update failed',UPDATE_IN_PROGRESS: 'Update in progress...',UPDATE_IN_PROGRESS_FOR: 'Update in progress for',UPDATE_INTERRUPTED: 'Update interrupted',UPDATE_PENDING: 'Update pending...',UDO_PERSONAL: 'Personal',UDO_PENDING_APPROVAL: 'Pending Approval',UDO_REWORK: 'Rework',UDO_RESERVED: 'Reserved',UDO_SHARED: 'Shared',REFRESH_WATCHLIST: 'Refresh',WARNING_THRESHOLD: 'Count is greater than or equal to Warning Threshold',CRITICAL_THRESHOLD: 'Count is greater than or equal to Critical Threshold'},HARD_LIMIT_REFRESH_INTERVAL: '5',HARD_LIMIT_NUM_RECORDS: '500',DEFAULT_REFRESH_INTERVAL: '60',DEFAULT_NUM_RECORDS: '200',NUM_REFRESH_THREADS: '3'};
+</script>
+
+      
+      <div title="Watchlists" class="e1MenuBarItem Nav_Watchlists_icon" onmouseover="javascript:addHover(this);" onmouseout="javascript:removeHover(this);" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="showMenu('e1MMenuWatchlists',event);" ${!showwldropdown?"style='\"display:none;\"":""}'>
+        
+            <div tabindex="1" class="e1MenuBarItemChild MenuBarFocusableDiv" id="drop_watchlist_menus" ${!showwldropdown?"style='\"display:none;\"":""}'></div>
+        
+      </div>
+    
+ 
+    
+ 
+       
+
+  </div>
+
+
+  
+    
+  
+ 
+
+
+  
+    
+  
+
+</div>
+  
+    
+  <span id="navigation_desc" style="display: none;">Use arrow keys to navigate menus. Use ESC key to close all sub menus.</span>
+
+
+
+
+<a id="e1MRoleBacklink" style="display: none;" href="javascript:e1MRoleboxVisibleRefresh(true)">
+   Back to Navigation by Role</a>  
+<div class="gradientBackground" id="topBannerStylediv">
+
+<table width="100%" class="topBannerStyle" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td id="topMenunavbar" nowrap="nowrap" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr class="toptext"> 
+
+<td nowrap="nowrap" style="min-width: 20px;"><script type="text/javascript">
+var newLocationURL="/jde/E1Menu.maf?action=new&RENDER_MAFLET=E1Menu&e1.state=maximized&e1.jdeactionparamcheck=true&e1UserActInfo=true&e1.mode=view&e1.external=true";</script>
+</td>
+
+<td>
+<div id="dropdown_actions" nowrap="nowrap" style="display: none;"><script>var menu1 = document.createElement('DIV');</script><div id="actionsSubMenu"><div><div id="node1501589430029_2256"><div id="head1501589430029_2256">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2256" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2256',1,'1501589430029_2256submenu');doActivateNodeWebGui('1501589430029_2256','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2256');" onclick="doActivateNodeWebGui('1501589430029_2256','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2256',1,'1501589430029_2256submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2256pop',0, 'FlyOut1501589430029_2256');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="Help" id="fldnode1501589430029_2256" onkeydown="return doMenuKeyDown(this,event)" onclick="window.open('/jde/Help.mafService?ContextID=E1MENU&amp;e1.namespace=&amp;e1.service=Help&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view','OneWorldHelp','toolbar,location,status,menubar,scrollbars,resizable,width=740,height=540');" href="javascript:;" arrownav="yes">Help</a></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node1501589430029_2257"><div id="head1501589430029_2257">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2257" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2257',1,'1501589430029_2257submenu');doActivateNodeWebGui('1501589430029_2257','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2257');" onclick="doActivateNodeWebGui('1501589430029_2257','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2257',1,'1501589430029_2257submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2257pop',0, 'FlyOut1501589430029_2257');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="Application: P0085, Form: W0085N" id="fldnode1501589430029_2257" onkeydown="return doMenuKeyDown(this,event)" onclick="checkHrefKeyPress(this, event, null)" href='javascript:RunNewApp("launchForm","","P0085","APP","W0085N","","","","My%20System%20Options","","","","","0","","2709237843d2b192","1501589430029_2257")' arrownav="yes" alt="APP">My System Options</a></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node1501589430029_2258"><div id="head1501589430029_2258">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2258" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2258',1,'1501589430029_2258submenu');doActivateNodeWebGui('1501589430029_2258','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2258');" onclick="doActivateNodeWebGui('1501589430029_2258','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2258',1,'1501589430029_2258submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2258pop',0, 'FlyOut1501589430029_2258');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="My System Profile" id="fldnode1501589430029_2258" onkeydown="return doMenuKeyDown(this,event)" onclick="window.open('/jde/E1Menu_About.mafService?e1.namespace=&amp;e1.service=E1Menu_About&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view','teAboutWindow','height=400,width=600,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1');" href="javascript:;" arrownav="yes">My System Profile</a></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node1501589430029_2259"><div id="head1501589430029_2259">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2259" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2259',1,'1501589430029_2259submenu');doActivateNodeWebGui('1501589430029_2259','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2259');" onclick="doActivateNodeWebGui('1501589430029_2259','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2259',1,'1501589430029_2259submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2259pop',0, 'FlyOut1501589430029_2259');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="Application: P012503, Form: W012503F, Version: ZJDE0002" id="fldnode1501589430029_2259" onkeydown="return doMenuKeyDown(this,event)" onclick="checkHrefKeyPress(this, event, null)" href='javascript:RunNewApp("launchForm","","P012503","APP","W012503F","ZJDE0002","","","Work%20With%20Work%20Center","","","","","0","","2709237843d2b192","1501589430029_2259")' arrownav="yes" alt="APP">Work With Work Center</a></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node1501589430029_2260"><div id="head1501589430029_2260">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2260" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2260',1,'1501589430029_2260submenu');doActivateNodeWebGui('1501589430029_2260','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2260');" onclick="doActivateNodeWebGui('1501589430029_2260','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2260',1,'1501589430029_2260submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2260pop',0, 'FlyOut1501589430029_2260');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="Application: P98305W, Form: W98305WA, Version: ZJDE0001" id="fldnode1501589430029_2260" onkeydown="return doMenuKeyDown(this,event)" onclick="checkHrefKeyPress(this, event, null)" href='javascript:RunNewApp("launchForm","","P98305W","APP","W98305WA","ZJDE0001","","","Submit%20Job","","","","","0","","2709237843d2b192","1501589430029_2260")' arrownav="yes" alt="APP">Submit Job</a></td><td>&nbsp;</td></tr></tbody></table></div></div><div id="node1501589430029_2261"><div id="head1501589430029_2261">
+<table tabindex="0" class="MenuNormal" id="menuItem1501589430029_2261" onmouseover="menuItemHover(this,1);" onmouseout="menuItemUnhover(this,1);" onkeydown="menuItemKeyDown(event,this,1); showSubMenu(event,'treechild1501589430029_2261',1,'1501589430029_2261submenu');doActivateNodeWebGui('1501589430029_2261','','11');;this.className='HoverMenuItem';return doMenuKeyDown(this,event,false,'treechild1501589430029_2261');" onclick="doActivateNodeWebGui('1501589430029_2261','','11');;menuItemClick(this,1,event);showSubMenu(event,'treechild1501589430029_2261',1,'1501589430029_2261submenu');" onfocus="menuItemHover(this);" onblur="menuItemUnhover(this,1);" oncontextmenu="displayTaskContextMenu(event,'1501589430029_2261pop',0, 'FlyOut1501589430029_2261');" cellspacing="0" cellpadding="0"><tbody><tr><td></td><td><span class="GenericAppIcon"><img width="16" height="16" alt="" src="/jde/share/images/spacer.gif"></span></td><td>&nbsp;</td><td width="100%" align="left" "=""><a title="Application: P986116, Form: W986116A, Version: ZJDE0001" id="fldnode1501589430029_2261" onkeydown="return doMenuKeyDown(this,event)" onclick="checkHrefKeyPress(this, event, null)" href='javascript:RunNewApp("launchForm","","P986116","APP","W986116A","ZJDE0001","","","View%20Job%20Status","","","","","0","","2709237843d2b192","1501589430029_2261")' arrownav="yes" alt="APP">View Job Status</a></td><td>&nbsp;</td></tr></tbody></table></div></div></div></div>
+<script type="text/javascript">try{self.old_onload = window.onload;} catch(problem){}window.onload = function(event){try{old_onload(event);} catch(problem){}document.getElementById("actionsSubMenu").innerHTML="";document.getElementById("actionsSubMenu").appendChild(menu1);menu1=null;};</script></div>
+</td>
+
+<td align="right" nowrap="nowrap">
+
+<!-- The fastpath was here -->
+</td>
+<td class="menulabel" nowrap="nowrap" style="width: 1px;"></td>
+
+</tr></tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="brand-bar" id="divStyle">
+</div>
+</div>  <!--end of normMenu-->
+</div>  <!--end of branding Area Div-->
+<div id="breadcrumbBarDiv" style="display: block;">
+
+<table width="100%" id="breadcrumbBar" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td nowrap="nowrap" valign="top" style="height: 18px;">
+                
+
+
+
+<div style="height: 0px;"><iframe name="e1BreadcrumbIframe" width="0" height="0" tabindex="-1" title="e1BreadcrumbIframe" id="e1BreadcrumbIframe" src="/jde/share/https_dummy.html" frameborder="0" scrolling="no" style="color: black; background-color: white;">IFrame support is required to display this page.</iframe></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr class="toptext">
+             <td nowrap="nowrap" style="width: 2px; white-space: nowrap;">
+                <img width="2" height="5" alt="" src="/jde/share/images/spacer.gif">
+            </td>
+            <td nowrap="nowrap" style="width: 2px; white-space: nowrap;">
+                <img width="2" height="5" alt="" src="/jde/share/images/spacer.gif">
+            </td>
+            <td tabindex="0" title="View Breadcrumbs History" id="bchistory" role="menuitem" style="width: 1px;" onkeydown="return doMenuKeyDown(this,event,false,'');" onclick="BREADCRUMBS.loadBreadCrumbsHistory(event)" alt="View Breadcrumbs History">
+                <img id="bcDropdownArrow" style="display: block;" onmouseover="this.src='/jde/share/images/bchistorybtn_ovr.png'" onmouseout="this.src='/jde/share/images/bchistorybtn_ena.png'" onmousedown="this.src='/jde/share/images/bchistorybtn_ena.png'" alt="" src="/jde/share/images/bchistorybtn_ena.png" border="0" complete="complete">
+            </td>
+            
+            <td class="menulabel" nowrap="nowrap">
+                <div id="e1BreadcrumbBar">
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td id="breadcrumb8035884" onkeydown="return doMenuKeyDown(this,event,false,'','80_.._8035884');" onclick="showMenu('bcroot8035884',event);">  <div tabindex="0" id="bcroot8035884LabelHost" role="menuitem" style="cursor: pointer;" onclick="BREADCRUMBS.loadMenu('80_.._8035884', 'bcroot8035884');">LOL Menu  </div>  <div class="hideMenu" id="bcroot8035884">  </div></td><td width="20" align="center"> &gt; </td><td id="breadcrumb8035889" onkeydown="return doMenuKeyDown(this,event,false,'','4C90C066032000-0000459A00000004-PWQP_80_8035889');" onclick="showMenu('bcroot8035889',event);">  <div tabindex="0" id="bcroot8035889LabelHost" role="menuitem" style="cursor: pointer;" onclick="BREADCRUMBS.loadMenu('4C90C066032000-0000459A00000004-PWQP_80_8035889', 'bcroot8035889');">Shared Services  </div>  <div class="hideMenu" id="bcroot8035889">  </div></td><td width="20" align="center"> &gt; </td><td id="breadcrumb8035892" onkeydown="return doMenuKeyDown(this,event,false,'','4C90D519022506-0000440B00000003-PWQP_4C90C066032000-0000459A00000004-PWQP_8035892');" onclick="showMenu('bcroot8035892',event);">  <div tabindex="0" id="bcroot8035892LabelHost" role="menuitem" style="cursor: pointer;" onclick="BREADCRUMBS.loadMenu('4C90D519022506-0000440B00000003-PWQP_4C90C066032000-0000459A00000004-PWQP_8035892', 'bcroot8035892');">Accounts Payable  </div>  <div class="hideMenu" id="bcroot8035892">  </div></td><td width="20" align="center"> &gt; </td><td id="breadcrumb8035900" onkeydown="return doMenuKeyDown(this,event,false,'','4CD02A69031701-000039BD00000005-QUXS_4C90D519022506-0000440B00000003-PWQP_8035900');" onclick="showMenu('bcroot8035900',event);">  <div tabindex="0" id="bcroot8035900LabelHost" role="menuitem" style="cursor: pointer;" onclick="BREADCRUMBS.loadMenu('4CD02A69031701-000039BD00000005-QUXS_4C90D519022506-0000440B00000003-PWQP_8035900', 'bcroot8035900');">AP Payments  </div>  <div class="hideMenu" id="bcroot8035900">  </div></td></tr></tbody></table>
+</div>
+                <div class="hideMenu" id="bcHistoryRoot">
+                </div>
+            </td>
+            <td nowrap="nowrap" style="width: 1px; white-space: nowrap;">
+                <img width="1" height="5" alt="" src="/jde/share/images/spacer.gif">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+</div>
+
+<script>
+    var WSJNewVersion = "ZJDE0001";
+    getUserName = function()
+    {
+        return 'KANGURI SAMEER';
+    }
+    
+    getUserId = function()
+    {
+        var aboutService = getAboutInformation();
+        if (aboutService)
+        {
+            return aboutService.userId;
+        }
+    }
+
+    getEnvironment = function()
+    {
+        var aboutService = getAboutInformation();
+        if (aboutService)
+        {
+            return aboutService.env;
+        }
+    }
+
+    getLoginRole = function()
+    {
+        var aboutService = getAboutInformation();
+        if (aboutService)
+        {
+            return aboutService.role;
+        }
+    }
+    
+    getUserLang = function()
+    {
+        return 'en';
+    }
+    
+    getE1Language = function()
+    {
+        return '  ';
+    }
+
+    getUserInfo = function()
+    {
+        var aboutService = getAboutInformation();
+        if (aboutService)
+        {
+            aboutService.fullName = getUserName();
+            aboutService.lang = getUserLang();
+            aboutService.e1Lang = getE1Language();
+        }
+        return aboutService;
+    }
+    
+    getAboutInformation = function()
+    {
+        var postURL = "E1Menu_About.mafService?outputType=JSON&timeStamp=" + (new Date()).getTime();//Changed to use the new format
+
+        var urlFactory = _e1URLFactory.createInstance(_e1URLFactory.URL_TYPE_RES);
+        urlFactory.setURI(postURL);
+        postURL = urlFactory.toString();
+        
+        var respText = E1AJAX.sendSyncXMLReq("GET", postURL);
+        if (respText && respText.length > 0)
+        {
+            var aboutService = JSON.parse(respText);
+            if (aboutService && aboutService.timeout)
+            {
+                alert(aboutService.timeout);            
+                window.location.replace(window.location.href);
+            }
+            else
+            {
+                return aboutService;
+            }
+        }
+    }
+
+</script>
+
+
+<script>
+   //e1pages section of variables.
+   var e1pagesInfo = new Object();
+   e1pagesInfo.logo = "/jde/share/images/welcome/logo_E920.png";
+   e1pagesInfo.tools = "EnterpriseOne Tools Release: 9.2.1";
+   e1pagesInfo.isRTL = "false";
+   var pagesBar = 'E1 Pages Bar';
+   e1pagesInfo.collapse = 'Collapse' + ' ' + pagesBar;
+   e1pagesInfo.expand = 'Expand' + ' ' + pagesBar;
+   e1pagesInfo.defaultHomePage = 'Default home page';
+   
+</script>
+
+    
+
+    
+        
+
+
+
+
+<script>
+    // Last-Remembered Runtime State
+    var caroInitState = new Object();    
+    caroInitState.caroInitSide = "west";
+    caroInitState.caroExpanded = "true";
+    caroInitState.caroActiveTab = "OCL";
+    caroInitState.caroTabsShown = "true";
+    caroInitState.caroListExpandedOCL = "true";
+    caroInitState.caroListExpandedRR = "false";
+    caroInitState.caroListExpandedFAV = "true";
+    caroInitState.caroOpenUserFolders = "nil";
+    caroInitState.caroExpandedUserFolders = "nil";
+    caroInitState.caroSectionOrder = "nil";
+    caroInitState.openFavFolderIds = "nil";
+    caroInitState.openSectionsFavObject = {};
+    caroInitState.openSectionsBackPaths = {};
+    caroInitState.caroHiddenDefaultSections = "null";
+
+
+    // Explicit UI/System Preferences
+    var largeIconsInCarousel = "false";
+    var favoritesSecurity = "fullAccess";
+    
+    var CARO_STRING_CONSTS = {
+            show:'Show',
+            hide:'Hide',
+            updated:'updated.',
+            home:'Home',
+            search:'EnterpriseOne Search',
+            viewJobStatus:'View Job Status',
+            status:'Status',
+            manageFavo:'Manage Favorites',
+            refresh:'Refresh',
+            application:'Application:',
+            report:'Report:',
+            version:'Version:',
+            form:'Form:',
+            productCode:'Product Code:',
+            task:'Task:',
+            dateSubmitted:'Date Submitted:',
+            lastModified:'Last Modified',
+            expand:'Expand', /* unused? */
+            collapse:'Collapse', /* unused? */
+            empty:'Empty',
+            close:'Close',
+            manageFavoritesDesc:'Allows you to rename, reorder, or delete your favorites.',
+            homeDesc:'Returns you to your homepage, from which you can access any of the EnterpriseOne Pages available to you.',
+            searchDesc:'Return to your previous EnterpriseOne Search result.',
+            back:'Go to Previous Folder',
+            folder:'Folder',
+            carousel:'Carousel',
+            tab:'tab',
+            tabs:'Tabs',
+            ocl:'Open Applications',
+            recrpts:'Recent Reports',
+            fav:'Favorites'
+        };
+    
+    // Constants
+    var JDE_ICON_PREFIX = '/jde/share/images/jdeicons/';
+    var GLARE_FILTER_LOCATION = '/jde/share/images/carousel/glare_mask_80.png';
+    var CARO_SPECIAL_ICONS = { MANAGE_FAVS: { BASENAME:  'manageFavs',
+                                              EXT:       'png' },
+                               WSJ:         { BASENAME:  'wsj',
+                                              EXT:       'png' }};
+</script>
+
+<div class="MenuDropdownBack" id="caroTabContextMenu" style="display: none;"></div>
+<div id="caroHideShowHolder" style="display: none;"></div>
+<div id="caroHolder" style="top: 71px;">
+  <div id="caroDebug"><tt><div style="border: 1px solid rgb(0, 0, 0); border-image: none; top: 4px; width: 16px; height: 16px; text-align: center; right: 4px; position: absolute; cursor: pointer; background-color: rgb(255, 255, 255);" onclick="javascript:this.parentNode.parentNode.style.display='none'">X</div></tt><br></div>
+  
+  <div class="caroLeft caroExpanded" id="e1AppFrameContainer" whichCaption="label_two_rows" tilesize="small">
+   <div id="outerRCUX">
+   <div id="innerRCUX" style="overflow: auto;">
+    
+    <iframe name="e1menuAppIframe" width="100%" height="100%" title="Main Application" id="e1menuAppIframe" src="/jde/Welcome.mafService?namespace=&amp;e1.namespace=&amp;e1.service=Welcome&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;E1CurrentWindowName=E1MENUMAIN_1357365478925647872&amp;e1UserActInfo=true&amp;e1.mode=view" frameborder="0" style="display: block;">
+      IFrame support is required to display this page.
+    </iframe>
+
+    <iframe name="e1ExternalAppIframe" width="100%" height="100%" title="e1ExternalAppIframe" id="e1ExternalAppIframe" frameborder="0" style="display: none;" hidden="true">
+      IFrame support is required to display this page.
+    </iframe>
+    
+
+
+
+   </div>
+    
+   </div>
+   <div class="off" id="caroGlobalEventEater" debug="false"></div>
+   <iframe tabindex="-1" class="hideGlobalMaskFrame" id="defaultGlobalMaskFrame" src="javascript:false;" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div class="caroLeft caroExpanded" id="carousel" onmousedown="javascript:CARO.caroMouseDown(event);" ontouchstart="javascript:CARO.caroTouchStart(event);" tilesize="small" whichcaption="label_two_rows">  
+    <div class="accessibility" id="carouselText" role="heading" aria-level="2">Carousel</div>
+    <div tabindex="0" title="Hide Carousel" id="caroBar" role="button" onkeydown="javascript:CARO.keyDown(event,this);" onclick="javascript:CARO.caroToggleBar();" ontouchend="javascript:CARO.caroToggleBar();">
+      <div class="caroBarArrow"></div>
+    </div>
+    <div class="caroTabBar" id="caroTabBar" style="width: 371px; opacity: 1;" oncontextmenu="javascript:CARO.updateDropdownMenuView(this,event);jdeWebGUIdoToggleSubMenu(this, 'caroTabContextMenu', event, true);" expanded="true">
+      <div class="caroTab" id="caroTabOCL" style="left: 1px; padding-right: 0px; padding-left: 0px;" active="true" whichcaro="OCL"><div class="caroTabL"></div><div tabindex="0" class="caroTabM" role="link" aria-labelledby="carouselText caroTabOCL" onkeydown="CARO.keyDown(event,this);">Open Applications</div><div class="caroTabR"></div></div>
+      <div class="caroTab" id="caroTabRecRpts" style="left: 126px; padding-right: 0px; padding-left: 0px;" whichcaro="RecRpts"><div class="caroTabL"></div><div tabindex="0" class="caroTabM" id="RRcaroTabM" role="link" aria-labelledby="carouselText RRcaroTabM" onkeydown="CARO.keyDown(event,this);">Recent Reports</div><div class="caroTabR"><a tabindex="0" title="Refresh" class="recentReportsRefreshControl" role="button" aria-labelledby="caroTabRecRpts"></a></div><div class="caroTabR"></div></div>
+      <div class="caroTab" id="caroTabFav" style="left: 252px; padding-right: 0px; padding-left: 0px;" whichcaro="Fav"><div class="caroTabL"></div><div tabindex="0" class="caroTabM" role="link" aria-labelledby="carouselText caroTabFav" onkeydown="CARO.keyDown(event,this);">Favorites</div><div class="caroTabR"></div></div>
+      <div tabindex="0" title="Hide Carousel Tabs" class="caroTab" id="showHideCaroTabs" role="button" style="left: 329px; width: 43px; padding-right: 0px; padding-left: 0px;"><div class="caroTabL"></div><div class="caroTabM"><span></span></div><div class="caroTabR"></div></div>
+    </div>
+    <div id="caroContentHolder" ondblclick="javascript:CARO.caroToggleBar();" ontouchstart="javascript:CARO.caroContentTouchStart(event);" ontouchend="javascript:CARO.caroContentTouchEnd(event);" ontouchmove="javascript:CARO.caroContentTouchMove(event);" ontouchcancel="javascript:CARO.caroContentTouchCancel(event);">
+      <div id="caroContentOCL" style="left: 886px; opacity: 1;"><div tabindex="0" class="caroTile" id="caroOCL_0" role="link" aria-labelledby="appCaption_ocl_0" style="left: 0px;" isActiveTile="" specialIcon="home"><div class="caroTileMainGraphic" id="mainGraphic_ocl_0"><img class="filter tileImg" id="filter_tileImg_ocl_0" role="presentation" alt="" src="/jde/share/images/jdeicons/home_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Home</div><div class="appIDCaptionDiv">Home</div><div class="formIDCaptionDiv">Home</div><div class="labelTwoRowsCaptionDiv" style="line-height: 24px;">Home</div><div class="accessibility" id="appCaption_ocl_0">Home</div></div></div><div tabindex="0" class="caroTile" id="caroOCL_1" role="link" aria-labelledby="appCaption_ocl_1" style="left: 64px;" isActiveTile="true" specialIcon="financial_mntn"><div class="caroTileMainGraphic" id="mainGraphic_ocl_1"><img class="filter tileImg" id="filter_tileImg_ocl_1" role="presentation" alt="" src="/jde/share/images/jdeicons/financial_mntn_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Work with P...</div><div class="appIDCaptionDiv">P0413M</div><div class="formIDCaptionDiv">W0413MB</div><div class="labelTwoRowsCaptionDiv">Work with Payments</div><div class="accessibility" id="appCaption_ocl_1">Work with Payments</div></div></div></div>
+      <div id="caroContentFav" style="left: 918px; display: none;"><div tabindex="0" class="caroTile" id="caroFav_manageFavs" role="link" aria-labelledby="appCaption_fav_manageFavs" style="left: 0px;"><div class="caroTileMainGraphic" id="mainGraphic_fav_manageFavs"><img class="filter tileImg" id="filter_tileImg_fav_manageFavs" role="presentation" alt="" src="/jde/share/images/jdeicons/manageFavs_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Manage Fa...</div><div class="appIDCaptionDiv">Manage Fa...</div><div class="formIDCaptionDiv">Manage Fa...</div><div class="labelTwoRowsCaptionDiv">Manage Favorites</div><div class="accessibility" id="appCaption_fav_manageFavs">Manage Favorites</div></div></div></div>
+      <div id="caroContentRecRpts" style="left: 278px; display: none;"><div tabindex="0" class="caroTile" id="caroRRpt_WSJ" role="link" aria-labelledby="appCaption_rrpt_WSJ" style="left: 0px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_WSJ"><img class="filter tileImg" id="filter_tileImg_rrpt_WSJ" role="presentation" alt="" src="/jde/share/images/jdeicons/wsj_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">View Job St...</div><div class="appIDCaptionDiv">P986110B</div><div class="formIDCaptionDiv">W986110BA</div><div class="labelTwoRowsCaptionDiv">View Job Status</div><div class="accessibility" id="appCaption_rrpt_WSJ">View Job Status</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1015047" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015047" style="left: 64px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1015047"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1015047" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R5543001</div><div class="formIDCaptionDiv">R5543001</div><div class="labelTwoRowsCaptionDiv">Purchase Order Com...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1015047">Purchase Order Compliance (07/26/2017 07:16:59)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1015043" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015043" style="left: 128px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1015043"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1015043" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1015043">Print Purchase Order (07/26/2017 07:01:12)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1015042" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015042" style="left: 192px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1015042"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1015042" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">EDI Purcha...</div><div class="appIDCaptionDiv">R47012</div><div class="formIDCaptionDiv">R47012</div><div class="labelTwoRowsCaptionDiv">EDI Purchase Order  Extra...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1015042">EDI Purchase Order  Extraction (07/26/2017 07:01:10)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1015041" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015041" style="left: 256px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1015041"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1015041" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R43500</div><div class="formIDCaptionDiv">R43500</div><div class="labelTwoRowsCaptionDiv">Purchase Order Print ...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1015041">Purchase Order Print (07/26/2017 07:00:53)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1015040" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015040" style="left: 320px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1015040"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1015040" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R5543001</div><div class="formIDCaptionDiv">R5543001</div><div class="labelTwoRowsCaptionDiv">Purchase Order Com...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1015040">Purchase Order Compliance (07/26/2017 06:57:21)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014830" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014830" style="left: 384px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014830"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014830" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014830">Print Purchase Order (07/25/2017 07:53:17)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014829" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014829" style="left: 448px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014829"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014829" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">EDI Purcha...</div><div class="appIDCaptionDiv">R47012</div><div class="formIDCaptionDiv">R47012</div><div class="labelTwoRowsCaptionDiv">EDI Purchase Order  Extra...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014829">EDI Purchase Order  Extraction (07/25/2017 07:53:16)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014828" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014828" style="left: 512px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014828"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014828" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R43500</div><div class="formIDCaptionDiv">R43500</div><div class="labelTwoRowsCaptionDiv">Purchase Order Print ...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014828">Purchase Order Print (07/25/2017 07:53:12)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014827" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014827" style="left: 576px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014827"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014827" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014827">Print Purchase Order (07/25/2017 07:51:40)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014826" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014826" style="left: 640px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014826"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014826" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">EDI Purcha...</div><div class="appIDCaptionDiv">R47012</div><div class="formIDCaptionDiv">R47012</div><div class="labelTwoRowsCaptionDiv">EDI Purchase Order  Extra...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014826">EDI Purchase Order  Extraction (07/25/2017 07:51:39)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014825" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014825" style="left: 704px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014825"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014825" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R43500</div><div class="formIDCaptionDiv">R43500</div><div class="labelTwoRowsCaptionDiv">Purchase Order Print ...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014825">Purchase Order Print (07/25/2017 07:51:35)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014824" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014824" style="left: 768px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014824"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014824" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R5543001</div><div class="formIDCaptionDiv">R5543001</div><div class="labelTwoRowsCaptionDiv">Purchase Order Com...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014824">Purchase Order Compliance (07/25/2017 07:39:38)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014801" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014801" style="left: 832px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014801"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014801" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014801">Print Purchase Order (07/25/2017 06:03:32)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014800" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014800" style="left: 896px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014800"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014800" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">EDI Purcha...</div><div class="appIDCaptionDiv">R47012</div><div class="formIDCaptionDiv">R47012</div><div class="labelTwoRowsCaptionDiv">EDI Purchase Order  Extra...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014800">EDI Purchase Order  Extraction (07/25/2017 06:03:31)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014799" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014799" style="left: 960px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014799"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014799" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R43500</div><div class="formIDCaptionDiv">R43500</div><div class="labelTwoRowsCaptionDiv">Purchase Order Print ...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014799">Purchase Order Print (07/25/2017 06:03:27)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014797" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014797" style="left: 1024px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014797"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014797" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R5543001</div><div class="formIDCaptionDiv">R5543001</div><div class="labelTwoRowsCaptionDiv">Purchase Order Com...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014797">Purchase Order Compliance (07/25/2017 05:57:41)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014774" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014774" style="left: 1088px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014774"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014774" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014774">Print Purchase Order (07/25/2017 04:04:10)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014773" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014773" style="left: 1152px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014773"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014773" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">EDI Purcha...</div><div class="appIDCaptionDiv">R47012</div><div class="formIDCaptionDiv">R47012</div><div class="labelTwoRowsCaptionDiv">EDI Purchase Order  Extra...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014773">EDI Purchase Order  Extraction (07/25/2017 04:04:09)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014772" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014772" style="left: 1216px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014772"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014772" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Purchase O...</div><div class="appIDCaptionDiv">R43500</div><div class="formIDCaptionDiv">R43500</div><div class="labelTwoRowsCaptionDiv">Purchase Order Print ...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014772">Purchase Order Print (07/25/2017 04:04:05)</div></div></div><div tabindex="0" class="caroTile" id="caroRRpt_ahdoul1959_6017_1014771" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014771" style="left: 1280px;"><div class="caroTileMainGraphic" id="mainGraphic_rrpt_ahdoul1959_6017_1014771"><img class="filter tileImg" id="filter_tileImg_rrpt_ahdoul1959_6017_1014771" role="presentation" alt="" src="/jde/share/images/jdeicons/default_report_D_medium.png"></div><div class="caroTileCaption"><div class="labelCaptionDiv">Print Purch...</div><div class="appIDCaptionDiv">R5543501</div><div class="formIDCaptionDiv">R5543501</div><div class="labelTwoRowsCaptionDiv">Print Purchase O...</div><div class="accessibility" id="appCaption_rrpt_ahdoul1959_6017_1014771">Print Purchase Order (07/25/2017 04:02:37)</div></div></div></div>
+    <a class="panControl left" necessary="false"></a><a class="panControl right" necessary="false"></a></div>
+    <div id="listContentHolder">
+      <div class="caroList" id="listOCL" style="top: 0px; height: 89px;">
+        <div class="listHeader expanded" id="listOCLHeader" oncontextmenu="javascript:CARO.updateDropdownMenuView(this,event);jdeWebGUIdoToggleSubMenu(this, 'caroTabContextMenu', event, true);" toplistitem="true">          
+          <div class="listArrowBox">
+            <div tabindex="0" title="Hide" class="listArrow" id="listOCLArrow" role="button" aria-labelledby="listOCLHeaderText listOCLArrow"></div>
+          </div>
+          <div class="listHeaderTextPositionHelper" role="heading" aria-level="3">
+            <span class="listHeaderText" id="listOCLHeaderText">Open Applications</span>
+          </div>
+        </div>
+        <div class="listContentOuter" id="listOCLOuter" style="height: 64px;">
+          <div class="listContentInner" id="listOCLInner" style="top: 0px; height: 64px;"><div tabindex="0" class="listItem" id="listOCL_0" role="link" aria-labelledby="appCaption_ocl_0" style="top: 0px;" isActiveTile=""><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/home_small.png"></td><td class="listText">Home</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listOCL_1" role="link" aria-labelledby="appCaption_ocl_1" style="top: 32px;" isActiveTile="true"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/financial_mntn_small.png"></td><td class="listText">Work with Payments</td></tr></tbody></table></div></div>
+        <a class="panControl up" necessary="false"></a><a class="panControl down" necessary="false"></a></div>
+      </div>
+      <div class="caroList" id="listRecRpts" style="top: 89px; height: 25px;">
+        <div class="listHeader collapsed" id="listRecRptsHeader" oncontextmenu="javascript:CARO.updateDropdownMenuView(this,event);jdeWebGUIdoToggleSubMenu(this, 'caroTabContextMenu', event, true);" toplistitem="false">          
+          <div class="listArrowBox">
+            <div tabindex="0" title="Show" class="listArrow" id="listRecRptsArrow" role="button" aria-labelledby="listRecRptsHeaderText listRecRptsArrow"></div>
+          </div>
+          <div class="listHeaderTextPositionHelper" id="listRecRptsPositionHelper" role="heading" aria-level="3">
+            <span class="listHeaderText" id="listRecRptsHeaderText">Recent Reports</span>
+          <a tabindex="0" title="Refresh" class="recentReportsRefreshControl" role="button" aria-labelledby="listRecRptsPositionHelper"></a></div>
+        </div>
+        <div class="listContentOuter" id="listRecRptsOuter" style="height: 0px;">
+          <div class="listContentInner" id="listRecRptsInner" style="top: 0px; height: 672px; display: none;"><div tabindex="0" class="listItem" id="listRRpt_WSJ" role="link" aria-labelledby="appCaption_rrpt_WSJ" style="top: 0px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/wsj_small.png"></td><td class="listText">View Job Status</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1015047" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015047" style="top: 32px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Compliance (07/26/2017 07:16:59)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1015043" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015043" style="top: 64px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/26/2017 07:01:12)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1015042" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015042" style="top: 96px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">EDI Purchase Order  Extraction (07/26/2017 07:01:10)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1015041" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015041" style="top: 128px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Print (07/26/2017 07:00:53)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1015040" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1015040" style="top: 160px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Compliance (07/26/2017 06:57:21)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014830" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014830" style="top: 192px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/25/2017 07:53:17)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014829" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014829" style="top: 224px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">EDI Purchase Order  Extraction (07/25/2017 07:53:16)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014828" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014828" style="top: 256px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Print (07/25/2017 07:53:12)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014827" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014827" style="top: 288px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/25/2017 07:51:40)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014826" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014826" style="top: 320px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">EDI Purchase Order  Extraction (07/25/2017 07:51:39)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014825" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014825" style="top: 352px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Print (07/25/2017 07:51:35)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014824" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014824" style="top: 384px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Compliance (07/25/2017 07:39:38)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014801" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014801" style="top: 416px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/25/2017 06:03:32)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014800" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014800" style="top: 448px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">EDI Purchase Order  Extraction (07/25/2017 06:03:31)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014799" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014799" style="top: 480px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Print (07/25/2017 06:03:27)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014797" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014797" style="top: 512px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Compliance (07/25/2017 05:57:41)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014774" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014774" style="top: 544px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/25/2017 04:04:10)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014773" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014773" style="top: 576px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">EDI Purchase Order  Extraction (07/25/2017 04:04:09)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014772" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014772" style="top: 608px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Purchase Order Print (07/25/2017 04:04:05)</td></tr></tbody></table></div><div tabindex="0" class="listItem" id="listRRpt_ahdoul1959_6017_1014771" role="link" aria-labelledby="appCaption_rrpt_ahdoul1959_6017_1014771" style="top: 640px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/default_report_D_small.png"></td><td class="listText">Print Purchase Order (07/25/2017 04:02:37)</td></tr></tbody></table></div></div>
+        <a class="panControl up" necessary="false"></a><a class="panControl down" necessary="false"></a></div>
+      </div>
+      
+      <div class="caroList" id="listFav" style="top: 114px; height: 57px;">
+        <div class="listHeader expanded" id="listFavHeader" oncontextmenu="javascript:CARO.updateDropdownMenuView(this,event);jdeWebGUIdoToggleSubMenu(this, 'caroTabContextMenu', event, true);" toplistitem="false">          
+          <div class="listArrowBox">
+            <div tabindex="0" title="Hide" class="listArrow" id="listFavArrow" role="button" aria-labelledby="listFavHeaderText listFavArrow"></div>
+          </div>
+          <div class="listHeaderTextPositionHelper" role="heading" aria-level="3">
+            <span class="listHeaderText" id="listFavHeaderText">Favorites</span>
+          </div>
+        </div>
+        <div class="listContentOuter" id="listFavOuter" style="height: 32px;">
+          <div class="listContentInner" id="listFavInner" style="top: 0px; height: 32px;"><div tabindex="0" class="listItem" id="listFav_manageFavs" role="link" aria-labelledby="appCaption_fav_manageFavs" style="top: 0px;"><table class="listItem"><tbody><tr><td class="listIcon"><img alt="" src="/jde/share/images/jdeicons/manageFavs_small.png"></td><td class="listText">Manage Favorites</td></tr></tbody></table></div></div>
+        <a class="panControl up" necessary="false"></a><a class="panControl down" necessary="false"></a></div>
+      </div> 
+    </div>
+    <div id="caroLeftRightTopBorderProvider"></div>
+  <div class="caroDetailPane" id="caroDetailPane"><div class="detailText"></div></div><div class="stealthed captionSpacer" style="width: 58px; display: none;"><span>Work with Payments</span></div><div class="stealthed listTextSpacer" style="display: none;"><span style="font-weight: bold;" active="true">Work with Payments</span></div></div>
+  <div id="brandingBarShadowProvider" style="display: none;"></div>
+</div>
+
+    
+
+
+<div id="multipleMenusError" style="display: none;">
+<img align="absmiddle" alt="Warning" src="/jde/share/images/warning.gif">&nbsp;<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1">EnterpriseOne Menu</span></td></tr></tbody></table><table class="InYourFaceWarning" id="WGBContainer" border="0" cellspacing="0" cellpadding="5"><tbody><tr><td class="ClearBorders">
+Only a single instance of EnterpriseOne Menu is allowed on a portal page
+</td></tr></tbody></table>
+
+</div>
+<script type="text/javascript">
+window.setupMenuDisplayOptions(true, "/jde/E1Menu.maf", "E1MENUMAIN_1357365478925647872", "none", true, "E1MENUMAIN_1357365478925647872");
+var nbrMenus = document.getElementsByName("e1menuAppIframe").length;
+if (nbrMenus > 1)
+{
+	document.getElementById(previousMenu + "normMenu").style.display="none";
+	document.getElementById(previousMenu + "normMenu").innerHTML="";
+	document.getElementById(previousMenu + "multipleMenusError").style.display="block";
+	PurgeUiCache();
+}
+
+previousMenu = "";
+</script>
+
+<script type="text/javascript">
+    BREADCRUMBS.showBreadcrumbBar(true);
+</script>
+
+
+
+<iframe id="procIndMask" src="javascript:false;" frameborder="0" scrolling="no" style="display: none; position: absolute;"></iframe></body></html>

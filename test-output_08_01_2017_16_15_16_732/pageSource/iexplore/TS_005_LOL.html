@@ -1,0 +1,190 @@
+<html class="js no-touch svg inlinesvg svgclippaths no-ie8compat"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Land O'Lakes, Inc. - MPOL Login</title>
+    <link href="/Images/icons/favIcon.ico" rel="icon" type="image/png">
+    <link href="/Content/foundation.min.css" rel="stylesheet">
+    <link href="/Content/normalize.css" rel="stylesheet">
+    <link href="/Content/OpenSans.css" rel="stylesheet">
+    <link href="/Content/style.css?ver=" rel="stylesheet">
+    <link href="/Content/datatables.responsive.css" rel="stylesheet">
+    <script src="/Scripts/vendor/jquery.js"></script>
+    <script src="/Scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="/Scripts/responsive-tables.js"></script>
+    <script src="/Scripts/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <script src="/Scripts/js/script.js"></script>
+    <script>
+        function goprivate() {
+            if (document.Login.USER.value.length == 0) {
+                alert("Please enter User Name");
+                document.Login.USER.focus();
+                return false;
+            }
+            if (document.Login.PASSWORD.value.length == 0) {
+                alert("Please enter Password");
+                document.Login.PASSWORD.focus();
+                return false;
+            }
+            Login.submit();
+        }
+
+        var handle;
+        var bfirst = true;
+
+        function loadWindow(url) {
+            if (!bfirst && handle != null) {
+                handle.close();
+            }
+            else {
+                bfirst = false;
+            }
+            handle = window.open(url, "open", "toolbar=yes, menubar=no, scrollbars=yes, width=990, height=600, top=0, left=0, resizable=yes, screenX=0, screenY=0");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container loginPage">
+        <div class="navgation-head noselect">
+            <div class="top-black">
+                <div class="row collapse rightPad">
+                    <div class="large-8 medium-8 small-12 columns noselect">
+                        <div class="lol-logo">&nbsp;</div>
+                        <div class="mpol-text hide-for-small-only">Milk Producers Online</div>
+                        <div class="mpol-text-small show-for-small-only">MPOL</div>
+                    </div>
+                    <div class="large-4 medium-4 hide-for-small-only columns right textAlign"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-12 small-12 columns">
+                <div class="large-12 medium-12 small-12 columns alert-box alert-danger secondary radius" id="logoutPage" style="display: none;" data-alert="">
+                    <div class="logoutMsg">You've been logged out.</div>
+                    <div class="invalidLoginMsg">You have entered an invalid username or password. Please try again.</div>
+                    <a class="close" href="#">×</a>
+                </div>
+            </div>
+        </div>
+        <div class="row parent">
+            <div class="large-12 medium-12 small-12 columns">
+                <section>
+
+                    <div class="row">
+                        <div class="large-12 medium-12 small-12 columns">
+                            <h1>Member Login</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 medium-12 small-12">
+                            <div class="large-4 medium-5 small-12 columns loginTable">
+                                <form name="Login" id="Login" action="https://www.lolportals.com/secure" method="post">
+                                    <input name="login_referer" type="hidden">
+                                    <input name="space" type="hidden" value="MPOL">
+
+                                    <div class="large-12 medium-12 small-12">
+                                        <label for="USER">USERNAME</label>
+                                        <input name="username" id="USER" type="text">
+                                    </div>
+                                    <div class="large-12 medium-12 small-12">
+                                        <label for="PASSWORD">PASSWORD</label>
+                                        <input name="password" id="PASSWORD" type="password">
+                                        <span>Forgot Business Link
+                                        <a class="forgotPWD" href="https://credentials.lolportals.com/UserAccess/ForgotUsername">User ID </a>or
+                                        <a class="forgotPWD" href="https://credentials.lolportals.com/UserAccess/ForgotPassword">Password</a>?</span>
+                                    </div>
+                                    <div class="large-12 medium-12 small-12">
+                                        <button class="large-12 medium-12 small-12 columns button buttonMPOL" onclick="return goprivate()" type="submit">Login</button>
+                                        <span>Don't have an account? <a href="https://landolakesinc.force.com/ems/EMSSelfRegistrationPage">Register here.</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="large-1 medium-1 hide-for-small-only columns">&nbsp;</div>
+                            <div class="large-4 medium-5 small-12 columns left">
+                                <div class="large-12 medium-12 small-12 columns upperGrid-container">
+                                    <h3>More Resources</h3>
+                                </div>
+                                <div class="large-12 medium-12 small-12 columns tableSection">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.landolakesinc.com/" target="_blank">Our Company</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.landolakesinc.com/utility/login/default.aspx" target="_blank">Member News &amp; Resources</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.landolakes.com" target="_blank">Dairy Foods</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="footerarea noselect">
+            <div id="footer">
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+                        <div class="footer-text copyright-text">
+                            <a href="http://www.landolakesinc.com" target="_blank">
+                                <img width="170" height="21" src="Images/misc/lol-incnew.png">
+                            </a>
+                            <div class="privacy-text">
+                                <p>
+                                    <span>©2015 Land O'Lakes Inc. All Rights Reserved</span> <a href="http://www.landolakesinc.com/utility/privacy/default.aspx" target="_blank">Privacy / Terms of Use&nbsp;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var option = "";
+            var arr = location.search.split("&")
+            $.each(arr, function (i, val) {
+                var obj = val.split("=");
+                if (obj.length > 0 && obj[0].toLowerCase().replace("?", "") == "invalidcredentials".toLowerCase()) {
+                    option = obj[1].toLowerCase();
+                }
+            });
+            if (option.toLowerCase() == "logout") {
+                $("#logoutPage").show();
+                $(".logoutMsg").show();
+                $(".invalidLoginMsg").hide();
+            }
+            else if (option == "1") {
+                $("#logoutPage").show();
+                $(".logoutMsg").hide();
+                $(".invalidLoginMsg").show();
+            }
+            else {
+                $("#logoutPage").hide();
+            }
+            if (document.Login.USER.value.length == 0)
+                document.Login.USER.focus();
+            else
+                document.Login.PASSWORD.focus();
+        });
+    </script>
+
+</body></html>

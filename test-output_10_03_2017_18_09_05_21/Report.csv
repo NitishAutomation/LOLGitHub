@@ -1,0 +1,12 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Tue Oct 03 18:08:48 IST 2017,
+End Date   :  Tue Oct 03 18:09:04 IST 2017,
+Total Duration :0 Hours 0 Minutes 15 Seconds,
+Total Pass : 1,
+Total Fail : 0,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: Smoke_TestSuite_P1,,
+URL :http://www.freshway.com,
+Browser : Chrome 
+TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend,Pass,Duration: 0 Hours 0 Minutes 15 Seconds

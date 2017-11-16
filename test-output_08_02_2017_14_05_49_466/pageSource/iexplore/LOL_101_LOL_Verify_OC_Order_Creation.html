@@ -1,0 +1,841 @@
+<html><head><title>Purchase&nbsp;Order&nbsp;Entry&nbsp;-&nbsp;Vendor&nbsp;Consignment&nbsp;(OC)&nbsp;-&nbsp;Order&nbsp;Header</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="/jde/share/css/webclient.jsp" rel="stylesheet" type="text/css"><link href="/jde/share/css/webclient.css" rel="stylesheet" type="text/css">
+<script>  var jdemafOnLoad = new Array();  var jdemafOnResize= new Array();  var jdemafOnUnload = new Array();  var jdemafOnLoadIndex = -1;  var jdemafOnResizeIndex = -1;  var jdemafOnUnloadIndex = -1;  function jasmafRegisterOnLoad(method){    jdemafOnLoadIndex += 1;    jdemafOnLoad[jdemafOnLoadIndex] = method;  }  function jasmafRegisterOnResize(method){    jdemafOnResizeIndex += 1;    jdemafOnResize[jdemafOnResizeIndex] = method;  }  function jasmafRegisterOnUnload(method){    jdemafOnUnloadIndex += 1;    jdemafOnUnload[jdemafOnUnloadIndex] = method;  }  function handleOnload(){    try {      self.parent.updateOCL();    } catch(updateOclProblem) {}    for(var i=0;i<=jdemafOnLoadIndex;i++){      eval(jdemafOnLoad[i]);    }  }  function handleOnresize(){    for(var i=0;i<=jdemafOnResizeIndex;i++){      eval(jdemafOnResize[i]);    }  }  function handleOnunload(){    self.name="";    for(var i=0;i<=jdemafOnUnloadIndex;i++){      eval(jdemafOnUnload[i]);    }  }</script><script type="text/javascript">
+try{
+self.e1_Old_onload_1 = window.onload;} catch(problem){}
+var e1_onload_Handler_1 = function(event){
+try{e1_Old_onload_1(event);} catch(problem){}
+handleOnload();
+  };
+window.onload = e1_onload_Handler_1;
+
+</script>
+<script type="text/javascript">
+function getWindowHeight() { 
+var windowHeight=0; 
+ if (window.innerHeight !== undefined) { 
+    windowHeight=window.innerHeight; 
+  } 
+  // IE8 workarounds in "else ifs" 
+  else if (document.documentElement && document.documentElement.clientHeight) {
+     windowHeight = document.documentElement.clientHeight;
+  } 
+   else if (document.documentElement && document.documentElement.offsetHeight) {
+    windowHeight = document.documentElement.offsetHeight;
+  }
+  else if (document.body&&document.body.clientHeight) {
+     windowHeight=document.body.clientHeight;
+  }
+ return windowHeight;
+ }
+function getWindowWidth() {
+  var windowWidth=0;
+  if (window.innerWidth !== undefined) { 
+   windowWidth=window.innerWidth;
+  }
+  // IE8 workarounds in "else ifs" 
+  else if (document.documentElement && document.documentElement.clientWidth) {
+     windowWidth = document.documentElement.clientWidth;
+  } else if (document.documentElement && document.documentElement.offsetWidth) { 
+    windowWidth = document.documentElement.offsetWidth;
+  }  
+  else if (document.body&&document.body.clientWidth) {
+     windowWidth=document.body.clientWidth;
+  }
+ return windowWidth;
+ }
+var origWidth = getWindowWidth();
+var origHeight = getWindowHeight();
+try{
+self.e1_Old_onresize_1 = window.onresize;} catch(problem){}
+var e1_onresize_Handler_1 = function(event){
+try{e1_Old_onresize_1(event);} catch(problem){}
+  var innerWidth = getWindowWidth();
+  var innerHeight = getWindowHeight();
+  if (innerWidth != origWidth || innerHeight != origHeight) { 
+     origWidth =innerWidth; 
+    origHeight= innerHeight; 
+handleOnresize();
+ } };
+window.onresize = e1_onresize_Handler_1;
+
+</script>
+<script type="text/javascript">
+try{
+self.e1_Old_onunload_1 = window.onunload;} catch(problem){}
+var e1_onunload_Handler_1 = function(event){
+try{e1_Old_onunload_1(event);} catch(problem){}
+handleOnunload();
+  };
+window.onunload = e1_onunload_Handler_1;
+
+</script>
+<style>.cke{visibility:hidden;}</style></head><body scroll="yes" style="overflow: hidden; cursor: auto;">
+<script type="text/javascript">
+	var sbFrame = top.document.getElementById('sbFrame');
+	if(sbFrame != null)
+	{
+		top.cleanUpInlineHeightWidthForIFrame();
+	}
+</script>
+<script type="text/javascript">var titleDecoder = document.createElement('span');
+titleDecoder.innerHTML = "Purchase Order Entry - Vendor Consignment (OC) - Order Header";
+document.title=((titleDecoder.textContent === undefined) ? titleDecoder.innerText : titleDecoder.textContent);</script>
+<script language="JavaScript" src="/jde/js/utils.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/share/js/webgui.js" type="text/javascript"></script>
+<script type="text/javascript">
+var jdeWebGUICSS1 = true;
+var jdeWebGUIDOM1 = true;
+var jdeWebGUIDOM2 = true;
+var jdeWebGUIDynamicMenus = true;
+var jdeWebGUIDynamicOptions = true;
+var jdeWebGUIEventOffsetCoords = true;
+var jdeWebGUISmallScreen = false;
+WEBGUIRES_https_dummy_html="/jde/share/https_dummy.html";
+WEBGUIRES_images_treeexpanded_gif="/jde/share/images/treeexpanded.gif";
+WEBGUIRES_images_treecollapsed_gif="/jde/share/images/treecollapsed.gif";
+WEBGUIRES_images_treecollapsed_rtl_gif="/jde/share/images/treecollapsed_rtl.gif";
+WEBGUIRES_images_spacer_gif="/jde/share/images/spacer.gif";
+WEBGUIRES_images_menuitemblank_gif="/jde/share/images/menuitemblank.gif";
+WEBGUIRES_images_submenuitemdisabled_gif="/jde/share/images/submenuitemdisabled.gif";
+WEBGUIRES_images_submenuitemdisabled_rtl_gif="/jde/share/images/submenuitemdisabled_rtl.gif";
+WEBGUIRES_images_submenuitem_gif="/jde/share/images/submenuitem.gif";
+WEBGUIRES_images_submenuitem_rtl_gif="/jde/share/images/submenuitem_rtl.gif";
+WEBGUIRES_images_menuitemcheckdisabled_gif="/jde/share/images/menuitemcheckdisabled.gif";
+WEBGUIRES_images_menuitemcheck_gif="/jde/share/images/menuitemcheck.gif";
+WEBGUIRES_images_menuitembulletdisabled_gif="/jde/share/images/menuitembulletdisabled.gif";
+WEBGUIRES_images_menuitembullet_gif="/jde/share/images/menuitembullet.gif";
+WEBGUIRES_images_tiny_cancel_gif="/jde/share/images/tiny-cancel.gif";
+WEBGUIRES_images_tiny_cancel_mo_gif="/jde/share/images/tiny-cancel-mo.gif";
+WEBGUIRES_images_tiny_ok_mo_gif="/jde/share/images/tiny-ok-mo.gif";
+WEBGUIRES_images_tiny_ok_gif="/jde/share/images/tiny-ok.gif";
+WEBGUIRES_images_tiny_moveallleft_gif="/jde/share/images/tiny-moveallleft.gif";
+WEBGUIRES_images_tiny_moveleft_gif="/jde/share/images/tiny-moveleft.gif";
+WEBGUIRES_images_tiny_moveright_gif="/jde/share/images/tiny-moveright.gif";
+WEBGUIRES_images_tiny_moveallright_gif="/jde/share/images/tiny-moveallright.gif";
+WEBGUIRES_images_tiny_moveallleft_mo_gif="/jde/share/images/tiny-moveallleft-mo.gif";
+WEBGUIRES_images_tiny_moveleft_mo_gif="/jde/share/images/tiny-moveleft-mo.gif";
+WEBGUIRES_images_tiny_moveright_mo_gif="/jde/share/images/tiny-moveright-mo.gif";
+WEBGUIRES_images_tiny_moveallright_mo_gif="/jde/share/images/tiny-moveallright-mo.gif";
+WEBGUIRES_images_Orapageprocessing_ani_gif="/jde/share/images/Orapageprocessing_ani.gif";
+WEBGUIRES_images_loading_52x52_gif="/jde/share/images/loading_52x52.gif";
+WEBGUIRES_images_indeterminate_progress_bar_gif="/jde/share/images/indeterminate_progress_bar.gif";
+var jdeWebGUIcalendarStrings = new Array("Calendar","January","February","March","April","May","June","July","August","September","October","November","December","Sun","Mon","Tue","Wed","Thu","Fri","Sat","OK","Cancel","Previous Year","Previous Month","Next Month","Next Year","UTime","AM","PM");
+var jdeWebGUIStaticStrings = ({
+"JH_CLOSE":"Close",
+"RI_HOVER_TEXT_POPUP":"Popup Content",
+"ACCESS_SORT":"Sort",
+"ACCESS_CLICKABLE_ICON":"Clickable Icon",
+"ACCESS_EDITABLE":"Editable",
+"ACCESS_READONLY":"Read only",
+"ACCESS_DATA_ROW":"data row",
+"ACCESS_DATA_COLUMN":"column",
+"ACCESS_SUB_MENU":"sub menu",
+"ACCESS_SUB_MENU_DESC":"Press right arrow to expand, left arrow to collapse",
+"ROW_SELECTOR":"Row Selector",
+"ACCESS_EDIT_GRID_INSTRO":"Use space on grid cells to start edit mode when you navigate this editable grid.",
+"JH_ASSOCIATE_DESCRIPTION":"Associate Description is",
+"TE_UDC_FAVORITES":"User Defined Code",
+"TE_PROC_INDICATOR_TEXT":"Opening Application",
+"JH_PAGE_COMPLETE":"page loading complete",
+"ACCESS_WARNING_ON_PAGE":"Warning on page.",
+"ACCESS_ERROR_ON_PAGE":"Error on page.",
+"ACCESS_ERROR_INSTRUCTION":"Please check the heading for the detail and then use space key to select the error or warning and then tab to the description and the link to the related control.",
+"ACCESS_GRID_UPDATED":"Grid updated.",
+"ACCESS_TREENODE_UPDATED":"Tree control updated.",
+"ACCESS_CHECK_HEADING":"Check heading to get the detail again.",
+"SPELLCHECK_SUGGESTIONS":"Suggestions",
+"SPELLCHECK_REPLACE":"Replace With",
+"PRTL_WEBGUI_SUNDAY":"Sunday",
+"PRTL_WEBGUI_MONDAY":"Monday",
+"PRTL_WEBGUI_TUESDAY":"Tuesday",
+"PRTL_WEBGUI_WEDNESDAY":"Wednesday",
+"PRTL_WEBGUI_THURSDAY":"Thursday",
+"PRTL_WEBGUI_FRIDAY":"Friday",
+"PRTL_WEBGUI_SATURDAY":"Saturday",
+"CAL_ADD":"Add Activity",
+"HTML_HOTKEY_CALENDAR_DAYVIEW":"Switch to Day view.",
+"ACCESS_SET_ACTIVE":"Set Active",
+"ACCESS_REFRESH_REPORT_LIST":"Refresh Recent Report List",
+"ACCESS_GRID_AGGREGATE":"Grid Aggregate",
+"ACCESS_GRID_AGGREGATE_DESC":"Grid Aggregate (F2)",
+"TEDS_TASK":"Task:",
+"TEDS_APPLICATION":"Application:",
+"TEDS_REPORT":"Report:",
+"TEDS_VERSION":"Version:",
+"TEDS_FORM":"Form:",
+"TEDS_PRODUCT_CODE":"Product Code:",
+"HTML_NORECORD":"No records found.",
+"LV_INVALID_TEXT":"The filter value shall not contain * or %.",
+"JH_ATTACHMENT":"Attachment",
+"LV_LAYOUT":"Layout",
+"LV_ADD_FIELD":"Add Field",
+"LV_REMOVE_FIELD":"Remove Field",
+"CP_ADD_COL_RIGHT":"Add a column to right",
+"CP_ADD_ROW_BOTTOM":"Add a row to bottom",
+"CP_REMOVE_COL":"Remove this column",
+"CP_REMOVE_ROW":"Remove this row",
+"LV_CONFIG_LABEL":"Configure Label",
+"LV_CONFIG_VALUE":"Configure Value",
+"LV_RESIZE":"Resize",
+"LV_ADD_VALUE":"Add Value Only",
+"LV_ADD_LABEL_VALUE":"Add Label and Value",
+"LV_ALIGNMENT":"Alignment",
+"LV_LEFT_ALIGNMENT":"Left Alignment",
+"LV_RIGHT_ALIGNMENT":"Right Alignment",
+"LV_TABLE_VIEW":"Table View",
+"LV_LIST_VIEW":"List View",
+"LV_SORT_BY":"Sort By",
+"LV_OVR_ADD_WARN":"You cannot create a One View Report with a List View grid format. Please switch to a Table View grid format to perform this action.",
+"LV_OVR_ADD_WARN":"You cannot create a One View Report with a List View grid format. Please switch to a Table View grid format to perform this action.",
+"SG_E1_SEARCH_PRE":"EnterpriseOne Search Preferences"});
+</script>
+<script type="text/javascript">var titleDecoder = document.createElement('span');
+titleDecoder.innerHTML = "Purchase Order Entry - Vendor Consignment (OC) - Order Header";
+try{ parent.document.title=((titleDecoder.textContent === undefined) ? titleDecoder.innerText : titleDecoder.textContent);}catch(problem){}</script>
+<link href="/jde/css/calendar.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/wizard.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/JSGrid.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/RI.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/SidePanel.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/PopupTabs.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/FormDesign.css" rel="stylesheet" type="text/css">
+<link href="/jde/js/JQuery/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="/jde/css/EATT.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="/jde/ResourceCanonicalsJS.mafService?e1.namespace=&amp;e1.service=ResourceCanonicalsJS&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=false&amp;e1.mode=view" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/share/js/e1.js" type="text/javascript"></script>
+<script>
+
+_e1URLFactory = new E1URLFactory('Servlet','/jde/','/jde/URLBuilderService.mafService?e1.namespace=&e1.service=URLBuilderService&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=false&e1.mode=view');
+
+</script>
+<script>
+ var appAutoTestingOn = false;
+var visualAssistTooltip = "Visual Assist (F2)";
+ var subFormRestoreTooltip = "Restore Sub Form (Alt+K)";
+ var subFormCollapseTooltip = "Collapse Sub Form (Alt+K)";
+ var disableRightAltKey = false;
+ var fullElongation = false;
+function setCollapsibleSubformTooltip(elem){
+  if (elem != null){
+    if (elem.title == subFormRestoreTooltip){
+      elem.title = subFormCollapseTooltip;
+      var expended = true;
+    } else {
+      elem.title = subFormRestoreTooltip;
+      var expended = false;
+    }
+  }
+}
+</script>
+<script language="JavaScript" src="/jde/js/JSComponent.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSMonitor.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSAutoPopulate.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/Form.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/PopupTabs.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSSidePanel.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSAQ.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSEUR.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGF.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridMessageHandler.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridDTA.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGrid.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridCellRender.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridRowRender.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridColumn.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridSizeManager.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSGridFocusManager.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSCustomStyle.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/jdeCalcCaln.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JDEDTA.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/calendar.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/wizard.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/ClientObject.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/Agent.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/UIBlocking.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/psftAPAgent.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSBI.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/RIView.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/jdeAnimation.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSWL.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/dropdownMenu.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/databrowser/QuerySelector.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JQuery/jquery-ui.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/KnockOut/knockout-3.2.0.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSEATT.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/JSPF.js" type="text/javascript"></script>
+<script language="JavaScript" src="/jde/js/WebObjectUtil.js" type="text/javascript"></script>
+<script type="text/javascript">
+JDEDTAFactory.createInstance(ILEVEL_HIGH,'P4310_W4310B','/jde/E1VirtualClient.mafService?e1.namespace=&e1.service=E1VirtualClient&RENDER_MAFLET=E1Menu&e1.state=maximized&e1UserActInfo=true&e1.mode=view','1','2','','aa66ff6fdbe2f2e3','W4310B');
+APEngine.onLoad(true,50);
+JDEDTAFactory.getInstance('').autoPopulateMenuText = 'AutoPopulate';
+JDEDTAFactory.getInstance('').autoSuggestMenuText = 'Auto Suggest';
+JDEDTAFactory.getInstance('').autoPilot = false;
+JDEDTAFactory.getInstance('').procIndText = 'Processing';
+var dateseparator = "/";
+var dateformat = "MDE";
+var decsep = ".";
+var calcOrCalnStrings = new Array("Calendar","January","February","March","April","May","June","July","August","September","October","November","December","Sun","Mon","Tue","Wed","Thu","Fri","Sat","OK","Cancel","Previous Year","Previous Month","Next Month","Next Year","Calculator","UTime","AM","PM","Backspace","sqrt","CE","C");
+var szHotKeyConflict="Currently, more than one action can be triggered by this hotkey. Please perform the desired action manually.";var szWaitMsg = "Waiting for your request to process. Do you want to refresh?";
+var szCfmDelete = "Are you sure that you want to delete the selected item?";
+var szCfmDeleteHidden = "WARNING: One or more items that are not currently shown are selected.";
+var isNonVisibleRowsSelected = false;
+var helpToolTip = "Item Help";
+var helpWindowTip = "Item Help is now enabled.\nClick on any control to get help on that item.\nClick the Item Help button again to turn it off.";
+var infoOvrTip = "About One View Report";
+var infoAqTip = "About Query";
+var infoWlTip = "About Watchlist";
+var infoGfTip = "About Grid Format";
+var infoEATTTip = "About Attachments";
+var infoPfTip = "About Personal Format";
+var isIE = true;
+var isWin = true;
+var styleSheetSupported = true;
+var isPowerForm = false;
+function about(action){
+var e1UrlCreator = _e1URLFactory.createInstance(_e1URLFactory.URL_TYPE_SERVICE);
+e1UrlCreator.setURI("About");
+e1UrlCreator.setParameter("SID","strSession");
+e1UrlCreator.setParameter("id", 1501662934321);
+e1UrlCreator.setParameter("stackId", 1);
+if (action)
+{
+   e1UrlCreator.setParameter("action", action);
+}
+   window.open(e1UrlCreator.toString(),"Application_Information1501662934321","width=400,height=435,scrollbars=1,resizable=yes,titlebar");
+}
+function hp(idObject){
+if(isIE && window.event)
+{
+   window.event.cancelBubble = true;
+   if (window.event.preventDefault)
+   {
+      window.event.stopPropagation();
+      window.event.preventDefault();
+   }
+   window.event.returnValue = false;
+   window.event.keyCode = 0;
+   // The following line is added specifically for IE11.  The preceding lines suppressed
+   // the event bubbling in IE11 in all scenarios EXCEPT when focus was on secondary elements
+   // such as a checkbox label or empty areas on an E1 form like the side of a grid or group box.
+   window.onhelp = function() {return false;}
+}
+var e1UrlCreator = _e1URLFactory.createInstance(_e1URLFactory.URL_TYPE_SERVICE);
+ e1UrlCreator.setURI("ItemHelp");
+e1UrlCreator.setParameter("idObj", idObject);
+e1UrlCreator.setParameter("SID", "strSession");
+e1UrlCreator.setParameter("id", 1501662934321);
+e1UrlCreator.setParameter("stackId", 1);
+   window.open(e1UrlCreator.toString(),"ItemHelp1501662934321","width=570,height=400,resizable,scrollbars,titlebar");}
+function errors() {}
+
+function LaunchHotKeysPage()
+{
+	window.open("/jde/JspDispatcher.mafService?E1_JSP_PATH_PARAM=%2Fowhtml%2FHotKeys.jsp&e1.namespace=&e1.service=JspDispatcher&RENDER_MAFLET=E1Menu&e1.state=maximized&stackId=1&e1UserActInfo=false&e1.mode=view", "Hotkey_Summary","titlebar, resizable=1, scrollbars=1");
+}
+
+elongationDelayForTab=0;
+
+var modalSSIndex = 0;
+
+var autoSuggestDelay = 750;
+
+var autoSuggestText = "Auto Suggest";
+
+var autoSuggestNextPage = "Next";
+
+var autoSuggestPreviousPage = "Previous";
+
+var autoSuggestSearch = "Search";
+
+var menuItemChecked = "checked";
+
+var menuItemNotChecked = "not checked";
+
+var maximizeModalForm = "Maximize Modal Form";
+var restoreModalForm = "Restore Modal Form";
+var keepAliveInterval =1410000;
+</script>
+<script type="text/javascript">
+framebusting('differentDomain')
+jasmafRegisterOnLoad("OnLoadMethods()");jasmafRegisterOnResize("JSCompMgr.onResize('')");</script>
+<iframe name="dummy_iframe" id="dummy_iframe" src="about:blank" style="display: none;"></iframe><form name="prot" style="margin: 0px;" action="/jde/E1Client.mafService?e1.namespace=&amp;e1.service=E1Client&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post"><input name="visit" type="hidden" value="Visited"><input name="RID" type="hidden" value="aa66ff6fdbe2f2e3"></form>
+<form name="blankpost" style="display: none;" action="/jde/E1Client.mafService?e1.namespace=&amp;e1.service=E1Client&amp;RENDER_MAFLET=E1Menu&amp;e1.state=maximized&amp;e1UserActInfo=true&amp;e1.mode=view" method="post"><input name="RID" type="hidden" value="aa66ff6fdbe2f2e3"></form>
+<span id="formOID" style="display: none;">P4310_W4310B_UPM014</span>
+<form name="P4310_W4310B" id="E1PaneForm" style="margin: 0px;" action="javascript:void(0);" method="post" target="">
+<input name="jdemafjasLauncher" type="hidden" value="PSFT_TE_V3_SW"><input name="jdemafjasUID" type="hidden" value="1"><input name="jdemafjasComponent" type="hidden" value="JDE_HTMLCLIENT"><input name="jdemafjascacheUID" type="hidden" value="1579"><input name="portletstateparameter" type="hidden" value="max">
+<input name="cmd" type="hidden">
+<input name="evtSeq" type="hidden">
+<input name="ActiveXSupported" type="hidden" value="true">
+<input name="pgIDKey" type="hidden" value="0"><script type="text/javascript"> var mafLoopURL = "/jde/E1Client.mafService?jdemafjasUID=1&jdemafjasComponent=JDE_HTMLCLIENT&e1.namespace=&e1.service=E1Client&RENDER_MAFLET=E1Menu&jdemafjasLauncher=PSFT_TE_V3_SW&e1.state=maximized&e1UserActInfo=true&e1.mode=view&jdemafjascacheUID=1579"; var mafCloseURL = "/jde/E1Client.mafService?jdemafjasUID=1&jdemafjasComponent=JDE_HTMLCLIENT&e1.namespace=&e1.service=E1Client&RENDER_MAFLET=E1Menu&jdemafjasLauncher=PSFT_TE_V3_SW&e1.state=maximized&e1UserActInfo=true&e1.mode=view&jdemafjascacheUID=1579";</script>
+<input name="RID" type="hidden" value="aa66ff6fdbe2f2e3">
+<input name="activeElement" type="hidden">
+<script type="text/javascript">
+insertFormHeader("0","W4310B","W4310G","P4310","Purchase Order Entry - Vendor Consignment (OC) - Order Header","Errors and Warnings",false,"Help","About (Ctrl+Shift+J)","Item Help",0,0,"W4310B","","Edit","","Clear Form",false,false,"","1","","",false,true,"<td class=\"helpOptionsSiblingColumn\" ><a role='presentation'><img border=0 NAME=\"jdeclose_ena\" ID=\"jdeclose_ena\" TITLE=\"Cancel (Ctrl+Alt+L)\" ALT=\"Cancel (Ctrl+Alt+L)\" SRC=\"/jde/img/jdeclose_ena.png\" onMouseOver=\"this.src='/jde/img/jdeclose_hov.png'\" onMouseOut=\"this.src='/jde/img/jdeclose_ena.png'\" onClick=\"javascript:JDEDTAFactory.getInstance('').post('0_4')\" onKeyDown=\"if(event.keyCode==32||event.keyCode==13){javascript:JDEDTAFactory.getInstance('').post('0_4');UTIL.stopEventBubbling(event);};\" TABINDEX=0 role=presentation></a></td>"
+,{"E1UDO":{"PF":{"bCanCreatePF":true,"bFeatureSecurityPF":true}}});
+var formCloseOrCancelDomID='C0_4';
+</script><table width="100%" id="formTitleTable" cellspacing="0"><tbody><tr id="formTitle0"><td class="MainHeading" id="formHeading" role="heading"><span title="Purchase&nbsp;Order&nbsp;Entry&nbsp;-&nbsp;Vendor&nbsp;Consignment&nbsp;(OC)&nbsp;-&nbsp;Order&nbsp;Header" id="jdeFormTitle0" style="-ms-overflow-x: hidden; -ms-text-overflow: ellipsis;">&nbsp;Purchase&nbsp;Order&nbsp;Entry&nbsp;-&nbsp;Vendor&nbsp;Consignment&nbsp;(OC)&nbsp;-&nbsp;Order&nbsp;Header</span></td><td class="toptext" nowrap=""></td><td class="buttons e1HelpLayoutCell" nowrap=""><table class="e1HelpLayoutTable"><tbody><tr><td class="helpOptionsSiblingColumn" nowrap=""><span><span class="selectLabel">Personal Form: </span><select tabindex="0" title="Select a Personal Form" class="RCUXComboBox" id="PersonalizeViewList"><option value="50909^null" user="50909">(No Personalization)</option></select></span><span id="RILayoutSelectionSpan" style="padding-right: 10px; display: inline;"><span class="selectLabel">Layout:</span><select tabindex="0" class="RCUXComboBox" id="RILayoutSelectionForm"><optgroup label="Personal"><option selected="selected" value="(simple)">(No&nbsp;Layout)</option></optgroup></select></span></td><td class="helpOptionsSiblingColumn">&nbsp;<a tabindex="0" id="PersonalizeDesignBtn" role="button" style="vertical-align: 4px;" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.firstChild.click()};" href="#openPersonalizeFormDesign"><img title="Personal Form" id="PersonalizeForm" style="vertical-align: -4px;" onmouseover="this.src='/jde/img/PF_personalize_mo.png' " onmouseout="this.src='/jde/img/PF_personalize_df.png' " alt="Personal Form" src="/jde/img/PF_personalize_df.png" border="0"></a></td><td class="helpOptionsSiblingColumn" nowrap=""><span id="jdeDTAStatusBtn"><!--4JTidy--></span><span class="jdeErrorBtn" id="jdeErrorBtn">&nbsp;<img name="ERRORS" align="absmiddle" id="E1_0" onmouseover="updateHelpCursor('',this)" onclick="errors()" alt="Errors and Warnings" src="/jde/img/jdeerror.gif" border="0"></span></td><td class="e1HelpLayoutCell" nowrap=""><table class="e1helpOptionsMenu e1HelpLayoutTable" cellspacing="0" cellpadding="0"><tbody><tr><td class="e1helpOptionsGateway e1HelpLayoutCell" nowrap="" onclick="toggleHelpOptionsSubmenu('','')"><div class="imageDiv16"><img tabindex="0" title="Help" class="e1helpOptionsImage" id="helpOptionImage" onmouseover="this.src='/jde/img/jdehelp_hov.png'" onmouseout="this.src='/jde/img/jdehelp_ena.png'" onkeydown="if(event.keyCode==32 || event.keyCode==13){this.click()};" alt="Help" src="/jde/img/jdehelp_ena.png"></div></td></tr><tr><td><div class="e1helpOptionsClickCaptureDiv" id="helpOptionsClickCaptureDivId" style="z-index: 999;" onclick="toggleHelpOptionsSubmenu('','')"><div class="e1helpOptionsSubmenuDiv"><div class="e1helpOptionsSubmenuBubbleDiv e1helpBubblePosition" id="helpBubbleTip"></div><table class="e1helpOptionsSubmenu AccessibilityContainer" id="helpOptionsSubmenuId" style="z-index: 1000;" onclick="toggleHelpOptionsSubmenu('','')" cellspacing="10"><tbody><tr class="e1helpOptionsRow"><td class="e1helpOptionsItem" onclick='about("FormInfo")'><a tabindex="0" onkeydown='keydownHelpMenu(event, "helpOptionImage")' beginofsubcontrol="true">About (Ctrl+Shift+J)</a></td></tr><tr class="e1helpOptionsRow"><td class="e1helpOptionsItem" onclick="showHelp('W4310B','W4310G','P4310');"><a tabindex="0" onkeydown='keydownHelpMenu(event, "helpOptionImage")'>Help</a></td></tr><tr class="e1helpOptionsRow"><td class="e1helpOptionsItem" id="helpOptionsItemHelpId" onclick="toggleHelpOptionsSubmenu('','')"><a tabindex="0" onkeydown='keydownHelpMenu(event, "helpOptionImage")' endofsubcontrol="true">Item Help</a></td></tr></tbody></table></div></div></td></tr></tbody></table></td><td class="helpOptionsSiblingColumn"><a role="presentation"><img name="jdeclose_ena" tabindex="0" title="Cancel (Ctrl+Alt+L)" id="jdeclose_ena" role="presentation" onmouseover="this.src='/jde/img/jdeclose_hov.png'" onmouseout="this.src='/jde/img/jdeclose_ena.png'" onkeydown="if(event.keyCode==32||event.keyCode==13){javascript:JDEDTAFactory.getInstance('').post('0_4');UTIL.stopEventBubbling(event);};" onclick="javascript:JDEDTAFactory.getInstance('').post('0_4')" alt="Cancel (Ctrl+Alt+L)" src="/jde/img/jdeclose_ena.png" border="0"></a></td></tr></tbody></table></td></tr></tbody></table>
+<table width="100%" class="MenuBar" id="WebMenuBarFrame" cellspacing="0" cellpadding="1"><tbody><tr class="MenuBar"><td style="white-space: nowrap;"><table id="WebMenuBar" style="left: 0px;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="center" id="outer0_3" valign="top" style="min-width: 20px;"><a tabindex="-1" id="C0_3" style="text-decoration: none;"><img name="hc_OK" tabindex="0" title="OK (Ctrl+Alt+O)" id="hc_OK" role="button" onmouseover="this.src='/jde/img/hc_OKmo.gif'" onmouseout="this.src='/jde/img/hc_OK.gif'" onkeydown="if(event.keyCode==32||event.keyCode==13){javascript:JDEDTAFactory.getInstance('').post('0_3');UTIL.stopEventBubbling(event);};" onclick="javascript:JDEDTAFactory.getInstance('').post('0_3')" alt="OK (Ctrl+Alt+O)" src="/jde/img/hc_OKmo.gif" border="0"></a></td><td>&nbsp;&nbsp;</td><td align="center" id="outer0_4" valign="top" style="min-width: 20px;"><a tabindex="-1" id="C0_4" style="text-decoration: none;"><img name="hc_Cancel" tabindex="0" title="Cancel (Ctrl+Alt+L)" id="hc_Cancel" role="button" onmouseover="this.src='/jde/img/hc_Cancelmo.gif'" onmouseout="this.src='/jde/img/hc_Cancel.gif'" onkeydown="if(event.keyCode==32||event.keyCode==13){javascript:JDEDTAFactory.getInstance('').post('0_4');UTIL.stopEventBubbling(event);};" onclick="javascript:JDEDTAFactory.getInstance('').post('0_4')" alt="Cancel (Ctrl+Alt+L)" src="/jde/img/hc_Cancel.gif" border="0"></a></td><td>&nbsp;&nbsp;</td><td align="center" valign="top" style="min-width: 20px;">
+<script>
+jdeWebGUIstartMenu("HE0_137hc_Form_Exit");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Favorites","","MENU","FavoritesLabel1","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","-","","SEPARATOR","AUTOID58067","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Form","","MENU","FormRowLabels1","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Quote Suppliers","javascript:JDEDTAFactory.getInstance('').post('0_181');","MENU","HE0_181","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","-","","SEPARATOR","AUTOID58068","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Order Recap","javascript:JDEDTAFactory.getInstance('').post('0_223');","MENU","HE0_223","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Financial Status","javascript:JDEDTAFactory.getInstance('').post('0_226');","MENU","HE0_226","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Order Addresses","javascript:JDEDTAFactory.getInstance('').post('0_134');","MENU","HE0_134","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Print Order","javascript:JDEDTAFactory.getInstance('').post('0_229');","DISABLED","HE0_229","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Supplier Master","javascript:JDEDTAFactory.getInstance('').post('0_176');","MENU","HE0_176","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Address Book","javascript:JDEDTAFactory.getInstance('').post('0_143');","MENU","HE0_143","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","-","","SEPARATOR","AUTOID58069","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Attachments","javascript:JDEDTAFactory.getInstance('').post('0_142');","MENU","HE0_142","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Log Details","javascript:JDEDTAFactory.getInstance('').post('0_222');","DISABLED","HE0_222","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Additional Info","javascript:JDEDTAFactory.getInstance('').post('0_135');","MENU","HE0_135","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","-","","SEPARATOR","AUTOID58070","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Clauses","javascript:JDEDTAFactory.getInstance('').post('0_355');","DISABLED","HE0_355","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Header To Detail","","SUBMENU","HE0_183","Menu Item","",false,"","","false","");
+jdeWebGUIwriteMenu();
+
+jdeWebGUIstartSubMenu("HE0_137hc_Form_Exit-HE0_183");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Define","javascript:JDEDTAFactory.getInstance('').post('0_184');","MENU","HE0_184","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("HE0_137hc_Form_Exit","Populate","javascript:JDEDTAFactory.getInstance('').post('0_185');","MENU","HE0_185","Menu Item","",false,"","","false","");
+jdeWebGUIwriteMenu();
+
+</script><div align="LEFT" class="MenuDropdownBack" id="HE0_137hc_Form_Exit" style="display: none; position: absolute; z-index: 9;" onclick="jdeWebGUIhideAllMenus(this,'HE0_137hc_Form_Exit', event);" jdewebguipopupmenu="yes">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td>
+<div tabindex="0" id="outerFavoritesLabel1"><table width="100%" class="MenuNormal" id="FavoritesLabel1" onclick="jdeWebGUIpreventHideAll=true;" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="FavoritesLabel" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Favorites&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" id="outerFormRowLabels1"><table width="100%" class="MenuNormal" id="FormRowLabels1" onclick="jdeWebGUIpreventHideAll=true;" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="FormRowLabels" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Form&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_181"><table width="100%" class="MenuNormal" id="HE0_181" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_181'); hideSubMenuToggle(this, 'HE0_181', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_181', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_181\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Quote Suppliers&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerHE0_223"><table width="100%" class="MenuNormal" id="HE0_223" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_223'); hideSubMenuToggle(this, 'HE0_223', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_223', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_223\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Order Recap&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_226"><table width="100%" class="MenuNormal" id="HE0_226" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_226'); hideSubMenuToggle(this, 'HE0_226', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_226', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_226\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Financial Status&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_134"><table width="100%" class="MenuNormal" id="HE0_134" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_134'); hideSubMenuToggle(this, 'HE0_134', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_134', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_134\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Order Addresses&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_229"></div>
+<div tabindex="0" align="left" id="outerHE0_176"><table width="100%" class="MenuNormal" id="HE0_176" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_176'); hideSubMenuToggle(this, 'HE0_176', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_176', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_176\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Supplier Master&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_143"><table width="100%" class="MenuNormal" id="HE0_143" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_143'); hideSubMenuToggle(this, 'HE0_143', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_143', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_143\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Address Book&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerHE0_142"><table width="100%" class="MenuNormal" id="HE0_142" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_142'); hideSubMenuToggle(this, 'HE0_142', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_142', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_142\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Attachments&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_222"></div>
+<div tabindex="0" align="left" id="outerHE0_135"><table width="100%" class="MenuNormal" id="HE0_135" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_135'); hideSubMenuToggle(this, 'HE0_135', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_135', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_135\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Additional Info&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerHE0_355"></div>
+<div tabindex="0" id="HE0_137hc_Form_Exit-HE0_183-Show" jdewebguipopupmenu="yes" submenu="yes"><table class="MenuNormal" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('HE0_137hc_Form_Exit-HE0_183-Show');jdeWebGUIpreventHideAll=false;jdeWebGUIdoToggleSubMenu(this, 'HE0_137hc_Form_Exit-HE0_183', event);" onclick="jdeWebGUIpreventHideAll=true;jdeWebGUIdoToggleSubMenu(this, 'HE0_137hc_Form_Exit-HE0_183', event);" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"> <tbody><tr jdewebguipopupmenu="yes"> <td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItemSubMenu" id="SubMenu_HE0_183" jdewebguipopupmenu="yes"><span class="MenuItemSubMenu"><nobr style="width: 100%;" jdewebguipopupmenu="yes">Header To Detail&nbsp;&nbsp;&nbsp;</nobr></span><nobr><label for="SubMenu_HE0_183"><span style="display: none;">&nbsp;SUBMENU&nbsp;</span></label></nobr></td> <td align="right" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes"><img width="9" height="10" align="absmiddle" alt="Menu Item" src="/jde/share/images/submenuitem.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td></tr></tbody></table></div>
+</td></tr></tbody></table></div>
+<div align="left" class="MenuDropdownBack" id="HE0_137hc_Form_Exit-HE0_183" style="display: none; position: absolute; z-index: 9;" onclick="jdeWebGUIhideAllMenus(this, 'HE0_137hc_Form_Exit-HE0_183', event);" jdewebguipopupmenu="yes">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td>
+<div tabindex="0" align="left" id="outerHE0_184"><table width="100%" class="MenuNormal" id="HE0_184" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_184'); hideSubMenuToggle(this, 'HE0_184', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_184', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_184\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Define&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerHE0_185"><table width="100%" class="MenuNormal" id="HE0_185" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerHE0_185'); hideSubMenuToggle(this, 'HE0_185', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerHE0_185', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').post(\'0_185\');');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Populate&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+</td></tr></tbody></table></div>
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td nowrap=""><center><a tabindex="-1" id="C0_137" style="text-decoration: none;"><img name="FORM_EXIT_BUTTON" tabindex="0" title="Form (Ctrl+Alt+F)" id="FORM_EXIT_BUTTON" role="button" onmouseover="this.src='/jde/img/form_exitmo.gif'" onmouseout="this.src='/jde/img/form_exit.gif'" onkeydown="if(event.keyCode==32||event.keyCode==13){jdeWebGUIdoToggleSubMenu(this,'HE0_137hc_Form_Exit', event, true);;UTIL.stopEventBubbling(event);};" onclick="jdeWebGUIdoToggleSubMenu(this,'HE0_137hc_Form_Exit', event, true);" alt="Form (Ctrl+Alt+F)" src="/jde/img/form_exit.gif" border="0" launchmenuid="HE0_137hc_Form_Exit"></a></center></td><td onclick="jdeWebGUIdoToggleSubMenu(this,'HE0_137hc_Form_Exit', event, true);">&nbsp;</td><td nowrap=""><a aria-hidden="true" onclick="jdeWebGUIdoToggleSubMenu(this,'HE0_137hc_Form_Exit', event, true);"><div title="Form (Ctrl+Alt+F)" class="WebLabel" id="divC0_137" style="text-align: left; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabelSmall"><u>F</u>orm</span></div></a></td></tr></tbody></table>
+</td><td>&nbsp;&nbsp;</td><td align="center" valign="top" style="min-width: 20px;">
+<script>
+jdeWebGUIstartMenu("ToolsMenu");
+jdeWebGUIaddMenuItem("ToolsMenu","Collaborate","","SUBMENU","ToolsMenu_Collaborate","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","-","","SEPARATOR","AUTOID58071","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Data Browser","javascript:toolsExitSelected('DataBrowsernull', '')","MENU","Data_Browser","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","-","","SEPARATOR","AUTOID58072","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Auto Suggest","javascript:JDEDTAFactory.getInstance('').toggleAutoSuggest()","CHECKED","AutoSuggest","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","AutoPopulate","javascript:JDEDTAFactory.getInstance('').toggleAutoPopulate()","CHECKED","ToggleAutoPopulate","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","-","","SEPARATOR","AUTOID58073","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Save (Ctrl+Shift+S)","javascript:toolsExitSelected('saveForm', '')","MENU","Save_As...","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Save As...","javascript:toolsExitSelected('saveFormAs', '')","MENU","AUTOID58074","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","-","","SEPARATOR","AUTOID58075","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Refresh","javascript:toolsExitSelected('refresh','')","MENU","Refresh","Menu Item","",false,"","","false","");
+jdeWebGUIwriteMenu();
+
+jdeWebGUIstartSubMenu("ToolsMenu-ToolsMenu_Collaborate");
+jdeWebGUIaddMenuItem("ToolsMenu","Send Email","javascript:toolsExitSelected('SendEmail', '')","MENU","Send_Email","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Send Meeting Invite","javascript:toolsExitSelected('SendMeetingInvite', '')","MENU","Send_Meeting_Invite","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Send Shortcut","javascript:toolsExitSelected('sendShortcut', '')","MENU","Send_Shortcut","Menu Item","",false,"","","false","");
+jdeWebGUIaddMenuItem("ToolsMenu","Parameterized URL","javascript:toolsExitSelected('Parameterized URL', '')","MENU","Parameterized_URL","Menu Item","",false,"","","false","");
+jdeWebGUIwriteMenu();
+
+</script><div align="LEFT" class="MenuDropdownBack" id="ToolsMenu" style="display: none; position: absolute; z-index: 9;" onclick="jdeWebGUIhideAllMenus(this,'ToolsMenu', event);" jdewebguipopupmenu="yes">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td>
+<div tabindex="0" id="ToolsMenu-ToolsMenu_Collaborate-Show" jdewebguipopupmenu="yes" submenu="yes"><table class="MenuNormal" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('ToolsMenu-ToolsMenu_Collaborate-Show');jdeWebGUIpreventHideAll=false;jdeWebGUIdoToggleSubMenu(this, 'ToolsMenu-ToolsMenu_Collaborate', event);" onclick="jdeWebGUIpreventHideAll=true;jdeWebGUIdoToggleSubMenu(this, 'ToolsMenu-ToolsMenu_Collaborate', event);" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"> <tbody><tr jdewebguipopupmenu="yes"> <td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItemSubMenu" id="SubMenu_ToolsMenu_Collaborate" jdewebguipopupmenu="yes"><span class="MenuItemSubMenu"><nobr style="width: 100%;" jdewebguipopupmenu="yes">Collaborate&nbsp;&nbsp;&nbsp;</nobr></span><nobr><label for="SubMenu_ToolsMenu_Collaborate"><span style="display: none;">&nbsp;SUBMENU&nbsp;</span></label></nobr></td> <td align="right" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes"><img width="9" height="10" align="absmiddle" alt="Menu Item" src="/jde/share/images/submenuitem.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerData_Browser"><table width="100%" class="MenuNormal" id="Data_Browser" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerData_Browser'); hideSubMenuToggle(this, 'Data_Browser', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerData_Browser', event);" onclick="eval('javascript:toolsExitSelected(\'DataBrowsernull\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Data Browser&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerAutoSuggest" autosuggestchecked="yes"><table width="100%" class="MenuNormal" id="AutoSuggest" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerAutoSuggest'); hideSubMenuToggle(this, 'AutoSuggest', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerAutoSuggest', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').toggleAutoSuggest()');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemcheck.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Auto Suggest&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerToggleAutoPopulate"><table width="100%" class="MenuNormal" id="ToggleAutoPopulate" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerToggleAutoPopulate'); hideSubMenuToggle(this, 'ToggleAutoPopulate', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerToggleAutoPopulate', event);" onclick="eval('javascript:JDEDTAFactory.getInstance(\'\').toggleAutoPopulate()');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemcheck.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">AutoPopulate&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerSave_As..."><table width="100%" class="MenuNormal" id="Save_As..." onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerSave_As...'); hideSubMenuToggle(this, 'Save_As...', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerSave_As...', event);" onclick="eval('javascript:toolsExitSelected(\'saveForm\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Save (Ctrl+Shift+S)&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerAUTOID58074"><table width="100%" class="MenuNormal" id="AUTOID58074" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerAUTOID58074'); hideSubMenuToggle(this, 'AUTOID58074', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerAUTOID58074', event);" onclick="eval('javascript:toolsExitSelected(\'saveFormAs\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Save As...&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<table class="MenuSep" cellspacing="0" cellpadding="0"><tbody><tr><td onclick="jdeWebGUIpreventHideAll=true;" ontouchend="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"><hr size="1" class="HR1" onclick="jdeWebGUIpreventHideAll=true;" jdewebguipopupmenu="yes"></td></tr></tbody></table>
+<div tabindex="0" align="left" id="outerRefresh"><table width="100%" class="MenuNormal" id="Refresh" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerRefresh'); hideSubMenuToggle(this, 'Refresh', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerRefresh', event);" onclick="eval('javascript:toolsExitSelected(\'refresh\',\'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Refresh&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+</td></tr></tbody></table></div>
+<div align="left" class="MenuDropdownBack" id="ToolsMenu-ToolsMenu_Collaborate" style="display: none; position: absolute; z-index: 9;" onclick="jdeWebGUIhideAllMenus(this, 'ToolsMenu-ToolsMenu_Collaborate', event);" jdewebguipopupmenu="yes">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td>
+<div tabindex="0" align="left" id="outerSend_Email"><table width="100%" class="MenuNormal" id="Send_Email" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerSend_Email'); hideSubMenuToggle(this, 'Send_Email', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerSend_Email', event);" onclick="eval('javascript:toolsExitSelected(\'SendEmail\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Send Email&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerSend_Meeting_Invite"><table width="100%" class="MenuNormal" id="Send_Meeting_Invite" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerSend_Meeting_Invite'); hideSubMenuToggle(this, 'Send_Meeting_Invite', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerSend_Meeting_Invite', event);" onclick="eval('javascript:toolsExitSelected(\'SendMeetingInvite\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Send Meeting Invite&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerSend_Shortcut"><table width="100%" class="MenuNormal" id="Send_Shortcut" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerSend_Shortcut'); hideSubMenuToggle(this, 'Send_Shortcut', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerSend_Shortcut', event);" onclick="eval('javascript:toolsExitSelected(\'sendShortcut\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Send Shortcut&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+<div tabindex="0" align="left" id="outerParameterized_URL"><table width="100%" class="MenuNormal" id="Parameterized_URL" onmouseover="jdeWebGUIUnhighlightAllItemsInCurrentMenu(this);jdeWebGUIHighlightMenuItemById('outerParameterized_URL'); hideSubMenuToggle(this, 'Parameterized_URL', event);" onmouseout="jdeWebGUIUnhighlightMenuItem(this);" onmousedown="menuItemMouseDown('outerParameterized_URL', event);" onclick="eval('javascript:toolsExitSelected(\'Parameterized URL\', \'\')');" cellspacing="0" cellpadding="0" jdewebguipopupmenu="yes" jdemenuhighlightable="yes"><tbody><tr jdewebguipopupmenu="yes"><td jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">&nbsp;<img width="9" height="10" align="absmiddle" alt="" src="/jde/share/images/menuitemblank.gif" border="0" jdewebguipopupmenu="yes">&nbsp;</nobr></td><td class="MenuItem" style="width: 100%;" jdewebguipopupmenu="yes"><span class="MenuItem" jdewebguipopupmenu="yes"><nobr jdewebguipopupmenu="yes">Parameterized URL&nbsp;</nobr></span></td><td align="right" jdewebguipopupmenu="yes">  <img width="10" height="1" alt="" src="/jde/share/images/spacer.gif"></td></tr></tbody></table></div>
+</td></tr></tbody></table></div>
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td nowrap=""><center><a tabindex="-1" style="text-decoration: none;"><img name="TOOLS_EXIT_BUTTON" tabindex="0" title="Tools (Ctrl+Alt+T)" id="TOOLS_EXIT_BUTTON" role="button" onmouseover="this.src='/jde/img/tools_exitmo.gif'" onmouseout="this.src='/jde/img/tools_exit.gif'" onkeydown="if(event.keyCode==32||event.keyCode==13){jdeWebGUIdoToggleSubMenu(this,'ToolsMenu', event, true);;UTIL.stopEventBubbling(event);};" onclick="jdeWebGUIdoToggleSubMenu(this,'ToolsMenu', event, true);" alt="Tools (Ctrl+Alt+T)" src="/jde/img/tools_exit.gif" border="0" launchmenuid="ToolsMenu"></a></center></td><td onclick="jdeWebGUIdoToggleSubMenu(this,'ToolsMenu', event, true);">&nbsp;</td><td nowrap=""><a aria-hidden="true" onclick="jdeWebGUIdoToggleSubMenu(this,'ToolsMenu', event, true);"><div title="Tools (Ctrl+Alt+T)" class="WebLabel" style="text-align: left; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabelSmall"><u>T</u>ools</span></div></a></td></tr></tbody></table></td><td>&nbsp;&nbsp;</td></tr></tbody></table></td></tr></tbody></table>
+<div tabindex="-1" class="formdiv e1container AccessibilityContainer" id="e1formDiv" style="width: 1720px; height: 837px;" onscroll="FormDivScrollHandler.syncToolBar(true)"><script type="text/javascript">var oPFActObj = {"omwObjName":"null","isLcmPreview" :false,"isLcmEdit" :false,"userId":"50909"};
+var  prefObject = {rowExitpref :true,isWSRP :false};</script>
+<div id="jdeINYFE" style="position: relative;"><label for="summaryTop"><span style="display: none;">Errors</span></label><textarea id="summaryTop" style="border: currentColor; border-image: none; display: none;"></textarea>
+<table style="margin-top: 5px;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="10"><img width="10" height="10" alt="" src="/jde/img/spacer.gif"></td><td width="100%" class="InYourFaceErrorBg">
+<table width="100%" border="0" cellspacing="0" cellpadding="1"><tbody><tr><td width="20" height="20" nowrap=""><nobr><img title="Collapse Errors" id="collapsed_expanded_icon" style="cursor: pointer;" onclick="javascript:inyfeHandler.toggleSummary('', ' (click to see the error summary)', 'Collapse Errors', 'Expand Errors');" alt="Collapse Errors" src="/jde/img/icon_expanded.gif" border="0" valign="absmiddle">&nbsp;&nbsp;</nobr></td><td class="errorTitle" nowrap=""><a onkeydown="if(event.keyCode ==32){this.click()};" href="javascript:inyfeHandler.toggleSummary('', ' (click to see the error summary)', 'Collapse Errors', 'Expand Errors');"><span class="GroupHeading">This form has 1 Errors 0 Warnings</span></a><span id="title_append"></span></td><td align="right" nowrap=""><input name="errorPopup" id="errorPopup" style="cursor: pointer;" aria-label="Enable Error Pop-ups" onclick="javascript:inyfeHandler.toggleErrorPopup('');" type="checkbox" size="4" checked=""><b>Enable Error Pop-ups</b></td></tr></tbody></table>
+<table width="100%" class="InYourFaceError" id="summary_content" border="1" cellspacing="0" cellpadding="5"><tbody><tr><td width="100%" class="ClearBorders" valign="top">
+Issues (click each label for more information):<br>
+<div id="INYFEContent"><table width="100%" role="presentation" border="0" cellspacing="2" cellpadding="0">
+<tbody><tr><td nowrap=""><nobr><a onkeydown="if(event.keyCode==32){this.click()};" href="javascript:inyfeHandler.toggleDescription('WIDGETID_0_239_0','DESCID_0_239_0',true);"><img id="WIDGETID_0_239_0" alt="Error 1" src="/jde/img/err_r.gif" border="0" valign="absmiddle" "=""></a>&nbsp;&nbsp;</nobr></td><td><a onkeydown="if(event.keyCode==32){this.click()};" href="javascript:inyfeHandler.toggleDescription('WIDGETID_0_239_0','DESCID_0_239_0',true);">Invalid Long Address Number</a>&nbsp;&nbsp;<a onkeydown="if(event.keyCode ==32){this.click()};" href="javascript:inyfeHandler.toggleDetail('DETAILID_0_239_0','DETAILICONID_0_239_0');"><img title="Warning" id="DETAILICONID_0_239_0" alt="Warning" src="/jde/img/warn_r.gif" border="0" valign="absmiddle"></a></td><td align="right" nowrap="">
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="right" nowrap="">
+<a aria-label="Go to error 1" onkeydown="if(event.keyCode ==32){this.click()};" href="javascript:inyfeHandler.goToError('0_239_0')">Go to error..</a>
+</td></tr></tbody></table>
+</td></tr><tr><td></td><td><div id="DESCID_0_239_0" style="display: none;" errorwarn="Error"><i></i>CAUSE: The long address number entered is not found in the Address Book<br>               Master file (F0101).<br>RESOLUTION:  Enter a valid long address number.</div></td><td></td></tr><tr><td></td><td colspan="2"><div id="DETAILID_0_239_0" style="display: none;"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="30%"><b><i>ER Details:</i></b></td><td></td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Form&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">P4310_W4310B</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Control Id&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">239</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Control Title&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">Ship To</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Event&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">Control Exited/Changed-Inline</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Line No&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">17</td></tr></tbody></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="30%"><b><i>Client NER Details:</i></b></td><td></td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Function&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">ScrubAddressNumberNER</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Line No&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">365</td></tr><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;Error ID&nbsp;&nbsp;</td><td valign="top" style="-ms-word-wrap: break-word;">799L</td></tr></tbody></table></div></td></tr>
+<script id="inyfeErrorScript">
+function inyfeErrorFunction(){
+var jsErrorHandler = inyfeHandler;
+jsErrorHandler.resetErrors();
+jsErrorHandler.setEnableErrorPopup(true);
+jsErrorHandler.resetErrorSummary("", " (click to see the error summary)", "Expand", true);
+jsErrorHandler.addError('0_239_0',false,'VTTextField','Invalid Long Address Number','0_274',0,44,'799L');
+jsErrorHandler.updateErrors();
+}</script>
+
+</tbody></table>
+</div>Please look for the highlighted fields or use Go To Error links to move the focus to the control with the error, correct the entries, and resubmit your request.</td></tr></tbody></table>
+</td><td width="10"><img width="10" height="10" alt="" src="/jde/img/spacer.gif"></td></tr></tbody></table>
+</div>
+<script type="text/javascript">var nextErr="Next Error";var prevErr="Previous Error";var summary="Go to Top";var hiddenError="An error has occurred, but it cannot be corrected from this form. Please correct any other errors and then contact your System Administrator regarding this error.";var inyfeHandler = new INYFEHandler('', nextErr, prevErr, summary, hiddenError);</script>
+
+<!-- Form above grid -->
+<table width="100%" id="FormAboveGridTable" style="padding: 3px 0px 0px 3px; width: 100%;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td>
+<div id="FormAboveGrid" style="width: 1694.99px; height: 583px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_274" style="left: 7px; top: 7px; width: 664px; position: absolute;" hasAdjacentControls="true" shouldElongate="false">
+<span onmousedown="return true;" onkeydown="FormKeyboardHandler.OnKeyDownInTab(event, '0_274', '')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><span id="outerJDETabHeader0_274"><table width="100%" id="modelessTabHeaders" role="presentation" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><table width="100%" role="tablist" cellspacing="0" cellpadding="0"><tbody><tr role="presentation" valign="MIDDLE"><td role="presentation"><table class="tabTableSelected" role="presentation" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td class="nonImageTab" role="presentation"><table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td width="100%" align="center" class="tabPages_275" role="presentation" nowrap="" tabid="275" tabsequence="0"><span class="ActiveTabLink" activetabid="275" activetabindex="CT0_274.0"><img align="absmiddle" alt="X" src="/jde/share/images/error-small.gif" border="0">&nbsp;Order Header</span></td></tr></tbody></table></td></tr></tbody></table></td><td role="presentation"><table class="tabTable" role="presentation" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td class="nonImageTab" role="presentation"><table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td width="100%" align="center" class="tabPages_276" role="presentation" nowrap="" tabid="276" tabsequence="1"><span class="tablink"><a name="CT0_274.1" title="Additional Properties (Alt+2)" class="tablink" id="CT0_274.1" role="tab" aria-selected="false" onkeydown="if(event.keyCode ==32 || event.keyCode ==13 ){this.click();event.stopPropagation();event.preventDefault();};" onblur="FCHandler.removeGroupJumpIndicatorById('0_274');" href="javascript:onClick=FCHandler.onTabChange('0_274','tab0_274.276','')">Additional Properties</a></span></td></tr></tbody></table></td></tr></tbody></table></td><td role="presentation"><table class="tabTable" role="presentation" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td class="nonImageTab" role="presentation"><table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0"><tbody><tr role="presentation"><td width="100%" align="center" class="tabPages_311" role="presentation" nowrap="" tabid="311" tabsequence="2"><span class="tablink"><a name="CT0_274.2" title="Category Codes (Alt+3)" class="tablink" id="CT0_274.2" role="tab" aria-selected="false" onkeydown="if(event.keyCode ==32 || event.keyCode ==13 ){this.click();event.stopPropagation();event.preventDefault();};" onblur="FCHandler.removeGroupJumpIndicatorById('0_274');" href="javascript:onClick=FCHandler.onTabChange('0_274','tab0_274.311','')">Category Codes</a></span></td></tr></tbody></table></td></tr></tbody></table></td><td width="100%" class="NoTabFiller"></td></tr></tbody></table></td></tr></tbody></table></span><table width="100%" height="540" class="TabBody" role="tabpanel" cellspacing="0" cellpadding="0"><tbody><tr><td class="ClearBorders"><table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="5"><tbody><tr><td valign="TOP">
+<!-- Tab Pane -->
+<span id="outerJDETabBody0_274">
+<b><script id="jdeTabRegisterScript0_274">
+function jdeTabRegisterFunction0_274(){
+var jdeTabPages0_274 = new Array(275, 276, 311);
+var jdeEnabledTabPages0_274 = new Array(true,true,true);
+var jdeTabPageIndexes0_274 = new Array(0, 1, 2);
+FormKeyboardHandler.RegisterTabKBHandler('0_274', jdeTabPages0_274,0, jdeEnabledTabPages0_274, jdeTabPageIndexes0_274)}
+</script></b>
+<div id="div0_274" style="width: 100%; height: 540px; position: relative;"><span id="outer0_137" style="left: 8px; top: 6px; width: 642px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1"></span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_137" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="85" class="ClearBorders" valign="TOP">
+<div id="div0_137" style="width: 642px; height: 85px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_137')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_24" style="left: 115px; top: 4px; width: 80px; position: absolute;" ddinfo="DOCO">
+<nobr><input name="0_24" tabindex="33" title="Order Number" class="textfield" id="C0_24" style="width: 73px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_24')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="8" htmlpostflag="false"></nobr></span>
+<span id="outer0_26" style="left: 197px; top: 4px; width: 57px; position: absolute;" ddinfo="DCTO">
+<nobr><input name="0_26" tabindex="34" title="Order Type" class="textfield" id="C0_26" style="width: 33px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_26')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="2" value="OC" autocomplete="OFF" htmlpostflag="false" isdropdown="1" hotkey="0" mincharnumber="1" autosuggestenabled="1"><img name="va0_26" width="17" height="17" id="va0_26" role="presentation" style="left: -1px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('dropdown.png')!=-1) this.src='/jde/img/dropdownmo.png';" onmouseout="if (this.src.indexOf('dropdownmo.png')!=-1) this.src='/jde/img/dropdown.png';" onclick="FCHandler.onClickTypeAheadIcon(document.getElementById('C0_26'), null, '0_26', 0, 2, '', 'ctrlAutoSuggest')" alt="User Defined Code: Order Type" src="/jde/img/dropdown.png"></nobr></span>
+<span id="outer0_103" style="left: 262px; top: 4px; width: 66px; position: absolute;" ddinfo="KCOO">
+<nobr><input name="0_103" tabindex="-1" title="Order Company" class="tfdisabled" id="C0_103" style="width: 42px;" onmouseover="updateHelpCursor('',this)" type="text" readonly="" value=" "></nobr></span>
+<span id="outer0_159" style="left: 330px; top: 4px; width: 25px; display: none; position: absolute;" ddinfo="EV01">
+</span>
+<span id="outer0_211" style="left: 362px; top: 4px; width: 79px; display: none; position: absolute;">
+</span>
+<span id="outer0_224" style="left: 362px; top: 4px; width: 101px; display: none; position: absolute;">
+</span>
+<span id="outer0_225" style="left: 362px; top: 4px; width: 101px; display: none; position: absolute;">
+</span>
+<span id="outer0_34" style="left: 459px; top: 4px; width: 135px; position: absolute;" ddinfo="MCU">
+<nobr><input name="0_34" tabindex="38" title="Branch/Plant" class="textfield autosuggesttextfield" id="C0_34" style="width: 111px; vertical-align: top; cursor: auto;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_34')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="12" autocomplete="OFF" htmlpostflag="false" hotkey="1" mincharnumber="2" autosuggestenabled="1"><img title="Auto Suggest" id="ASIcon_0_34" style="left: -13px; top: 2px; width: 11px; height: 11px; display: none; position: relative; z-index: 1;" src="/jde/img/AutoSuggest_clickable.gif" valign="center"><img name="va0_34" width="17" height="17" title="Visual Assist (F2)" id="va0_34" style="left: 0px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_34')" alt="Visual Assist (F2)" src="/jde/img/va0.gif"></nobr></span>
+<span id="outer0_23" style="left: 9px; top: 6px; width: 99px; position: absolute;" ddinfo="DOCO">
+<div title="Order Number" class="WebLabel" id="divTC0_23" style="padding: 1px 0px 0px; width: 99px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Order Number</span></div>
+</span>
+<span id="outer0_33" style="left: 361px; top: 6px; width: 89px; position: absolute;" ddinfo="MCU">
+<div title="Branch/Plant" class="WebLabel" id="divTC0_33" style="padding: 1px 0px 0px; width: 89px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Branch/Plant</span></div>
+</span>
+<span id="outer0_101" style="left: 194px; top: 27px; width: 57px; display: none; position: absolute;" ddinfo="DCTO">
+</span>
+<span id="outer0_90" style="left: 9px; top: 28px; width: 99px; display: none; position: absolute;" ddinfo="LDOC">
+</span>
+<span id="outer0_91" style="left: 116px; top: 28px; width: 80px; display: none; position: absolute;" ddinfo="LDOC">
+</span>
+<span id="outer0_105" style="left: 403px; top: 28px; width: 16px; display: none; position: absolute;" ddinfo="SFXO">
+</span>
+<span id="outer0_386" style="left: 443px; top: 28px; width: 112px; display: none; position: absolute;">
+</span>
+<span id="outer0_140" style="left: 443px; top: 49px; width: 56px; position: absolute;" ddinfo="CRDC">
+<nobr><input name="0_140" tabindex="-1" title="Base" class="tfdisabled associated0_139" id="C0_140" style="width: 32px;" onmouseover="updateHelpCursor('',this)" type="text" readonly="" value=" " data-static="0_139"></nobr></span>
+<span id="outer0_43" style="left: 504px; top: 49px; width: 79px; position: absolute;" ddinfo="CRRM"><div title="Foreign" id="div0_43" style="width: 79px; height: 24px; overflow: hidden; white-space: nowrap;"><input name="0_43" tabindex="-1" title="Foreign" disabled="" id="C0_43" onmouseover="updateHelpCursor('',this)" onclick="FCHandler.onClickCtrl(this,false,'')" onhelp="hp('0_43')" onfocus="FCHandler.onFocusCheckboxRadio(this,'')" onblur="FCHandler.onExitCheckboxRadio(this,'')" type="checkbox"><span class="cbdisabled"><nobr><label for="C0_43">Foreign</label></nobr></span></div></span>
+<span id="outer0_31" style="left: 9px; top: 51px; width: 98px; position: absolute;" ddinfo="CRCD">
+<div title="Currency" class="WebLabel" id="divTC0_31" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Currency</span></div>
+</span>
+<span id="outer0_32" style="left: 116px; top: 51px; width: 53px; position: absolute;" ddinfo="CRCD">
+<nobr><input name="0_32" tabindex="39" title="Currency" class="textfield associated0_31" id="C0_32" style="width: 29px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onhelp="hp('0_32')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="3" value=" " htmlpostflag="false" data-static="0_31"><img name="va0_32" width="17" height="17" title="Visual Assist (F2)" id="va0_32" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_32')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_148" style="left: 173px; top: 51px; width: 89px; position: absolute;" ddinfo="CRR">
+<div title="Exchange Rate" class="WebLabel" id="divTC0_148" style="padding: 1px 0px 0px; width: 89px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Exchange Rate</span></div>
+</span>
+<span id="outer0_149" style="left: 262px; top: 51px; width: 117px; position: absolute;" ddinfo="CRR">
+<nobr><input name="0_149" tabindex="40" title="Exchange Rate" class="textfield associated0_148" id="C0_149" style="width: 93px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','1', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','1', event,false,'UTC')" onhelp="hp('0_149')" onfocus="FCHandler.onFocusVACalc(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="16" htmlpostflag="false" data-static="0_148"><img name="va0_149" width="17" height="17" title="Visual Assist (F2)" id="va0_149" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_calc_16_ena.png')!=-1) this.src='/jde/img/func_calc_16_hov.png';" onmouseout="if (this.src.indexOf('func_calc_16_hov.png')!=-1) this.src='/jde/img/func_calc_16_ena.png';" onclick="ocCalc('','0_149')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_139" style="left: 402px; top: 51px; width: 38px; position: absolute;" ddinfo="CRDC">
+<div title="Base" class="WebLabel" id="divTC0_139" style="padding: 1px 0px 0px; width: 38px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Base</span></div>
+</span>
+</div>
+</td></tr></tbody></table>
+</span>
+<span id="outer0_40" style="left: 8px; top: 93px; width: 419px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1">Address Numbers</span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_40" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="115" class="ClearBorders" valign="TOP">
+<div id="div0_40" style="width: 419px; height: 115px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_40')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_237" style="left: 116px; width: 125px; position: absolute;" ddinfo="ALKY">
+<nobr><input name="0_237" tabindex="43" title="Supplier" class="textfield associated0_7 associated0_252 autosuggesttextfield" id="C0_237" style="border-width: 2px; width: 101px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_237'),'', event)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_237')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,true,'',false)" type="text" maxlength="20" value=" " autocomplete="OFF" htmlpostflag="true" data-static="0_7" hotkey="0" mincharnumber="3" autosuggestenabled="1" ispopupassociated="1" data-description="0_252"><img title="Auto Suggest" id="ASIcon_0_237" style="left: -13px; top: 2px; width: 11px; height: 11px; display: none; position: relative; z-index: 1;" src="/jde/img/AutoSuggest_disabled.gif" valign="center"><img name="va0_237" width="17" height="17" title="Visual Assist (F2)" id="va0_237" style="left: 0px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_237')" alt="Visual Assist (F2)" src="/jde/img/va0.gif"><span class="popupIndicator" id="popupImg0_237"><img title="More..." onmouseover="this.src='/jde/img/popup_indicator_ovr.png';" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_237'),'', event)" onclick="FCHandler.onMouseIsHovered(document.getElementById('C0_237'),'', event)" alt="More..." src="/jde/img/popup_indicator.png" ;=""></span></nobr></span>
+<span id="outer0_7" style="left: 9px; top: 2px; width: 98px; position: absolute;" ddinfo="ALKY">
+<div title="Supplier" class="WebLabel" id="divTC0_7" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Supplier</span></div>
+</span>
+<span id="outer0_252" style="left: 246px; top: 4px; width: 171px; position: absolute;" ddinfo="DL01"><div title="MYERS INDUSTRIES INC" class="WebLabel associatedDesc" id="divTC0_252" style="padding: 1px 0px 0px; width: 171px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i>MYERS INDUSTRIES INC</i></span></div></span>
+<span id="outer0_8" style="left: 114px; top: 15px; width: 88px; display: none; position: absolute;" ddinfo="AN8">
+</span>
+<span id="outer0_10" style="left: 114px; top: 30px; width: 75px; display: none; position: absolute;" ddinfo="SHAN">
+</span>
+<span id="outer0_253" style="left: 247px; top: 30px; width: 171px; position: absolute;" ddinfo="DL01"><div title="601" class="WebLabel associatedDesc" id="divTC0_253" style="padding: 1px 0px 0px; width: 171px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i>601</i></span></div></span>
+<span id="outer0_9" style="left: 9px; top: 32px; width: 98px; position: absolute;" ddinfo="ALKY">
+<div title="Ship To" class="WebLabel" id="divTC0_9" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Ship To</span></div>
+</span>
+<span id="outer0_239" style="left: 116px; top: 32px; width: 125px; position: absolute;" ddinfo="ALKY">
+<nobr><input name="0_239" tabindex="44" title="Ship To" class="textfield associated0_9 associated0_253 autosuggesttextfield" id="C0_239" style="border-width: 2px; border-color: rgb(255, 124, 124); width: 101px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_239'),'', event)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_239')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="20" value=" " autocomplete="OFF" htmlpostflag="false" data-static="0_9" hotkey="0" mincharnumber="3" autosuggestenabled="1" ispopupassociated="1" data-description="0_253"><img title="Auto Suggest" id="ASIcon_0_239" style="left: -13px; top: 2px; width: 11px; height: 11px; display: none; position: relative; z-index: 1;" src="/jde/img/AutoSuggest_active.gif" valign="center"><img name="va0_239" width="17" height="17" title="Visual Assist (F2)" id="va0_239" style="left: 0px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_239')" alt="Visual Assist (F2)" src="/jde/img/va0.gif"><span class="popupIndicator" id="popupImg0_239"><img title="More..." onmouseover="this.src='/jde/img/popup_indicator_ovr.png';" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_239'),'', event)" onclick="FCHandler.onMouseIsHovered(document.getElementById('C0_239'),'', event)" alt="More..." src="/jde/img/popup_indicator.png" ;=""></span></nobr></span>
+<span id="outer0_245" style="left: 109px; top: 49px; width: 61px; display: none; position: absolute;" ddinfo="ANBY">
+</span>
+<span id="outer0_241" style="left: 9px; top: 56px; width: 98px; position: absolute;" ddinfo="ALKY">
+<div title="Buyer" class="WebLabel" id="divTC0_241" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Buyer</span></div>
+</span>
+<span id="outer0_240" style="left: 116px; top: 56px; width: 125px; position: absolute;" ddinfo="ALKY">
+<nobr><input name="0_240" tabindex="45" title="Buyer" class="textfield associated0_241 associated0_254" id="C0_240" style="width: 101px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_240'),'', event)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_240')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="20" value=" " autocomplete="OFF" htmlpostflag="false" data-static="0_241" hotkey="0" mincharnumber="3" autosuggestenabled="1" ispopupassociated="1" data-description="0_254"><img name="va0_240" width="17" height="17" title="Visual Assist (F2)" id="va0_240" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_240')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"><span class="popupIndicator" id="popupImg0_240"><img title="More..." onmouseover="this.src='/jde/img/popup_indicator_ovr.png';" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_240'),'', event)" onclick="FCHandler.onMouseIsHovered(document.getElementById('C0_240'),'', event)" alt="More..." src="/jde/img/popup_indicator.png" ;=""></span></nobr></span>
+<span id="outer0_254" style="left: 247px; top: 64px; width: 171px; position: absolute;" ddinfo="DL01">
+<div title=" " class="WebLabel associatedDesc" id="divTC0_254" style="padding: 1px 0px 0px; width: 171px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i> </i></span></div>
+</span>
+<span id="outer0_13" style="left: 9px; top: 88px; width: 98px; position: absolute;" ddinfo="ANCR">
+<div title="Carrier" class="WebLabel" id="divTC0_13" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Carrier</span></div>
+</span>
+<span id="outer0_14" style="left: 116px; top: 88px; width: 89px; position: absolute;" ddinfo="ANCR">
+<nobr><input name="0_14" tabindex="46" title="Carrier" class="textfield associated0_13 associated0_255" id="C0_14" style="width: 65px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_14'),'', event)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_14')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="8" htmlpostflag="false" data-static="0_13" ispopupassociated="1" data-description="0_255"><img name="va0_14" width="17" height="17" title="Visual Assist (F2)" id="va0_14" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_14')" alt="Visual Assist (F2)" src="/jde/img/va0.gif"><span class="popupIndicator" id="popupImg0_14"><img title="More..." onmouseover="this.src='/jde/img/popup_indicator_ovr.png';" onmouseout="FCHandler.onMouseOutControl(document.getElementById('C0_14'),'', event)" onclick="FCHandler.onMouseIsHovered(document.getElementById('C0_14'),'', event)" alt="More..." src="/jde/img/popup_indicator.png" ;=""></span></nobr></span>
+<span id="outer0_255" style="left: 214px; top: 92px; width: 198px; position: absolute;" ddinfo="DL01"><div title="MYERS INDUSTRIES INC" class="WebLabel associatedDesc" id="divTC0_255" style="padding: 1px 0px 0px; width: 198px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i>MYERS INDUSTRIES INC</i></span></div></span>
+</div>
+</td></tr></tbody></table>
+</span>
+<span id="outer0_167" style="left: 434px; top: 93px; width: 218px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1">Dates</span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_167" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="206" class="ClearBorders" valign="TOP">
+<div id="div0_167" style="width: 218px; height: 206px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_167')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_16" style="left: 128px; top: 4px; width: 87px; position: absolute;" ddinfo="TRDJ">
+<nobr><input name="0_16" tabindex="50" title="Order Date" class="textfield associated0_15" id="C0_16" style="width: 63px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','2', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','2', event,false,'UTC')" onhelp="hp('0_16')" onfocus="FCHandler.onFocusVACaln(this,'')" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" htmlpostflag="false" data-static="0_15"><img name="va0_16" width="17" height="17" title="Visual Assist (F2)" id="va0_16" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('input_date.png')!=-1) this.src='/jde/img/input_date_ovr.png';" onmouseout="if (this.src.indexOf('_ovr.png')!=-1) this.src='/jde/img/input_date.png';" onclick="ocCaln('','0_16',false,'UTC')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_15" style="left: 5px; top: 6px; width: 111px; position: absolute;" ddinfo="TRDJ">
+<div title="Order Date" class="WebLabel" id="divTC0_15" style="padding: 1px 0px 0px; width: 111px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Order Date</span></div>
+</span>
+<span id="outer0_231" style="left: 128px; top: 32px; width: 87px; position: absolute;" ddinfo="DRQJ">
+<nobr><input name="0_231" tabindex="51" title="Requested" class="textfield associated0_230" id="C0_231" style="width: 63px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','2', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','2', event,false,'UTC')" onhelp="hp('0_231')" onfocus="FCHandler.onFocusVACaln(this,'')" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" htmlpostflag="false" data-static="0_230"><img name="va0_231" width="17" height="17" title="Visual Assist (F2)" id="va0_231" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('input_date.png')!=-1) this.src='/jde/img/input_date_ovr.png';" onmouseout="if (this.src.indexOf('_ovr.png')!=-1) this.src='/jde/img/input_date.png';" onclick="ocCaln('','0_231',false,'UTC')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_230" style="left: 4px; top: 34px; width: 120px; position: absolute;" ddinfo="DRQJ">
+<div title="Requested" class="WebLabel" id="divTC0_230" style="padding: 1px 0px 0px; width: 120px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Requested</span></div>
+</span>
+<span id="outer0_233" style="left: 128px; top: 62px; width: 87px; position: absolute;" ddinfo="PDDJ">
+<nobr><input name="0_233" tabindex="52" title="Promised Delivery" class="textfield associated0_232" id="C0_233" style="width: 63px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','2', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','2', event,false,'UTC')" onhelp="hp('0_233')" onfocus="FCHandler.onFocusVACaln(this,'')" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" htmlpostflag="false" data-static="0_232"><img name="va0_233" width="17" height="17" title="Visual Assist (F2)" id="va0_233" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('input_date.png')!=-1) this.src='/jde/img/input_date_ovr.png';" onmouseout="if (this.src.indexOf('_ovr.png')!=-1) this.src='/jde/img/input_date.png';" onclick="ocCaln('','0_233',false,'UTC')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_232" style="left: 5px; top: 64px; width: 111px; position: absolute;" ddinfo="PDDJ">
+<div title="Promised Delivery" class="WebLabel" id="divTC0_232" style="padding: 1px 0px 0px; width: 111px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Promised Delivery</span></div>
+</span>
+<span id="outer0_21" style="left: 4px; top: 94px; width: 110px; position: absolute;" ddinfo="CNDJ">
+<div title="Cancel Date" class="WebLabel" id="divTC0_21" style="padding: 1px 0px 0px; width: 110px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Cancel Date</span></div>
+</span>
+<span id="outer0_22" style="left: 128px; top: 94px; width: 87px; position: absolute;" ddinfo="CNDJ">
+<nobr><input name="0_22" tabindex="53" title="Cancel Date" class="textfield associated0_21" id="C0_22" style="width: 63px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','2', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','2', event,false,'UTC')" onhelp="hp('0_22')" onfocus="FCHandler.onFocusVACaln(this,'')" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" htmlpostflag="false" data-static="0_21"><img name="va0_22" width="17" height="17" title="Visual Assist (F2)" id="va0_22" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('input_date.png')!=-1) this.src='/jde/img/input_date_ovr.png';" onmouseout="if (this.src.indexOf('_ovr.png')!=-1) this.src='/jde/img/input_date.png';" onclick="ocCaln('','0_22',false,'UTC')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_217" style="left: 5px; top: 126px; width: 115px; display: none; position: absolute;" ddinfo="ADDJ">
+</span>
+<span id="outer0_218" style="left: 128px; top: 126px; width: 87px; display: none; position: absolute;" ddinfo="ADDJ">
+</span>
+<span id="outer0_227" style="left: 4px; top: 156px; width: 110px; display: none; position: absolute;" ddinfo="PEFJ">
+</span>
+<span id="outer0_228" style="left: 128px; top: 156px; width: 87px; display: none; position: absolute;" ddinfo="PEFJ">
+</span>
+</div>
+</td></tr></tbody></table>
+</span>
+<span id="outer0_268" style="left: 10px; top: 217px; width: 419px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1">Payment Terms</span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_268" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="83" class="ClearBorders" valign="TOP">
+<div id="div0_268" style="width: 419px; height: 83px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_268')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_204" style="left: 7px; top: 4px; width: 98px; position: absolute;" ddinfo="RMK">
+<div title="Pmt. Remark" class="WebLabel" id="divTC0_204" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Pmt. Remark</span></div>
+</span>
+<span id="outer0_205" style="left: 114px; top: 4px; width: 174px; position: absolute;" ddinfo="RMK">
+<nobr><input name="0_205" tabindex="47" title="Pmt. Remark" class="textfield associated0_204" id="C0_205" style="width: 167px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_205')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="30" value=" " htmlpostflag="false" data-static="0_204"></nobr></span>
+<span id="outer0_206" style="left: 7px; top: 36px; width: 98px; position: absolute;" ddinfo="DESC">
+<div title="Description" class="WebLabel" id="divTC0_206" style="padding: 1px 0px 0px; width: 98px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Description</span></div>
+</span>
+<span id="outer0_207" style="left: 114px; top: 36px; width: 174px; position: absolute;" ddinfo="DESC">
+<nobr><input name="0_207" tabindex="48" title="Description" class="textfield associated0_206" id="C0_207" style="width: 167px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_207')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="30" value=" " htmlpostflag="false" data-static="0_206"></nobr></span>
+<span id="outer0_267" style="left: 7px; top: 60px; width: 99px; position: absolute;" ddinfo="INMG">
+<div title="Print Message" class="WebLabel" id="divTC0_267" style="padding: 1px 0px 0px; width: 99px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Print Message</span></div>
+</span>
+<span id="outer0_266" style="left: 114px; top: 60px; width: 71px; position: absolute;" ddinfo="INMG">
+<nobr><input name="0_266" tabindex="49" title="Print Message" class="textfield associated0_267" id="C0_266" style="width: 47px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_266')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" value=" " autocomplete="OFF" htmlpostflag="false" data-static="0_267" isdropdown="1" hotkey="0" mincharnumber="1" autosuggestenabled="1"><img name="va0_266" width="17" height="17" id="va0_266" role="presentation" style="left: -1px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('dropdown.png')!=-1) this.src='/jde/img/dropdownmo.png';" onmouseout="if (this.src.indexOf('dropdownmo.png')!=-1) this.src='/jde/img/dropdown.png';" onclick="FCHandler.onClickTypeAheadIcon(document.getElementById('C0_266'), null, '0_266', 0, 2, '', 'ctrlAutoSuggest')" alt="User Defined Code: Print Message" src="/jde/img/dropdown.png"></nobr></span>
+</div>
+</td></tr></tbody></table>
+</span>
+<span id="outer0_175" style="left: 8px; top: 326px; width: 642px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1"></span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_175" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="171" class="ClearBorders" valign="TOP">
+<div id="div0_175" style="width: 642px; height: 171px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_175')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_170" style="left: 9px; width: 106px; position: absolute;" ddinfo="EXR1">
+<div title="Tax Expl Code" class="WebLabel" id="divTC0_170" style="padding: 1px 0px 0px; width: 106px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Tax Expl Code</span></div>
+</span>
+<span id="outer0_171" style="left: 116px; width: 44px; position: absolute;" ddinfo="EXR1">
+<nobr><input name="0_171" tabindex="56" title="Tax Expl Code" class="textfield associated0_170 associated0_256" id="C0_171" style="width: 20px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_171')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="2" value=" " autocomplete="OFF" htmlpostflag="false" data-static="0_170" isdropdown="1" hotkey="0" mincharnumber="1" autosuggestenabled="1" data-description="0_256"><img name="va0_171" width="17" height="17" id="va0_171" role="presentation" style="left: -1px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('dropdown.png')!=-1) this.src='/jde/img/dropdownmo.png';" onmouseout="if (this.src.indexOf('dropdownmo.png')!=-1) this.src='/jde/img/dropdown.png';" onclick="FCHandler.onClickTypeAheadIcon(document.getElementById('C0_171'), null, '0_171', 0, 2, '', 'ctrlAutoSuggest')" alt="User Defined Code: Tax Expl Code" src="/jde/img/dropdown.png"></nobr></span>
+<span id="outer0_53" style="left: 328px; width: 94px; position: absolute;" ddinfo="HOLD">
+<div title="Hold Code" class="WebLabel" id="divTC0_53" style="padding: 1px 0px 0px; width: 94px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Hold Code</span></div>
+</span>
+<span id="outer0_54" style="left: 426px; width: 57px; position: absolute;" ddinfo="HOLD">
+<nobr><input name="0_54" tabindex="62" title="Hold Code" class="textfield associated0_53 associated0_257" id="C0_54" style="width: 33px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_54')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="2" value=" " autocomplete="OFF" htmlpostflag="false" data-static="0_53" isdropdown="1" hotkey="0" mincharnumber="1" autosuggestenabled="1" data-description="0_257"><img name="va0_54" width="17" height="17" id="va0_54" role="presentation" style="left: -1px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('dropdown.png')!=-1) this.src='/jde/img/dropdownmo.png';" onmouseout="if (this.src.indexOf('dropdownmo.png')!=-1) this.src='/jde/img/dropdown.png';" onclick="FCHandler.onClickTypeAheadIcon(document.getElementById('C0_54'), null, '0_54', 0, 2, '', 'ctrlAutoSuggest')" alt="User Defined Code: Hold Code" src="/jde/img/dropdown.png"></nobr></span>
+<span id="outer0_256" style="left: 175px; width: 130px; position: absolute;" ddinfo="DL01"><div title="" class="WebLabel associatedDesc" id="divTC0_256" style="padding: 1px 0px 0px; width: 130px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i></i></span></div></span>
+<span id="outer0_257" style="left: 486px; width: 144px; position: absolute;" ddinfo="DL01">
+<div title="BLANK-HOLD CODE 42/HC" class="WebLabel associatedDesc" id="divTC0_257" style="padding: 1px 0px 0px; width: 144px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i>BLANK-HOLD CODE 42/HC</i></span></div>
+</span>
+<span id="outer0_168" style="left: 9px; top: 20px; width: 106px; position: absolute;" ddinfo="TXA1">
+<div title="Tax Rate/Area" class="WebLabel" id="divTC0_168" style="padding: 1px 0px 0px; width: 106px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Tax Rate/Area</span></div>
+</span>
+<span id="outer0_169" style="left: 116px; top: 20px; width: 71px; position: absolute;" ddinfo="TXA1">
+<nobr><input name="0_169" tabindex="57" title="Tax Rate/Area" class="textfield associated0_168" id="C0_169" style="width: 47px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onhelp="hp('0_169')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="10" value=" " htmlpostflag="false" data-static="0_168"><img name="va0_169" width="17" height="17" title="Visual Assist (F2)" id="va0_169" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_169')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_79" style="left: 328px; top: 20px; width: 94px; display: none; position: absolute;" ddinfo="ARTG">
+</span>
+<span id="outer0_80" style="left: 426px; top: 20px; width: 115px; display: none; position: absolute;" ddinfo="ARTG">
+</span>
+<span id="outer0_155" style="left: 313px; top: 44px; width: 25px; display: none; position: absolute;" ddinfo="ACTN">
+</span>
+<span id="outer0_157" style="left: 354px; top: 44px; width: 25px; display: none; position: absolute;" ddinfo="EV01">
+</span>
+<span id="outer0_165" style="left: 354px; top: 44px; width: 25px; display: none; position: absolute;" ddinfo="EV01">
+</span>
+<span id="outer0_163" style="left: 362px; top: 44px; width: 30px; display: none; position: absolute;" ddinfo="ORNN">
+</span>
+<span id="outer0_180" style="left: 362px; top: 44px; width: 25px; display: none; position: absolute;" ddinfo="EV01">
+</span>
+<span id="outer0_172" style="left: 9px; top: 52px; width: 106px; position: absolute;" ddinfo="TXCT">
+<div title="Certificate" class="WebLabel" id="divTC0_172" style="padding: 1px 0px 0px; width: 106px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Certificate</span></div>
+</span>
+<span id="outer0_173" style="left: 116px; top: 52px; width: 122px; position: absolute;" ddinfo="TXCT">
+<nobr><input name="0_173" tabindex="58" title="Certificate" class="textfield associated0_172" id="C0_173" style="width: 115px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_173')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="20" value=" " htmlpostflag="false" data-static="0_172"></nobr></span>
+<span id="outer0_202" style="left: 328px; top: 52px; width: 94px; position: absolute;" ddinfo="PCRT">
+<div title="Retainage %" class="WebLabel" id="divTC0_202" style="padding: 1px 0px 0px; width: 94px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Retainage %</span></div>
+</span>
+<span id="outer0_203" style="left: 426px; top: 52px; width: 89px; position: absolute;" ddinfo="PCRT">
+<nobr><input name="0_203" tabindex="64" title="Retainage %" class="textfield associated0_202" id="C0_203" style="width: 82px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_203')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="9" htmlpostflag="false" data-static="0_202"></nobr></span>
+<span id="outer0_373" style="left: 518px; top: 52px; width: 122px; display: none; position: absolute;" ddinfo="RETI">
+</span>
+<span id="outer0_259" style="left: 335px; top: 65px; width: 30px; display: none; position: absolute;" ddinfo="CM">
+</span>
+<span id="outer0_199" style="left: 116px; top: 74px; width: 122px; position: absolute;" ddinfo="TAX">
+<nobr><input name="0_199" tabindex="-1" title="Tax ID" class="tfdisabled associated0_198" id="C0_199" style="width: 115px;" onmouseover="updateHelpCursor('',this)" type="text" readonly="" value=" " data-static="0_198"></nobr></span>
+<span id="outer0_198" style="left: 9px; top: 76px; width: 106px; position: absolute;" ddinfo="TAX">
+<div title="Tax ID" class="WebLabel" id="divTC0_198" style="padding: 1px 0px 0px; width: 106px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Tax ID</span></div>
+</span>
+<span id="outer0_84" style="left: 328px; top: 80px; width: 94px; position: absolute;" ddinfo="ORBY">
+<div title="Ordered By" class="WebLabel" id="divTC0_84" style="padding: 1px 0px 0px; width: 94px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Ordered By</span></div>
+</span>
+<span id="outer0_85" style="left: 426px; top: 83px; width: 89px; position: absolute;" ddinfo="ORBY">
+<nobr><input name="0_85" tabindex="-1" title="Ordered By" class="tfdisabled associated0_84" id="C0_85" style="width: 82px;" onmouseover="updateHelpCursor('',this)" type="text" readonly="" value="50909" data-static="0_84"></nobr></span>
+<span id="outer0_209" style="left: 215px; top: 93px; width: 184px; display: none; position: absolute;" ddinfo="PROM">
+</span>
+<span id="outer0_153" style="left: 313px; top: 93px; width: 61px; display: none; position: absolute;" ddinfo="JOBS">
+</span>
+<span id="outer0_151" style="left: 330px; top: 93px; width: 97px; display: none; position: absolute;" ddinfo="CTID">
+</span>
+<span id="outer0_200" style="left: 9px; top: 104px; width: 113px; position: absolute;" ddinfo="TAXC">
+<div title="Person/Corp. ID" class="WebLabel" id="divTC0_200" style="padding: 1px 0px 0px; width: 113px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Person/Corp. ID</span></div>
+</span>
+<span id="outer0_201" style="left: 116px; top: 104px; width: 84px; position: absolute;" ddinfo="TAXC">
+<nobr><input name="0_201" tabindex="-1" title="Person/Corp. ID" class="tfdisabled associated0_200" id="C0_201" style="width: 60px;" onmouseover="updateHelpCursor('',this)" type="text" readonly="" data-static="0_200"></nobr></span>
+<span id="outer0_81" style="left: 328px; top: 108px; width: 94px; position: absolute;" ddinfo="TKBY">
+<div title="Order Taken By" class="WebLabel" id="divTC0_81" style="padding: 1px 0px 0px; width: 94px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Order Taken By</span></div>
+</span>
+<span id="outer0_82" style="left: 426px; top: 108px; width: 89px; position: absolute;" ddinfo="TKBY">
+<nobr><input name="0_82" tabindex="66" title="Order Taken By" class="textfield associated0_81" id="C0_82" style="width: 82px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onhelp="hp('0_82')" onfocus="FCHandler.onFocus(this,'',false)" onblur="FCHandler.onExit(this,false,'',false)" type="text" maxlength="10" value=" " htmlpostflag="false" data-static="0_81"></nobr></span>
+<span id="outer0_263" style="left: 9px; top: 136px; width: 106px; position: absolute;" ddinfo="PTC">
+<div title="Payment Terms" class="WebLabel" id="divTC0_263" style="padding: 1px 0px 0px; width: 106px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">Payment Terms</span></div>
+</span>
+<span id="outer0_262" style="left: 116px; top: 136px; width: 44px; position: absolute;" ddinfo="PTC">
+<nobr><input name="0_262" tabindex="61" title="Payment Terms" class="textfield associated0_263 associated0_273" id="C0_262" style="width: 20px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onhelp="hp('0_262')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="3" value=" " htmlpostflag="false" data-static="0_263" data-description="0_273"><img name="va0_262" width="17" height="17" title="Visual Assist (F2)" id="va0_262" style="top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('func_find_16_ena.png')!=-1) this.src='/jde/img/func_find_16_hov.png';" onmouseout="if (this.src.indexOf('func_find_16_hov.png')!=-1) this.src='/jde/img/func_find_16_ena.png';" onclick="JDEDTAFactory.getInstance('').post('va0_262')" alt="Visual Assist (F2)" src="/jde/img/spacer.gif"></nobr></span>
+<span id="outer0_273" style="left: 174px; top: 138px; width: 148px; position: absolute;" ddinfo="DL01"><div title="NET 30 DAYS" class="WebLabel associatedDesc" id="divTC0_273" style="padding: 1px 0px 0px; width: 148px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i>NET 30 DAYS</i></span></div></span>
+<span id="outer0_265" style="left: 328px; top: 138px; width: 93px; position: absolute;" ddinfo="FUF1">
+<div title="AIA Document" class="WebLabel" id="divTC0_265" style="padding: 1px 0px 0px; width: 93px; height: 20px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel">AIA Document</span></div>
+</span>
+<span id="outer0_264" style="left: 426px; top: 140px; width: 38px; position: absolute;" ddinfo="FUF1">
+<nobr><input name="0_264" tabindex="67" title="AIA Document" class="textfield associated0_265" id="C0_264" style="width: 14px; vertical-align: top;" onmouseover="updateHelpCursor('',this)" onmousedown="FCHandler.onKeyDownTextField(this,'','3', event)" onkeydown="FCHandler.onKeyDownTextField(this,'','3', event,false,'UTC')" onkeyup="FCHandler.onKeyUpTextField(this,'', event)" onhelp="hp('0_264')" onfocus="FCHandler.onFocusVA(this,'',false)" onblur="FCHandler.onExitVA(this,false,'',false)" type="text" maxlength="1" value="Y" autocomplete="OFF" htmlpostflag="false" data-static="0_265" isdropdown="1" hotkey="0" mincharnumber="1" autosuggestenabled="1"><img name="va0_264" width="17" height="17" id="va0_264" role="presentation" style="left: -1px; top: 1px; vertical-align: top; position: relative;" onmouseover="if (this.src.indexOf('dropdown.png')!=-1) this.src='/jde/img/dropdownmo.png';" onmouseout="if (this.src.indexOf('dropdownmo.png')!=-1) this.src='/jde/img/dropdown.png';" onclick="FCHandler.onClickTypeAheadIcon(document.getElementById('C0_264'), null, '0_264', 0, 2, '', 'ctrlAutoSuggest')" alt="User Defined Code: AIA Document" src="/jde/img/dropdown.png"></nobr></span>
+<span id="outer0_249" style="left: 150px; top: 157px; width: 75px; display: none; position: absolute;" ddinfo="SHAN">
+</span>
+</div>
+</td></tr></tbody></table>
+</span>
+<span id="outer0_197" style="left: 8px; top: 502px; width: 642px; position: absolute;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td class="componenttitle" valign="middle"><span class="GroupHeading" state="expand"></span><span class="SubForm_header-title" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor=''" border="1">Messages</span></td></tr></tbody></table><table class="GroupBox" id="WGBContainer0_197" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="15" class="ClearBorders" valign="TOP">
+<div id="div0_197" style="width: 642px; height: 15px; position: relative;" onmousedown="return true;" onkeydown="return FormKeyboardHandler.onContainerKeyDown(event,'0_197')" oncontextmenu="return FormKeyboardHandler.formExitContextMenu(event)"><span id="outer0_146" style="left: 84px; top: 2px; width: 104px; display: none; position: absolute;">
+</span>
+<span id="outer0_147" style="left: 207px; top: 2px; width: 113px; display: none; position: absolute;">
+</span>
+<span id="outer0_261" style="left: 333px; top: 2px; width: 209px; position: absolute;" ddinfo="DL01"><div title=" " class="WebLabel associatedDesc" id="divTC0_261" style="padding: 1px 0px 0px; width: 209px; height: 15px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;"><span class="FieldLabel"><i> </i></span></div>
+</span>
+</div>
+</td></tr></tbody></table>
+</span>
+</div>
+</span>
+<!-- End of Tab Pane -->
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+</span>
+</span>
+<span id="outer0_369" style="left: 40px; top: 583px; width: 135px; display: none; position: absolute;">
+</span>
+<span id="outer0_370" style="left: 204px; top: 586px; width: 152px; display: none; position: absolute;">
+</span>
+</div>
+</td></tr></tbody></table>
+</div>
+</form>
+<script defer="">
+	jdeTabRegisterFunction0_274()</script>
+<script type="text/javascript">
+function OnLoadMethods()
+{
+	try{
+	if (allowSetFocusOnOpen()){
+		window.focus();
+		document.body.focus();}
+	}catch(e){};
+var agent = Agent.getAgent();
+agent.addBubbleEventListener(document, 'mouseover', document_onmouseover);
+agent.addBubbleEventListener(document, 'mouseup', document_onmouseup);
+if(!window.alreadyAddDocumentClick) { agent.addBubbleEventListener(document, 'click', document_onclick);window.alreadyAddDocumentClick=true;}
+agent.addBubbleEventListener(document, 'keyup', document_onkeyup);
+agent.addBubbleEventListener(document, 'keydown', document_onkeydown);
+agent.addBubbleEventListener(document, 'blur', document_onblur);
+	BackButtonProtect();
+
+
+JSCompMgr.createNode('JSContainer','0','VTContainer',0,672,true,true,1,'');	JSCompMgr.registerNodeHotkeys('0', new Array('79','76'), new Array('1','1'), new Array('0_3','0_4'));JSCompMgr.createNode('JSContainer','0_274','VTTabPane',7,664,true,true,0,'');JSCompMgr.createNode('JSContainer','0_137','VTGroupBox',8,642,true,true,0,'');JSCompMgr.addNewNode('0_137','JSControl','0_24','VTTextField',115,73,true,true,0,'Order Number','');JSCompMgr.addNewNode('0_137','JSControl','0_26','VTTextField',197,33,true,true,0,'Order Type','');JSCompMgr.addNewNode('0_137','JSControl','0_103','VTTextField',262,42,true,false,0,'Order Company','');JSCompMgr.addNewNode('0_137','JSControl','0_159','VTTextField',330,18,false,true,0,'EV01:WrittenToWorkFile&#40;wf&#41;','');JSCompMgr.addNewNode('0_137','JSControl','0_211','VTLabel',362,79,false,true,0,'Job','');JSCompMgr.addNewNode('0_137','JSControl','0_224','VTLabel',362,101,false,true,0,'Project','');JSCompMgr.addNewNode('0_137','JSControl','0_225','VTLabel',362,101,false,true,0,'Business Unit','');JSCompMgr.addNewNode('0_137','JSControl','0_34','VTTextField',459,111,true,true,0,'Branch/Plant','');JSCompMgr.addNewNode('0_137','JSControl','0_23','VTLabel',9,99,true,true,0,'Order Number','');JSCompMgr.addNewNode('0_137','JSControl','0_33','VTLabel',361,89,true,true,0,'Branch/Plant','');JSCompMgr.addNewNode('0_137','JSControl','0_101','VTTextField',194,33,false,false,0,'Previous Order Type','');JSCompMgr.addNewNode('0_137','JSControl','0_90','VTLabel',9,99,false,false,0,'Previous Order','');JSCompMgr.addNewNode('0_137','JSControl','0_91','VTTextField',116,73,false,false,0,'Previous Order','');JSCompMgr.addNewNode('0_137','JSControl','0_105','VTTextField',403,9,false,true,0,'SFXO:Order Suffix&#40;wf&#41;','');JSCompMgr.addNewNode('0_137','JSControl','0_386','VTButton',443,112,false,true,0,'RetriveTaxArea','');JSCompMgr.addNewNode('0_137','JSControl','0_140','VTTextField',443,32,true,false,0,'Base','');JSCompMgr.addNewNode('0_137','JSControl','0_43','VTCheckBox',504,79,true,false,0,'Foreign','');JSCompMgr.addNewNode('0_137','JSControl','0_31','VTLabel',9,98,true,true,0,'Currency','');JSCompMgr.addNewNode('0_137','JSControl','0_32','VTTextField',116,29,true,true,0,'Currency','');JSCompMgr.addNewNode('0_137','JSControl','0_148','VTLabel',173,89,true,true,0,'Exchange Rate','');JSCompMgr.addNewNode('0_137','JSControl','0_149','VTTextField',262,93,true,true,0,'Exchange Rate','');JSCompMgr.addNewNode('0_137','JSControl','0_139','VTLabel',402,38,true,false,0,'Base','');JSCompMgr.attachNode('0_274','0_137');JSCompMgr.createNode('JSContainer','0_40','VTGroupBox',8,419,true,true,0,'');JSCompMgr.addNewNode('0_40','JSControl','0_237','VTTextField',116,101,true,true,0,'Supplier','');JSCompMgr.addNewNode('0_40','JSControl','0_7','VTLabel',9,98,true,true,0,'Supplier','');JSCompMgr.addNewNode('0_40','JSControl','0_252','VTLabel',246,171,true,true,0,' ','');JSCompMgr.addNewNode('0_40','JSControl','0_8','VTTextField',114,64,false,true,0,'Supplier','');JSCompMgr.addNewNode('0_40','JSControl','0_10','VTTextField',114,51,false,true,0,'Ship To SHAN','');JSCompMgr.addNewNode('0_40','JSControl','0_253','VTLabel',247,171,true,true,0,' ','');JSCompMgr.addNewNode('0_40','JSControl','0_9','VTLabel',9,98,true,true,0,'Ship To','');JSCompMgr.addNewNode('0_40','JSControl','0_239','VTTextField',116,101,true,true,0,'Ship To','');JSCompMgr.addNewNode('0_40','JSControl','0_245','VTTextField',109,37,false,true,0,'Buyer Number','');JSCompMgr.addNewNode('0_40','JSControl','0_241','VTLabel',9,98,true,true,0,'Buyer','');JSCompMgr.addNewNode('0_40','JSControl','0_240','VTTextField',116,101,true,true,0,'Buyer','');JSCompMgr.addNewNode('0_40','JSControl','0_254','VTLabel',247,171,true,true,0,' ','');JSCompMgr.addNewNode('0_40','JSControl','0_13','VTLabel',9,98,true,true,0,'Carrier','');JSCompMgr.addNewNode('0_40','JSControl','0_14','VTTextField',116,65,true,true,0,'Carrier','');JSCompMgr.addNewNode('0_40','JSControl','0_255','VTLabel',214,198,true,true,0,'','');JSCompMgr.attachNode('0_274','0_40');JSCompMgr.createNode('JSContainer','0_167','VTGroupBox',434,218,true,true,0,'');JSCompMgr.addNewNode('0_167','JSControl','0_16','VTTextField',128,63,true,true,0,'Order Date','');JSCompMgr.addNewNode('0_167','JSControl','0_15','VTLabel',5,111,true,true,0,'Order Date','');JSCompMgr.addNewNode('0_167','JSControl','0_231','VTTextField',128,63,true,true,0,'Requested','');JSCompMgr.addNewNode('0_167','JSControl','0_230','VTLabel',4,120,true,true,0,'Requested','');JSCompMgr.addNewNode('0_167','JSControl','0_233','VTTextField',128,63,true,true,0,'Promised Delivery','');JSCompMgr.addNewNode('0_167','JSControl','0_232','VTLabel',5,111,true,true,0,'Promised Delivery','');JSCompMgr.addNewNode('0_167','JSControl','0_21','VTLabel',4,110,true,true,0,'Cancel Date','');JSCompMgr.addNewNode('0_167','JSControl','0_22','VTTextField',128,63,true,true,0,'Cancel Date','');JSCompMgr.addNewNode('0_167','JSControl','0_217','VTLabel',5,115,false,true,0,'Receipt Date','');JSCompMgr.addNewNode('0_167','JSControl','0_218','VTTextField',128,63,false,true,0,'Receipt Date','');JSCompMgr.addNewNode('0_167','JSControl','0_227','VTLabel',4,110,false,true,0,'Effective Date','');JSCompMgr.addNewNode('0_167','JSControl','0_228','VTTextField',128,63,false,true,0,'Effective Date','');JSCompMgr.attachNode('0_274','0_167');JSCompMgr.createNode('JSContainer','0_268','VTGroupBox',10,419,true,true,0,'');JSCompMgr.addNewNode('0_268','JSControl','0_204','VTLabel',7,98,true,true,0,'Pmt. Remark','');JSCompMgr.addNewNode('0_268','JSControl','0_205','VTTextField',114,167,true,true,0,'Pmt. Remark','');JSCompMgr.addNewNode('0_268','JSControl','0_206','VTLabel',7,98,true,true,0,'Description','');JSCompMgr.addNewNode('0_268','JSControl','0_207','VTTextField',114,167,true,true,0,'Description','');JSCompMgr.addNewNode('0_268','JSControl','0_267','VTLabel',7,99,true,true,0,'Print Message','');JSCompMgr.addNewNode('0_268','JSControl','0_266','VTTextField',114,47,true,true,0,'Print Message','');JSCompMgr.attachNode('0_274','0_268');JSCompMgr.createNode('JSContainer','0_175','VTGroupBox',8,642,true,true,0,'');JSCompMgr.addNewNode('0_175','JSControl','0_170','VTLabel',9,106,true,true,0,'Tax Expl Code','');JSCompMgr.addNewNode('0_175','JSControl','0_171','VTTextField',116,20,true,true,0,'Tax Expl Code','');JSCompMgr.addNewNode('0_175','JSControl','0_53','VTLabel',328,94,true,true,0,'Hold Code','');JSCompMgr.addNewNode('0_175','JSControl','0_54','VTTextField',426,33,true,true,0,'Hold Code','');JSCompMgr.addNewNode('0_175','JSControl','0_256','VTLabel',175,130,true,true,0,'                             .','');JSCompMgr.addNewNode('0_175','JSControl','0_257','VTLabel',486,144,true,true,0,'BLANK-HOLD CODE 42/HC','');JSCompMgr.addNewNode('0_175','JSControl','0_168','VTLabel',9,106,true,true,0,'Tax Rate/Area','');JSCompMgr.addNewNode('0_175','JSControl','0_169','VTTextField',116,47,true,true,0,'Tax Rate/Area','');JSCompMgr.addNewNode('0_175','JSControl','0_79','VTLabel',328,94,false,false,0,'Approval Code','');JSCompMgr.addNewNode('0_175','JSControl','0_80','VTTextField',426,91,false,false,0,'Approval Code','');JSCompMgr.addNewNode('0_175','JSControl','0_155','VTTextField',313,18,false,true,0,'ACTN:ActionCode &#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_157','VTTextField',354,18,false,true,0,'EV01:FirstCycleFlag&#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_165','VTTextField',354,18,false,true,0,'Generic Text exists &#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_163','VTTextField',362,23,false,true,0,'ORNN:Order Nxt Nbr &#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_180','VTTextField',362,18,false,true,0,'EV01..UsesWorkFiles&#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_172','VTLabel',9,106,true,true,0,'Certificate','');JSCompMgr.addNewNode('0_175','JSControl','0_173','VTTextField',116,115,true,true,0,'Certificate','');JSCompMgr.addNewNode('0_175','JSControl','0_202','VTLabel',328,94,true,true,0,'Retainage %','');JSCompMgr.addNewNode('0_175','JSControl','0_203','VTTextField',426,82,true,true,0,'Retainage %','');JSCompMgr.addNewNode('0_175','JSControl','0_373','VTCheckBox',518,122,false,true,0,'Retainage Indicator','');JSCompMgr.addNewNode('0_175','JSControl','0_259','VTTextField',335,9,false,true,0,'Credit Message','');JSCompMgr.addNewNode('0_175','JSControl','0_199','VTTextField',116,115,true,false,0,'Tax ID','');JSCompMgr.addNewNode('0_175','JSControl','0_198','VTLabel',9,106,true,true,0,'Tax ID','');JSCompMgr.addNewNode('0_175','JSControl','0_84','VTLabel',328,94,true,false,0,'Ordered By','');JSCompMgr.addNewNode('0_175','JSControl','0_85','VTTextField',426,82,true,false,0,'Ordered By','');JSCompMgr.addNewNode('0_175','JSControl','0_209','VTTextField',215,160,false,true,0,'PROM','');JSCompMgr.addNewNode('0_175','JSControl','0_153','VTTextField',313,54,false,true,0,'JOBS:Job Number&#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_151','VTTextField',330,90,false,true,0,'CTID:Computer ID &#40;wf&#41;','');JSCompMgr.addNewNode('0_175','JSControl','0_200','VTLabel',9,113,true,true,0,'Person/Corp. ID','');JSCompMgr.addNewNode('0_175','JSControl','0_201','VTTextField',116,60,true,false,0,'Person/Corp. ID','');JSCompMgr.addNewNode('0_175','JSControl','0_81','VTLabel',328,94,true,true,0,'Order Taken By','');JSCompMgr.addNewNode('0_175','JSControl','0_82','VTTextField',426,82,true,true,0,'Order Taken By','');JSCompMgr.addNewNode('0_175','JSControl','0_263','VTLabel',9,106,true,true,0,'Payment Terms','');JSCompMgr.addNewNode('0_175','JSControl','0_262','VTTextField',116,20,true,true,0,'Payment Terms','');JSCompMgr.addNewNode('0_175','JSControl','0_273','VTLabel',174,148,true,true,0,'DO NOT USE-DEFAULT TERM','');JSCompMgr.addNewNode('0_175','JSControl','0_265','VTLabel',328,93,true,true,0,'AIA Document','');JSCompMgr.addNewNode('0_175','JSControl','0_264','VTTextField',426,14,true,true,0,'AIA Document','');JSCompMgr.addNewNode('0_175','JSControl','0_249','VTTextField',150,51,false,true,0,'Ship To','');JSCompMgr.attachNode('0_274','0_175');JSCompMgr.createNode('JSContainer','0_197','VTGroupBox',8,642,true,true,0,'');JSCompMgr.addNewNode('0_197','JSControl','0_146','VTLabel',84,104,false,true,0,'Attachments','');JSCompMgr.addNewNode('0_197','JSControl','0_147','VTLabel',207,113,false,true,0,'Order On Hold','');JSCompMgr.addNewNode('0_197','JSControl','0_261','VTLabel',333,209,false,true,0,'                             .','');JSCompMgr.attachNode('0_274','0_197');JSCompMgr.attachNode('0','0_274');JSCompMgr.addNewNode('0','JSControl','0_369','VTButton',40,135,false,true,0,'Disable UDF Properties','');JSCompMgr.addNewNode('0','JSControl','0_370','VTButton',204,152,false,true,0,'Disable Category Codes','');JSCompMgr.setRootContainer('','0');
+FCHandler.callOnLoadMethods('');
+JSCompMgr.onLoad("");
+if(FCHandler.isModalStackEmpty('') == true){
+	var focusElm = document.getElementsByName("0_237");
+	try{	 if(focusElm!=null && focusElm[0]!=null && focusElm[0].focus!=null && focusElm[0].disabled!=true && allowSetFocusOnOpen())
+	 { 		 focusElm[0].focus();	 } 	}catch(e){};
+}
+FCHandler.handleModalStack('');
+
+
+
+
+
+
+try {
+if (window.parent){if (window.parent.syncRecentReports){window.parent.syncRecentReports(false);}else{if (window.parent.window.parent && window.parent.window.parent.syncRecentReports){window.parent.window.parent.syncRecentReports(false);}}}
+} catch (err) {}
+}
+try { if(top!=null && top.ProcessingIndicator.getInstance() != null)
+	top.ProcessingIndicator.stopProcessingIndicator();}catch(problem){}
+RIUTIL.setCompositePage(false);RIUTIL.setCompositePageAsApp(false);RIUTIL.init('({RI_DELETED_CONTENT:\'Deleted Content\',RI_PUBLISH_ERROR:\'The Personal Form must be public in order to publish this Layout.\',UDO_ENTER_APPROVER_NOTE:\'Confirmation\',RI_SAVE_BLANK_LAYOUT:\'Please add at least one content frame before saving the page.\',RI_WZTMP_NOT:\'not {0}\',RI_NORMAL_CONTENT:\'Restore Content\',CP_BLANK_WELCOME:\'Welcome to the EnterpriseOne Page Composer!\',UDO_SAVE_AS:\'Save As\',JS_SIDE_PANEL_RI_HOVER:\'About Form Layout\',RI_ADD_E1_FORM:\'Add an existing EnterpriseOne form.\',RI_HOVER_TEXT_POPUP:\'Popup Content\',RI_EDIT_EVENT:\'Edit End User Event\',UDO_PROMPT_DEFAULT_NAME:\'new name\',UDO_RESERVED:\'Reserved\',RI_DEL_LAYOUT_CONFORM:\'Are you sure you want to delete this layout?\',RI_HOVER_TEXT_CANCEL:\'Cancel\',UDO_DELETE:\'Delete\',RI_OBIEE:\'OBIEE\',RI_HOVER_DELETE_INDICATOR:\'Click to delete it\',RI_HOVER_TEXT_EDIT:\'Edit\',UDO_TOKEN_BY:\'Token held in project {0}\',RI_TRIGGER_WIZARD:\'Trigger Wizard\',RI_CLOSE_CONTENT:\'Close Content\',RI_R_ERR_WRITE_CONTROL:\'Cannot write data to the control \"{0}\" on the frame \"{1}\". Please make sure the control is visible and editable.\',RI_CREATE_VALIDATE_OK:\'URL verification is successful.\',RI_ADD_OBIEE:\'Add a Dashboards Page or BI Answer from Oracle Business Intelligence Enterprise Edition 11G.\',RI_INVLIAD_APP_ID:\'Invalid application ID\',RI_ADD_NEW_EVENT:\'Add New End User Event\',RI_WZTMP_OR:\'{0} or {1}\',RI_R_ERR_WRITE_COL:\'Cannot write data to the column \"{0}\" of the grid on the frame \"{1}\". Please make sure the column is visible and editable.\',RI_HOVER_TEXT_CREATE:\'Create\',RI_MINI_CONTENT:\'Minimize Content\',RI_WZTMP_PUSH_BUTTON:\'push button {0}\',RI_EVENT_LIST:\'Event List\',RI_E1PAGE_OBJ:\'Classic Page\',RI_LANDING_OBJ:\'Springboard Pane\',RI_E1_MENU_OBJ:\'EnterpriseOne Menu\',UDO_REWORK:\'Rework\',UDO_DUPLICATED_NAME:\'The name is already in use, duplicate names are not allowed.\',RI_ADD_E1PAGE_OBJ:\'Add an EnterpriseOne Page.\',RI_EMPTY_CONTENT_PALETTE:\'There is no existing content to select.\',RI_DATA_WIZARD:\'Data Wizard\',RI_CHANGE_LAYOUT_WARN:\'Please save or delete the new content\',RI_LIMIT_CONTENTS:\'You cannot add anymore content to this layout.\',RI_ADD_E1_MENU_OBJ:\'Add a EnterpriseOne Menu.\',RI_WZTMP_CAPTURE_V_FIELD:\'{0}[capture a form field or grid column]\',RI_ADD_OVR_OBJ:\'Add a One View Report.\',UDO_SHARED:\'Shared\',RI_DELETE_EVENT:\'Remove End User Event\',RI_R_ERR_ACCESS_COL:\'Cannot access the column \"{0}\" of the grid on the frame \"{1}\". Please make sure the column is visible.\',UDO_LABEL_NAME:\'Name\',CP_PRODUCT_CODE:\'Product Code\',RI_REMOVE_COMPONENT:\'Remove this component\',RI_WZTMP_TRIG_ROW_SELECT:\'a grid row on {0}[a frame] is selected\',UDO_BAD_NAME:\'The name cannot be empty, blank or contain the following characters ~`\\u0027!@#$%^&*()+={[}]|\\u005c;:\"<,>.?/\',RI_ADD_LANDING_OBJ:\'Add a Springboard Pane\',RI_OPEN_CONTENT:\'Open Existing Content\',RI_WZTMP_TRIG_USER:\'the event button is clicked\',RI_ADD_REGUAL_URL:\'Add a URL to a third-party website.\',RI_OVR_OBJ:\'One View Report\',UDO_UNRESERVE:\'Unreserve\',RI_RELEASE_FAILED:\'Error releasing reservation. Check logs for more information.\',RI_WZTMP_IF_THEN:\'If {0} {1}\',RI_RULE_RUNTIME_ERROR:\'Event Rule Execution Error\',RI_AVAILABLE_CONTENT:\'Available Content\',RI_ADD_COMPONENT:\'Add this component\',RI_RESERVE_FAILED:\'Error reserving CafeOne Layout. Check logs for more information.\',JS_SIDE_PANEL_CMP_HOVER:\'About Composed Page\',RI_CHANGE_OPERATOR:\'Click to change the operator\',RI_INVALID_NAME:\'Invalid Name\',RI_HOVER_KEY:\'Frame Filter\',RI_WZTMP_AND:\'{0} and {1}\',RI_FREESTYLE_OBJ:\'Designer Pane\',RI_DEL_PAGE_CONFORM:\'Are you sure you want to delete this composed page?\',UDO_PERSONAL:\'Personal\',RI_CREATE_MAP_TO:\'is mapped to\',EUR_RESERVED_BY:\'Reserved by {0}\',RI_HOVER_TEXT_SAVE:\'Save\',RI_R_ERR_UNIT_WIZARD:\'The wizard placeholder shall be initialized before it can be executed at runtime. Please click the icon in the design mode to launch the wizard to initialize it.\',UDO_RESERVE:\'Reserve\',RI_CREATE_REMAIN_AS:\'remains as\',RI_CLEAR_RULES:\'Clear End User Rules\',RI_OUT_OF_SYNC:\'(Content out of sync)\',RI_ENTER_EVENT_NAME:\'Enter Event Name:\',UDO_PENDING_APPROVAL:\'Pending Approval\',CP_BAD_PRODCODE:\'The product code cannot be empty, blank or contain the following characters ~`\\u0027!@#$%^&*()+={[}]|\\u005c;:\"<,>.?/\',RI_WZTMP_SET_WITH:\'set {0} with {1}\',RI_ACTION_WIZARD:\'Action Wizard\',WL_REFRESH:\'Refresh\',UDO_CREATE:\'(Create)\',RI_R_ERR_ACCESS_ROW:\'Cannot access the grid cell because the system does not know which row to reference in the grid on the frame \"{0}\"\',RI_SELECT_OBIEE:\'Select OBIEE object\',RI_R_ERR_ACESS_CONTROL:\'Cannot read data from the control \"{0}\" on the frame \"{1}\". Please make sure the control is visible.\',RI_DRAG_ACTIVATE:\'Drag and drop to workspace to open\',UDO_TYPE_CAFEONE:\'Layout\',RI_WZTMP_SOURCE_DATA:\'{0} {1} {2}\',RI_E1_FORM:\'EnterpriseOne Form\',RI_ADD_FREESTYLE_OBJ:\'Add a Designer Pane.\',RI_WZTMP_TARGET_FIELD:\'{0}\',CP_VIEW_NOTES:\'Please view notes for this page from the OMW application attachment.\',UDO_SAVE:\'Save\',RI_VALIDATE_ERROR:\'Validation Error\',RI_LOGIC_WIZARD:\'Logic Wizard\',RI_CAPUTURE_MENU_ITEM:\'Click to capture a menu item on any satellite form\',RI_APPEND_COMPONENT:\'Append more components\',RI_DRAG_CREATE:\'Drag and drop to workspace to create\',RI_END_USER_EVENT:\'End User Event\',RI_CREATE_CLICK:\'Click the add icon near any text control on the form or the customized text to add into the mapping\',CP_BLANK_OPTIONS:\'You currently have no content created in this page. Please start with one of the following options:\',RI_SEL_EXISTING_CONTENT:\'Select an existing content for the workspace\',JH_CLOSE:\'Close\',RI_HOVER_WIZAR_ICON:\'Click to replace it using {0}\',JH_LOGINTITLE:\'JD Edwards\',RI_MANAGE_COMPOSITE_PAGE:\'Manage Composite Page\',RI_EXIT_FOR_XSS:\'EnterpriseOne has to exit due to XSS attack.\',RI_WZTMP_WHEN_EXECUTE:\'Under any of the following conditions {0}[] perform actions {1}[]\',RI_CHANGE_CONSTANT:\'Click to change the value of the constant\',RI_WZTMP_IF_ELSE:\'If {0} {1} else {2}\',UDO_TYPE_COMPOSITEPAGE:\'Composed Page\',RI_DRAG_DROP_WARN:\'Please drag and drop instead of clicking.\',RI_END_USER_RULES:\'End User Rules\',RI_HOVER_TEXT_REMOVE:\'Remove Content\',RI_WZTMP_TRIG_FRAME_OPEN:\'{0}[a frame] is opened\',RI_ADD_WL_COMPONENT_OBJ:\'Add Watchlist Pane\',RI_PR_WARN:\'Please confirm that you want to remove this content\',RI_CREATE_VALIDATE_FAIL:\'Verification Failed: This web page cannot be embedded within a frame.\',UDO_PROMPT_NAME:\'Enter New Name:\',UDO_CONFIRM_REQUEST_PUBLISH:\'You have requested to publish this {0}. <BR> Do you want to continue?\',UDO_CONFIRM_REQ_PUB_OPTION:\'(Click the checkbox to include comments about your {0}.)\',RI_WZTMP_CLICK_MENU:\'click toolbar button {0}\',RI_WZTMP_COMPARE:\'{0} {1} {2}\',RI_DELETE_CONTENT:\'Delete Content\',UDO_REQUESTOR_NOTE:\'Requestor Note\',RI_LINK_DETAIL:\'Inspect Link\',RI_HOVER_INSERT_INDICATOR:\'Click to insert an entry using {0}\',RI_ADD_DVT_OBJ:\'Add an ADF Application.\',RI_WL_COMPONENT_OBJ:\'Watchlist Pane\',RI_URL:\'URL\',RI_LAYOUT:\'Layout:\',RI_WZTMP_SOURCE_CONSTANT:\'{0}[constant]\',RI_R_ERR_NO_FRAME:\'Please add an embedded form in this layout in order to use this template.\',CP_BLANK_OPEN_CONTENT:\'Click \"Open Existing Content\" to select existing content for this blank page.\',RI_R_ERR_ACCESS_FRAME:\'Failed to access the satellite frame. Please make sure the frame is not minimized and is displayed in the current layout.\',RI_CONFIRM_DISCARD:\'You did not save the change. Are you sure that you want to discard the change?\',RI_HOVER_TEXT_INSPECT:\'Inspect\',RI_CAPTURE_EDIT_FIELD:\'Click to start capturing a editable field on the master or satellite forms\',CP_BLANK_CREATE_CONTENT:\'Click \"Create New Content\" to select the default content type for this blank page.\',RI_WARN_UNCOMMIT:\'This action will discard your changes. Proceed anyway?\',RI_CREATE_INVALID_URL:\'Enter a valid URL.\',UDO_NOTES:\'Notes\',RI_SELECT_SATELLITE:\'Select a satellite form\',RI_WZTMP_BETWEEN:\'{0} is between {1} and {2}\',RI_DVT_OBJ:\'ADF Application\',RI_HOVER_TEXT_DETAIL:\'Detail\',RI_RULE_VALIDATION_ERROR:\'Event Rule Validation Error\',RI_EDIT_CURRENT_PAGE:\'Edit Form Layout\',UDO_LABEL_DESCRIPTION:\'Description\',RI_CREATE_CONTENT:\'Create New Content\',RI_UPDATE_NOTES_FAILED:\'Request published Succeeded; But failed to update notes\',RI_NO_LAYOUT:\'(No Layout)\',UDO_REQUEST_PUBLISH:\'Request to Publish\',RI_SEL_DEFAULT_CONTENT:\'Select a content type for the workspace\',RI_ERROR_NO_OBIEE_ACCESS:\'The content cannot be displayed, because you do not have the access to OBIEE server.\',canSearchApp:true,canSearchUBE:true,canSearchTask:true,watchlistThreadPoolSize:3})',false);
+var isSimplifiedNavigation=false;
+
+var hideFormAndRowExits=false;
+
+var showNumericKeyboard =false;
+
+FCHandler.hideFormAndRowExit();
+var showAddFormToFav = false;
+showAddFormToFavorites(false);
+</script>
+<script defer="">
+</script>
+<noscript>A script enabled browser is required for this page to function properly</noscript>
+<script type="text/javascript">try {parent.jdeMenuParent.storeRunAppState("1",parent.name);if(parent.OpenAppIndicator.getInstance() != null){
+parent.OpenAppIndicator.stopOpenAppIndicator();} } catch (ex) {}</script>
+
+<div class="ProcInd" id="procIndicatorFloatLyr" nowrap="" style="left: 1547px; display: none;"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr nowrap=""><td class="af_progressIndicator_indeterminate"></td></tr></tbody></table></div><iframe id="procIndMask" src="javascript:false;" frameborder="0" scrolling="no" style="display: none; position: absolute;"></iframe></body></html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19390" started-at="2017-10-04T06:07:36Z" finished-at="2017-10-04T06:07:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19390" started-at="2017-10-04T06:07:36Z" finished-at="2017-10-04T06:07:55Z">
+      <class name="com.tavant.kwutils.MyTestCaseExecuter">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" name="beforeSuite" is-config="true" duration-ms="40" started-at="2017-10-04T11:37:36Z" finished-at="2017-10-04T11:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" test-instance-name="TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-10-04T11:37:36Z" finished-at="2017-10-04T11:37:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[none]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testCase()[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" test-instance-name="TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend" name="testCase" duration-ms="19218" started-at="2017-10-04T11:37:36Z" finished-at="2017-10-04T11:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" test-instance-name="TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend" name="afterMethod" is-config="true" duration-ms="135" started-at="2017-10-04T11:37:55Z" finished-at="2017-10-04T11:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" test-instance-name="TC_NetSuite_NutraBlend: With TestData :1:TC_NetSuite_NutraBlend" name="closeDriver" is-config="true" duration-ms="0" started-at="2017-10-04T11:37:55Z" finished-at="2017-10-04T11:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.tavant.kwutils.MyTestCaseExecuter@3c9d0bbc]" name="afterSuite" is-config="true" duration-ms="631" started-at="2017-10-04T11:37:55Z" finished-at="2017-10-04T11:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.tavant.kwutils.MyTestCaseExecuter -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

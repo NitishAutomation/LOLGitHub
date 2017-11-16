@@ -1,0 +1,15 @@
+Test Summary Report
+Test Name :CUSTOM
+Start Date : Wed Sep 20 14:26:09 IST 2017,
+End Date   :  Wed Sep 20 14:28:21 IST 2017,
+Total Duration :0 Hours 2 Minutes 12 Seconds,
+Total Pass : 0,
+Total Fail : 1,
+Executed By : NITISH-NAYAK/nitish.nayak/OS-Windows 10,
+Groups: MS_Patch_ProdFSi,,
+URL :http://www.freshway.com,
+Browser : Edge 
+TC_FSICrystalReporting:Validate_ReportGeneratingProperly With TestData :1:TC_FSICrystalReporting,Fail,Failed TestCase :TC_FSICrystalReporting:Validate_ReportGeneratingProperly With TestData :1:TC_FSICrystalReporting<br>No frame element found by name or id content_frame
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NITISH-NAYAK', ip: '10.10.26.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown<br> Duration>0 Hours 2 Minutes 8 Seconds

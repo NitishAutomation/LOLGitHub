@@ -1,0 +1,161 @@
+<!-- FILE: initial_frameset.html --><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Crystal Management Console</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/crystal/enterprise10/admin/en/js/cookieHandler.js"></script><script language="javascript">
+
+var _loc = "";
+var _cols = "";
+var sysInfo = {canCluster: true, canLDAP: true, canDest: true, canLimit: true, canEvent: true, canObSet: true};
+
+function goHome()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?draw=contentframeset&amp;contentsrc=homepage";
+}
+
+function goUser(id)
+{
+    var start_url = "/crystal/enterprise10/admin/en/infoobject.cwr?action=-10005&amp;sysobj"
+    start_url += "&amp;id=" + id;
+
+    frames["target_frame"].location = start_url;
+}
+
+function goGroup(id)
+{
+    var start_url = "/crystal/enterprise10/admin/en/infoobject.cwr?action=-10005&amp;sysobj&amp;briefinfo";
+    start_url += "&amp;id=" + id;
+
+    frames["target_frame"].location = start_url;
+}
+
+function goEvent(id)
+{
+    if (!sysInfo.canEvent) return;
+    var start_url = "/crystal/enterprise10/admin/en/infoobject.cwr?action=-10005&amp;sysobj&amp;briefinfo";
+    start_url += "&amp;id=" + id;
+
+    frames["target_frame"].location = start_url;
+}
+
+function goServerGroup(id)
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=server%5Fgroup" + "&amp;display=frameset&amp;contentsrc=tabframeset&amp;groupid=" + id;
+}
+
+function goAccount(id, isUser)
+{
+    if(isUser)
+        goUser(id);
+    else
+        goGroup(id);
+}
+
+
+function goUsers()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=user";
+}
+
+function goGroups()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=user%5Fgroup";
+}
+
+function goReports()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=report";
+}
+
+function goFolders()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=folder";
+}
+
+function goServers()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=server";
+}
+
+function goServerGroups()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=server%5Fgroup";
+}
+
+function goSettings()
+{
+	frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=general";
+}
+
+function goLicenseKeys()
+{
+	frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=license";
+}
+
+function goAuthentication()
+{
+	frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=password";
+}
+
+function goCalendars()
+{
+	frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=calendars";
+}
+
+function goEvents()
+{
+    if (!sysInfo.canEvent) return;
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=events";
+}
+
+function goWebApps()
+{
+    frames["target_frame"].location = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=webapps";
+}
+
+function goLocation(url)
+{
+	frames["target_frame"].location = url;
+}
+
+function createNewObject (fid, obtype)
+{
+  if (obtype != "noAction")
+    frames["target_frame"].location = "infoobject.cwr?action=-7&amp;id=" + fid + "&amp;obtype=" + obtype;
+}
+
+
+// fid: the destination folder
+// cmdType:  copy or move
+// checked_items: the folders to be copied or moved
+function copyFolderToRoot(fid, cmdType, checked_items)
+{
+	url = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=folder"  + "&amp;cmd=cm&amp;id=" + fid + "&amp;type=" + cmdType + "&amp;checkedItems=" + checked_items;
+	frames["target_frame"].location = url;
+}
+
+function restartServer(id)
+{
+    var url = "/crystal/enterprise10/admin/en/admin.cwr?server=&amp;service=APSAdmin&amp;page=server" + "&amp;";
+    url += "display=frameset&amp;contentsrc=restart&amp;selectedChoices=" + id;
+    frames["target_frame"].location = url;
+}
+
+function goHelp(page)
+{
+    var loc = "/crystal/enterprise10/help/en/administration/html/" + page;
+    window.open(loc, "_blank");
+}
+
+</script></head>
+
+
+
+<!-- if you change the value for ROWS attribute,
+     you also need to change onLoad() function in header.html -->
+<frameset id="initial_frameset" rows="57, *" frameborder="yes">
+    <frame name="header_frame" src="/crystal/enterprise10/admin/en/admin.cwr?draw=header" marginwidth="0" marginheight="0" scrolling="no"></frame>
+    <frame name="target_frame" src="/crystal/enterprise10/admin/en/admin.cwr?draw=contentframeset&amp;contentsrc=homepage" marginwidth="0" marginheight="0"></frame>
+</frameset>
+
+
+</html>

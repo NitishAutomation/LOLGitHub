@@ -1,0 +1,153 @@
+
+E:\LOLPOC\LOL_POC>echo off 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.test:LOL_Fire:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for com.test:fireKW:jar should not point at files within the project directory, ${basedir}/ext/fireKW-1.0-SNAPSHOT.jar will be unresolvable by dependent projects @ line 124, column 16
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LOL_Fire 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ LOL_Fire ---
+[INFO] Deleting E:\LOLPOC\LOL_POC\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ LOL_Fire ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\LOLPOC\LOL_POC\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ LOL_Fire ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to E:\LOLPOC\LOL_POC\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ LOL_Fire ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ LOL_Fire ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 31 source files to E:\LOLPOC\LOL_POC\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ LOL_Fire ---
+[INFO] Surefire report directory: E:\LOLPOC\LOL_POC\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Version - 3.1_MHG
+****** STARTING TEST LOL-116:LOL_Integrate_T246993_R5542520_Pick_Slip *****
+Aug 11, 2017 11:24:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+sabarish 
+RunThis = Yes
+Scenario Description = Validate sample Test case 
+UserName = 559773
+Password = Welcome9
+URL = https://mpis.landolakes.com
+OrderNumber = 10
+ShipToNumber = 7030420
+BranchPlant = 601231
+ItemNumber = 1608198
+SoldToNumber = 7028356
+Creditlimit = 5,000,000.00
+CreditManager = 102
+SampleRegulatoryCode = 3421
+OrderGuideProduct = 5332630
+itemnumber_T157619 = 1414555
+Quantity_T157619 = 5
+ScoopProduct = 6759039
+JITProduct = 2427540
+ContractedProduct = 6310726
+SingleImageProduct = 1365246
+ = 3327046
+ = 1841311
+ = 43083
+View Job Status - Submitted Job Search
+RunThis = NO
+Scenario Description = T157655_P5542067 - Rename 
+Trademark Field - Chemical Active Ingredients
+UserName = 559773
+Password = Welcome9
+URL = 
+OrderNumber = 10
+ShipToNumber = 7030420
+BranchPlant = 601231
+ItemNumber = 1608198
+SoldToNumber = 7028356
+Creditlimit = 5,000,000.00
+CreditManager = 102
+SampleRegulatoryCode = 3421
+OrderGuideProduct = 
+itemnumber_T157619 = 
+Quantity_T157619 = 
+ScoopProduct = 
+JITProduct = 
+ContractedProduct = 
+SingleImageProduct = 
+ = 
+ = 
+ = 
+Skipped scenario : T157655_P5542067 - Rename 
+Trademark Field - Chemical Active Ingredients
+RunThis = No
+Scenario Description = T155017 P5641202 Item
+ Availability
+UserName = 559773
+Password = Welcome9
+URL = https://mpis.landolakes.com
+OrderNumber = 10
+ShipToNumber = 7030420
+BranchPlant = 601231
+ItemNumber = 10001903
+SoldToNumber = 7028356
+Creditlimit = 5,000,000.00
+CreditManager = 102
+SampleRegulatoryCode = 3421
+OrderGuideProduct = 5332630
+itemnumber_T157619 = 1414555
+Quantity_T157619 = 5
+ScoopProduct = 6759039
+JITProduct = 2427540
+ContractedProduct = 6310726
+SingleImageProduct = 1365246
+ = 3327046
+ = 1841311
+ = 43083
+Skipped scenario : T155017 P5641202 Item
+ Availability
+***** ENDING TEST LOL-116:LOL_Integrate_T246993_R5542520_Pick_Slip *****
+====================================================================================
+Total ::: No Of Test cases :1::: PASS:1:::Fail:0:::Skipped:0
+====================================================================================
+PASSED: LOL-116:LOL_Integrate_T246993_R5542520_Pick_Slip
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+[TestNG] Time taken by [FailedReporter passed=0 failed=0 skipped=0]: 0 ms
+[TestNG] Time taken by org.testng.reporters.EmailableReporter2@6ea6d14e: 40 ms
+[TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@61443d8f: 143 ms
+[TestNG] Time taken by org.testng.reporters.JUnitReportReporter@2aaf7cc2: 6 ms
+[TestNG] Time taken by org.testng.reporters.jq.Main@63d4e2ba: 66 ms
+[TestNG] Time taken by org.testng.reporters.XMLReporter@2b80d80f: 15 ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 85.299 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:35 min
+[INFO] Finished at: 2017-08-11T11:25:37+05:30
+[INFO] Final Memory: 25M/132M
+[INFO] ------------------------------------------------------------------------
